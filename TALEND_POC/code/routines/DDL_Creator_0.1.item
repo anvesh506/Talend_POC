@@ -6,7 +6,7 @@ import java.io.IOException;
 public class DDL_Creator {
 public static String test_query() throws IOException {
 @SuppressWarnings("resource")
-BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\\Metadata_Info.xlsx"));
+BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\\Metadata_Info.tsv"));
 String str;
 while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
