@@ -13,9 +13,9 @@ while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
 break;
 }
-System.out.println("helo anvesh");
-String Col[]=str.trim().split("\\s+");
 
+String Col[]=str.trim().split("\\s+");
+System.out.println("array" + Col);
 StringBuilder sb = new StringBuilder("create table demo(");
 for(int i = 0 ; i< Col.length ; i++){
 sb.append(Col);
@@ -25,6 +25,7 @@ sb.append(",");
 }
 sb.delete(sb.lastIndexOf(","),sb.lastIndexOf(",")+1 );
 sb.append("); ");
+System.out.println("sb" + sb.toString());
 return sb.toString() ;
 
 }
