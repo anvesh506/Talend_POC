@@ -9,7 +9,7 @@ public static String test_query() throws IOException {
 @SuppressWarnings("resource")
 BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\\Metadata_Info-Copy.tsv"));
 String str;
-while ((str = in.readLine()) != null) {
+//while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
 }
 String Col[]=str.split("\\s+");
