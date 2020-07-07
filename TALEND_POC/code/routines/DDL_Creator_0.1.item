@@ -12,7 +12,7 @@ String str;
 while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
 }
-String Col[]=str.split("\\s");
+String Col[]=str.split("\\s+");
 
 StringBuilder sb = new StringBuilder("create table demo(");
 for(int i = 0 ; i< Col.length ; i++){
