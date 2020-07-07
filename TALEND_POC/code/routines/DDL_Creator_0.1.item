@@ -11,7 +11,9 @@ BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\
 String str;
 while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
+break;
 }
+
 String Col[]=str.trim().split("\\s+");
 
 StringBuilder sb = new StringBuilder("create table demo(");
