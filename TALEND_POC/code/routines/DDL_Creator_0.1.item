@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 public class DDL_Creator {
 public static String test_query() throws IOException {
-BufferedReader in = new BufferedReader(new FileReader("D:\\TOS-All-r12707-V2.3.2\\workspace\\File\\test.tsv"));
+BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\\test.tsv"));
 String str;
 while ((str = in.readLine()) != null) {
 System.out.println("FirstLine : " + str);
