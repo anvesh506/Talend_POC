@@ -14,7 +14,7 @@ System.out.println("FirstLine : " + str);
 break;
 }
 
-String Col[]=str.trim().split("\\s");
+String Col[]=str.trim().split("\\t");
 System.out.println("array123" + Col);
 StringBuilder sb = new StringBuilder("create table demo(");
 for(int i = 0 ; i< Col.length ; i++){
