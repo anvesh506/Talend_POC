@@ -15,7 +15,7 @@ break;
 }
 
 String Col[]=str.trim().split("\\s+");
-System.out.println("array" + Col);
+System.out.println("array123" + Col);
 StringBuilder sb = new StringBuilder("create table demo(");
 for(int i = 0 ; i< Col.length ; i++){
 sb.append(Col);
