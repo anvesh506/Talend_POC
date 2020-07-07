@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ww0IoBfa0cZmIdVxmOSOZMOav1k7muukc3W7f9km"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0wO834RrCtxBl/bHV5ey52mzKFf6VrXcrwP7IEtf"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fi/9CyNJzhRyqm0qWK+Y+dGFOG3Dc7QXd0Wu+8+D"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bh0REFHY/uhKHP5NXEm69UZ+Y+SE50jURA7vrCAp"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -117,7 +117,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/my_work/Schema_file/Metadata_Info.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:SQmnYEckeqW6PFC/knVcR8BwfaacrdDA0mT/vQsw"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:GhfL1Tf4N2Kg+LVcOgqFvAyfx47AziLdFotTlfll"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -283,7 +283,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/my_work/Schema_file/Metadata_Info.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:eTW7EHPULcw0i/OnCJXkoOoUg9wOczE+CLfmn3Gd"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:gxU95A1R/VSBCEG+flhCZil/4YuAWgBWWHZYMwaa"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -413,7 +413,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
     <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;      "/>
-    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;output_row1.line=null;&#10;for(int i=1;i&lt;=1;i++){&#10;if(output_row1.line==null){&#10;&#10;output_row1.line= &quot;create table&quot;+&quot;&quot;+input_row1.table_schema&#10;+&quot;.&quot;+input_row1.table_name+&quot;(&quot;+input_row1.column_name&#10;+&quot; &quot;+input_row1.data_type+&quot; &quot;+input_row1.CHARACTER_MAXIMUM_LENGTH+&quot;)&quot;;&#10;&#10;}else{&#10;output_row1.line= &quot;create table&quot;+&quot;&quot;+input_row1.table_schema&#10;+&quot;.&quot;+input_row1.table_name+&quot;(&quot;+input_row1.column_name&#10;+&quot; &quot;+input_row1.data_type+&quot; &quot;+input_row1.CHARACTER_MAXIMUM_LENGTH+&quot;)&quot;;&#10;&#10;}&#10;}&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;output_row1.line=null;&#10;String emp_table_name = &quot;&quot;;&#10;for(int i=1;i&lt;=1;i++){&#10;if(output_row1.line==null){&#10;System.out.println(&quot;hi&quot;)&#10;output_row1.line= &quot;create table&quot;+&quot;&quot;+input_row1.table_schema&#10;+&quot;.&quot;+input_row1.table_name+&quot;(&quot;+input_row1.column_name&#10;+&quot; &quot;+input_row1.data_type+&quot; &quot;+input_row1.CHARACTER_MAXIMUM_LENGTH+&quot;)&quot;;&#10;&#10;}else{&#10;System.out.println(&quot;hello&quot;)&#10;output_row1.line= &quot;create table&quot;+&quot;&quot;+input_row1.table_schema&#10;+&quot;.&quot;+input_row1.table_name+&quot;(&quot;+input_row1.column_name&#10;+&quot; &quot;+input_row1.data_type+&quot; &quot;+input_row1.CHARACTER_MAXIMUM_LENGTH+&quot;)&quot;;&#10;&#10;}&#10;}&#10;"/>
     <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
     <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
     <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
@@ -526,13 +526,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dc94cd78-1bdb-46fe-b431-f897d54a3dee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Oj2NUVoadoj9KKaHvbuT0z4prj7YAn4rW30qXEG+on3hOdQuSZjbMQEMn6Dx7cfY0I4KXbkqzo8a
-butwTe8MwA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a820bc1f-0b7f-4a52-b977-cf1429501de2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RhRmRleDY1MZMOnC1gW3u4aTfBOwEOEGuM8uczixDu1JYVsYLppyPCDgKHXkRfDEuD7recjYuB6u
-Ml1hQaKyGQ==</DigestValue></Reference></SignedInfo><SignatureValue>nVh+ZRFrzlz61E3CwuFPApzA3sUfmsaF0KflBLicGLRd43PN9XixhazKKBps7to25+uWSHXxVKeZ
-ZNyObKPLkOf92G6QO92LxML/C4W5SsWQ0X12wmcFFoaoMAAOfcS6J2rDHZQ3Pco7WMMLyXBulT0D
-oarfJ7YLlouCmx7R/YoXS2mN0ZnSRb/f9Eiq+c+XcjB8NF24Ec5sfFo/B6SAEwn1YCr+sR2lOstd
-vJkPFlFQyKC2BC8Q0v+A2DLuhMWCxXmMTLuTbG8mwcmoopsJZ5FnKbSW5IsMu68EBq8TWz6jh3Nv
-Dg93xdOEZjpn2VZisUwuohNxOTyeRKAIIzSMUQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0110fc24-7541-42a2-a488-7d9ebf2bbb37"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YAJEIC3dcw7wD/t4fBlrebytmBwoPo2fVgO0u7Y2Eu/kGEL7nA9/f8f+KnfyDMqHWuvJ4GVyqWIX
+HchnHVCfrg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f7790e1d-d4ee-4da8-8a79-6e1d7712cd16"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UuDNJEmZ5Ejuj8PqDnbbxjB64n6QYU5vHWQu83ybwrGfS5UvuNO8JC+/FhXmtp8bKY2CEVVjeM2s
+CbGwyczDJQ==</DigestValue></Reference></SignedInfo><SignatureValue>dez9o/YU4UjCsMQaqagEb158H/NAvBcXtmQ+5nXppbCtSB5+shPMDC185u61iM6LVr/zo2jn48gg
+JzKq2JOylzWl6Z1qkzX+uD5EdQDyuNmyqy0Tsfiiie3sAJ5Rw8/AlfSRj/DimeJi1sVOhENDzhs+
+4pbX9X33V0Xh+QYOpl/O6lRAtfwb8AcGQsZYAp6rxaYq8h45LJkh9tlOA+ki357Da3NhlQvEh33a
+Kb7fNPkuDm+COAB65ex68sF8u3fGxc4Rm3TvdmvhVyz/0Oc9KMCrDjDERg7zLVP1Ghbrgff6Al3y
+3T/CSvk9LLPdSZ3NN93NQJmkNq0xGQQYODe+dw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -554,4 +554,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a820bc1f-0b7f-4a52-b977-cf1429501de2" Target="#_dc94cd78-1bdb-46fe-b431-f897d54a3dee"><Timestamp>2020-07-07 16:05:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f7790e1d-d4ee-4da8-8a79-6e1d7712cd16" Target="#_0110fc24-7541-42a2-a488-7d9ebf2bbb37"><Timestamp>2020-07-07 16:51:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
