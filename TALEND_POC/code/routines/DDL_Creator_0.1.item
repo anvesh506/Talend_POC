@@ -1,0 +1,36 @@
+package routines;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+public class DDL_Creator {
+@SuppressWarnings("null")
+public static String test_query() throws IOException {
+@SuppressWarnings("resource")
+BufferedReader in = new BufferedReader(new FileReader("C:\\my_work\\Schema_file\\Metadata_Info-Copy.tsv"));
+String str;
+while ((str = in.readLine()) != null) {
+System.out.println("FirstLine : " + str);
+break;
+}
+
+String Col[]=str.trim().split("\\t");
+System.out.println("array123" + java.util.Arrays.toString(Col));
+StringBuilder sb = new StringBuilder("create table demo(");
+for(int i = 0 ; i< Col.length ; i++){
+sb.append(Col[i]).toString();
+sb.append(" ");
+sb.append("varchar(100)");
+sb.append(",");
+}
+sb.delete(sb.lastIndexOf(","),sb.lastIndexOf(",")+1 );
+sb.append("); ");
+System.out.println("sb" + sb.toString());
+return sb.toString() ;
+
+}
+
+public static String main(String[] args) throws IOException {
+return test_query();
+}
+}
