@@ -93,6 +93,7 @@
     <module>jobs/process_mr/Templates/copy_of_dev_load_sample_0.1</module>
     <module>jobs/process/TemplateBQToSQL/diloadsqltosqlfixedquerybulk_0.1</module>
     <module>jobs/process/envtest_0.1</module>
+    <module>jobs/joblets/Templates/gjverifygcs_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
