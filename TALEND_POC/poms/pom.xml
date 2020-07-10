@@ -51,6 +51,9 @@
     <module>jobs/joblets/Framework/gjllogcatcher_0.1</module>
     <module>jobs/joblets/Framework/gjlbundlelognotification_0.1</module>
     <module>jobs/joblets/Framework/gjlopsgenierequest_0.1</module>
+    <module>jobs/process/Test/testpath_0.1</module>
+    <module>jobs/process/Test/tac_api_test_0.1</module>
+    <module>jobs/process/TemplateBQToSQL/diloadbqtosqlfixedquery_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
