@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_xi8FEMK5EeqtA8yyy-0ZBA" xmi:version="2.0">
+  <contextParameter comment="" name="ErrorEmailTo" prompt="ErrorEmailTo?" promptNeeded="false" type="id_String" value="DIServices_Dev@pch.com" xmi:id="_xi8FEcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ErrorEmailFrom" prompt="ErrorEmailFrom?" promptNeeded="false" type="id_String" value="DIServices_Dev@pch.com" xmi:id="_xi8FEsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SmptServer" prompt="SmptServer?" promptNeeded="false" type="id_String" value="smtp.prod.pch.com" xmi:id="_xi8FE8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SmtpPort" prompt="SmtpPort?" promptNeeded="false" type="id_String" value="25" xmi:id="_xi8FFMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ErrorCode" prompt="ErrorCode?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FFcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ErrorMessage" prompt="ErrorMessage?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FFsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="VarPid" prompt="VarPid?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FF8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SetUpFile" prompt="SetUpFile?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FGMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="PassString" prompt="PassString?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:I7RmRmX8iOzj4+gxAY+Y0ndGqmjisAyEGLEUsqLgF+KXCoFUYbKii15a/9U=" xmi:id="_xi8FGcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SingleErrorNotification" prompt="SingleErrorNotification?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FGsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ErrorNotificationSent" prompt="ErrorNotificationSent?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FG8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="OpsGeniePriority" prompt="OpsGeniePriority?" promptNeeded="false" type="id_String" value="P3" xmi:id="_xi8FHMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="OpsGenieRequestBody" prompt="OpsGenieRequestBody?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FHcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="OpsGenieUrl" prompt="OpsGenieUrl?" promptNeeded="false" type="id_String" value="https://api.opsgenie.com/v2/alerts" xmi:id="_xi8FHsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="OpsGenieAlertTag" prompt="OpsGenieAlertTag?" promptNeeded="false" type="id_String" value="afa61d1e-c1a5-4e34-9900-453a2ebe22a3" xmi:id="_xi8FH8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="KillJobOnJavaExeption" prompt="KillJobOnJavaExeption?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FIMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="EmailOnError" prompt="EmailOnError?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FIcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="OpsGenieRequestOnError" prompt="OpsGenieRequestOnError?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FIsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="NotificationFailure" prompt="NotificationFailure?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FI8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="NotificationToBeSentAux" prompt="NotificationToBeSentAux?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FJMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalLogRoot" prompt="LocalLogRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FJcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3RootLogRoot" prompt="S3RootLogRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FJsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLLogRoot" prompt="URLLogRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FJ8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3LogAccessKey" prompt="S3LogAccessKey?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FKMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3LogSecretKey" prompt="S3LogSecretKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_xi8FKcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3LogBucket" prompt="S3LogBucket?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FKsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalLogFileNameDel" prompt="LocalLogFileNameDel?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FK8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalContextDumpFileNameDel" prompt="LocalContextDumpFileNameDel?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FLMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3LogFileName" prompt="S3LogFileName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FLcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3ContextDumpFileName" prompt="S3ContextDumpFileName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FLsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalLogFileNameXML" prompt="LocalLogFileNameXML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FL8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalLogFileNameHTML" prompt="LocalLogFileNameHTML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FMMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLfileName" prompt="XSLfileName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FMcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ExecutionEnvironment" prompt="ExecutionEnvironment?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FMsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalContextDumpFileNameXML" prompt="LocalContextDumpFileNameXML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FM8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalContextDumpFileNameHTML" prompt="LocalContextDumpFileNameHTML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FNMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLLogFile" prompt="URLLogFile?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FNcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLContextDumpFile" prompt="URLContextDumpFile?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FNsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLfileNameForContext" prompt="XSLfileNameForContext?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FN8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="HtmlEmailBody" prompt="HtmlEmailBody?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FOMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="EmailSubject" prompt="EmailSubject?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FOcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalHTMLContextDir" prompt="LocalHTMLContextDir?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FOsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalHTMLLogDir" prompt="LocalHTMLLogDir?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FO8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalXMLLogDir" prompt="LocalXMLLogDir?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FPMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalXMLContextDir" prompt="LocalXMLContextDir?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FPcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ErrorMessageInEmail" prompt="ErrorMessageInEmail?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FPsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="JobServerSystem" prompt="JobServerSystem?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FP8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="Moment" prompt="Moment?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FQMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="StartBoundary" prompt="StartBoundary?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FQcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="CodePriority" prompt="CodePriority?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FQsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="TalendLogID" prompt="TalendLogID?" promptNeeded="false" type="id_Long" value="" xmi:id="_xi8FQ8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="TalendJobBundleRunId" prompt="TalendJobBundleRunId?" promptNeeded="false" type="id_Long" value="" xmi:id="_xi8FRMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LogToFile" prompt="LogToFile?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FRcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LogToDb" prompt="LogToDb?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FRsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ReadyToLogToFile" prompt="ReadyToLogToFile?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FR8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ReadyToLogToDb" prompt="ReadyToLogToDb?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_xi8FSMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="EmailOnSuccess" prompt="EmailOnSuccess?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FScK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ContextDumpOnSuccess" prompt="ContextDumpOnSuccess?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FSsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="HTMLLogOnSuccess" prompt="HTMLLogOnSuccess?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FS8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="HTMLLogOnError" prompt="HTMLLogOnError?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FTMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ContextDumpOnError" prompt="ContextDumpOnError?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8FTcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="C_MessageType" prompt="C_MessageType?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FTsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="IntegrationLevel" prompt="IntegrationLevel?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FT8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3LogDirName" prompt="S3LogDirName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FUMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3ContextDumpDirName" prompt="S3ContextDumpDirName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FUcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLfileNameForJobIndex" prompt="XSLfileNameForJobIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FUsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="JobIndexHTMLFileLocal" prompt="JobIndexHTMLFileLocal?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FU8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3JobIndexHTMLFile" prompt="S3JobIndexHTMLFile?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FVMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLJobIndex" prompt="URLJobIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FVcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalXMLFileJobIndex" prompt="LocalXMLFileJobIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FVsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ExportRoot" prompt="ExportRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FV8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="ImportRoot" prompt="ImportRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FWMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SetUpRoot" prompt="SetUpRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FWcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="createBundleLog" prompt="createBundleLog?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FWsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="sentBundleEmail" prompt="sentBundleEmail?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FW8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="StatusCode" prompt="StatusCode?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FXMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="TalendJobBundleName" prompt="TalendJobBundleName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FXcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogFileNameXML" prompt="LocalBundleLogFileNameXML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FXsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogFileNameHTML" prompt="LocalBundleLogFileNameHTML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FX8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3BunldleLogFileName" prompt="S3BunldleLogFileName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FYMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLBunldleLogFileName" prompt="URLBunldleLogFileName?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FYcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogDirXML" prompt="LocalBundleLogDirXML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FYsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogDirHTML" prompt="LocalBundleLogDirHTML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FY8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLfileNameForBundleLog" prompt="XSLfileNameForBundleLog?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FZMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="IsSelfManaged" prompt="IsSelfManaged?" promptNeeded="false" type="id_Integer" value="" xmi:id="_xi8FZcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogIndexXML" prompt="LocalBundleLogIndexXML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FZsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="LocalBundleLogIndexHTML" prompt="LocalBundleLogIndexHTML?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FZ8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="S3BunldleLogIndex" prompt="S3BunldleLogIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FaMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="URLBunldleLogIndex" prompt="URLBunldleLogIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FacK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLfileNameForBundleIndex" prompt="XSLfileNameForBundleIndex?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FasK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="BundleRunStartDate" prompt="BundleRunStartDate?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8Fa8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="BundleRunEndDate" prompt="BundleRunEndDate?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FbMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="XSLForJobIndexFullIntegration" prompt="XSLForJobIndexFullIntegration?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FbcK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="EndBoundary" prompt="EndBoundary?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FbsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SentNotificationOnWarning" prompt="SentNotificationOnWarning?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_xi8Fb8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SparkTempRoot" prompt="SparkTempRoot?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FcMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SetUpRootBD" prompt="SetUpRootBD?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FccK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="WarningEmailFrom" prompt="WarningEmailFrom?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FcsK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="WarningEmailTo" prompt="WarningEmailTo?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8Fc8K5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SuccessEmailFrom" prompt="SuccessEmailFrom?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FdMK5EeqtA8yyy-0ZBA"/>
+  <contextParameter comment="" name="SuccessEmailTo" prompt="SuccessEmailTo?" promptNeeded="false" type="id_String" value="" xmi:id="_xi8FdcK5EeqtA8yyy-0ZBA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2d75ae35-f950-48b4-92d3-95f17b02d87c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>izTB4IabYgGmaMh6BSAKHBOePj5PkwSIH3jmYAVj8dAYk8F8wEe6ULB6x5HmDluk4SU007Iu36CS
+8X4ZpHINPw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0aeb442c-de26-4b97-b7bc-29eeee27bda3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wm6x69zzkaqVVcINe26cbNyxz98tfKb+jUpsBExhkykYwbt7/uZBWlxX6cvEDZZK5WEEGJ3HA7ME
+23LQlbLr+g==</DigestValue></Reference></SignedInfo><SignatureValue>G9p7UBdS3j6HRC/bDVKzClnPY8TXhqbAkBfvyVrVxrHEvO24nWpMQD8cIbxJEHzgcgg72+0ybfBm
+G402AoNfhL/WCZBRI5awASyo05ckTQZ3uJlyZrcoVgE/VL9WQ1Z/LJ3rN+SX7LIY1erqqoxKtJc6
+dIMKQvPluYvQA8WvkRB6bpFgK9bk8bWqqbNWPXHCb6xjviHE5P7cO2gDolgPQsjwLT4bvRWiBkoK
+Xje0Ol+Mqizn/oeaENIkeIjPcT96+3eN8RCAzRsReSM7qgsbH2tqvI3R400m2rNXwOWAdQ6VAQVz
+inR0dHEl0Gh/jIheMuLQE2ajPdTwUt65l7C65g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0aeb442c-de26-4b97-b7bc-29eeee27bda3" Target="#_2d75ae35-f950-48b4-92d3-95f17b02d87c"><Timestamp>2020-07-10 14:29:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

@@ -39,6 +39,18 @@
     <module>jobs/joblets/Framework/gjlpgpdecrypt_0.1</module>
     <module>jobs/process/diloadconversionlogicfullintegrationregistrations_0.1</module>
     <module>jobs/joblets/Framework/gjlgetlocalfilesbyrecords_0.1</module>
+    <module>jobs/joblets/Framework/gjlsendnotification_0.1</module>
+    <module>jobs/joblets/Framework/gjlstartjobrunmediumintegration_0.1</module>
+    <module>jobs/joblets/Framework/gjlbundlelogdetails_0.1</module>
+    <module>jobs/joblets/Framework/gjlputcontextonweb_0.1</module>
+    <module>jobs/joblets/Framework/gjlcreatejoblogindex_0.1</module>
+    <module>jobs/joblets/Framework/gjlcreatejoblogindexfullintegration_0.1</module>
+    <module>jobs/joblets/Framework/gjgetjobproperties_0.1</module>
+    <module>jobs/joblets/Framework/gjlbundlelogindex_0.1</module>
+    <module>jobs/joblets/Framework/gjlputlogonweb_0.1</module>
+    <module>jobs/joblets/Framework/gjllogcatcher_0.1</module>
+    <module>jobs/joblets/Framework/gjlbundlelognotification_0.1</module>
+    <module>jobs/joblets/Framework/gjlopsgenierequest_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
