@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="true"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/pwang/workspace_0629/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hOj5BmFGEyuY32RjYRGhT31Q3fT/PVRwlsRoGZjm"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_93YTwCYrEeitB6Cxa_Ohbg" name="DQTechnical"/>
+      <routinesParameter id="_92-rICYrEeitB6Cxa_Ohbg" name="DataMasking"/>
+      <routinesParameter id="_9xaOoCYrEeitB6Cxa_Ohbg" name="DataOperation"/>
+      <routinesParameter id="_93F_4CYrEeitB6Cxa_Ohbg" name="DataQualityDependencies"/>
+      <routinesParameter id="_93CVgCYrEeitB6Cxa_Ohbg" name="DataQuality"/>
+      <routinesParameter id="_93TbQCYrEeitB6Cxa_Ohbg" name="DqStringHandling"/>
+      <routinesParameter id="_92WZACYrEeitB6Cxa_Ohbg" name="Mathematical"/>
+      <routinesParameter id="_92dGsCYrEeitB6Cxa_Ohbg" name="Numeric"/>
+      <routinesParameter id="_92imQCYrEeitB6Cxa_Ohbg" name="Relational"/>
+      <routinesParameter id="_927AwCYrEeitB6Cxa_Ohbg" name="SQLike"/>
+      <routinesParameter id="_92mQoCYrEeitB6Cxa_Ohbg" name="StringHandling"/>
+      <routinesParameter id="_92qiECYrEeitB6Cxa_Ohbg" name="TalendDataGenerator"/>
+      <routinesParameter id="_92uMcCYrEeitB6Cxa_Ohbg" name="TalendDate"/>
+      <routinesParameter id="_923WYCYrEeitB6Cxa_Ohbg" name="TalendStringUtil"/>
+      <routinesParameter id="_92zE8CYrEeitB6Cxa_Ohbg" name="TalendString"/>
+      <routinesParameter id="_r4PHoOvVEeequ4npDh9sDw" name="OSValidator"/>
+    </parameters>
+    <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="800">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/pwang/workspace_0629/delete_folder&quot;"/>
+      <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Users/pwang/workspace_0629/delete_folder or delete_file&quot;"/>
+      <elementParameter field="CHECK" name="FAILON" value="true"/>
+      <elementParameter field="CHECK" name="FOLDER" value="false"/>
+      <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileDelete"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileDelete_1"/>
+    </node>
+    <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileProperties_1"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="CHECK" name="MD5" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="getFileProperty"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileProperties_1">
+        <column key="false" length="255" name="abs_path" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="dirname" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="basename" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="10" name="mode_string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="size" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column key="false" length="20" name="mtime_string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//&#10;// Using file properties dirname and basename&#10;//   derive dirname, filename w/o extension and extension name&#10;// &#10;&#10;globalMap.put(&quot;FILE_DIRNAME_POST_PROCESS&quot;, input_row.dirname);&#10;globalMap.put(&quot;FILE_BASENAME_POST_PROCESS&quot;, input_row.basename);&#10;&#10;// Default FILE_MODIFIER value if not properly supplied&#10;&#10;if (globalMap.containsKey(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;)==false)&#10;&#9;{  globalMap.put(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;,&quot;N&quot;);&#9;}&#10;if (globalMap.containsKey(&quot;FILE_MODIFIER_POST_PROCESS&quot;)==false)&#10;&#9;{  globalMap.put(&quot;FILE_MODIFIER_POST_PROCESS&quot;,&quot;&quot;);&#9;}&#10;if((Boolean) (((String)globalMap.get(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;N&quot;)) ) &#10;{&#9;globalMap.put(&quot;FILE_MODIFIER_POST_PROCESS&quot;, TalendDate.getDate(&quot;CCYYMMDDhhmmss&quot;));&#10;} else if ((Boolean) (((String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;&quot;)) ) &#10;{&#9;globalMap.put(&quot;FILE_MODIFIER_POST_PROCESS&quot;, TalendDate.getDate(&quot;CCYYMMDDhhmmss&quot;));&#10;}&#10;      &#10;&#10;// Default FILE_COPYDIR if not properly supplied&#10;&#10;if (globalMap.containsKey(&quot;HAS_COPYDIR_POST_PROCESS&quot;)==false)&#10;&#9;{  globalMap.put(&quot;HAS_COPYDIR_POST_PROCESS&quot;,&quot;N&quot;);&#9;}&#10;&#10;if((Boolean) (((String)globalMap.get(&quot;HAS_COPYDIR_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;N&quot;)) ) &#10;{&#9;globalMap.put(&quot;FILE_COPYDIR_POST_PROCESS&quot;, (String)globalMap.get(&quot;FILE_DIRNAME_POST_PROCESS&quot;));&#10;}  &#10;if ((Boolean) (((String)globalMap.get(&quot;HAS_COPYDIR_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Y&quot;)) &amp;&amp; globalMap.containsKey(&quot;FILE_COPYDIR_POST_PROCESS&quot;)==false ) &#10;{&#9;boolean isItWindows=routines.OSValidator.isWindows();&#10;&#9;String slash=&quot;/&quot;;&#10;&#9;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;&#9;globalMap.put(&quot;FILE_COPYDIR_POST_PROCESS&quot;,(String)globalMap.get(&quot;FILE_DIRNAME_POST_PROCESS&quot;)+slash+&quot;Done&quot;);&#10;&#9;&#10;}&#10;&#10;&#10;// Parse basename to get filename and ext&#10;String name = (input_row.basename);&#10;int dot = name.lastIndexOf('.');&#10;String baseNoExt = (dot == -1) ? name : name.substring(0, dot);&#10;String extension = (dot == -1) ? &quot;&quot; : name.substring(dot+1);&#10; &#10;globalMap.put(&quot;FILE_BASENOEXT&quot;, baseNoExt);&#10;globalMap.put(&quot;FILE_EXTENSION&quot;, extension);&#10;&#10;// print values&#10;//System.out.println(&quot;-- Fullname:  &quot;+(String)globalMap.get(&quot;FILE_FULL_NAME&quot;));&#10;System.out.println(&quot; -- File Operation:  &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;));&#10;System.out.println(&quot; -- Has File CopyDir:  &quot;+(String)globalMap.get(&quot;HAS_COPYDIR_POST_PROCESS&quot;));&#10;System.out.println(&quot; -- File CopyDir:  &quot;+(String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;));&#10;System.out.println(&quot; -- Has File Modifier:  &quot;+(String)globalMap.get(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;));&#10;System.out.println(&quot; -- File Modifier:  &quot;+(String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;));&#10;//System.out.println(&quot;DirName:  &quot;+(String)globalMap.get(&quot;FILE_DIRNAME_POST_PROCESS&quot;));&#10;//System.out.println(&quot;BaseNoExt:  &quot;+(String)globalMap.get(&quot;FILE_BASENOEXT&quot;));&#10;//System.out.println(&quot;Extension:  &quot;+(String)globalMap.get(&quot;FILE_EXTENSION&quot;));&#10;//System.out.println(&quot;FILE_COPYDIR_POST_PROCESS:  &quot;+(String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;));&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="setFileGMap"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_2">
+        <column key="false" length="255" name="dirname" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="basename" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="608">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
+      <elementParameter field="FILE" name="FILE_NAME" value="(String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;)"/>
+      <elementParameter field="TEXT" name="LABEL" value="chkDirExist"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error Getting Properties of file  &quot;+((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))+&quot;. Error is :&quot;+((String)globalMap.get(&quot;tFileProperties_1_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50604"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="getFilePropFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_1"/>
+    </node>
+    <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="864">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+      <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/pwang/workspace_0629&quot;"/>
+      <elementParameter field="DIRECTORY" name="DESTINATION" value="((String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;))"/>
+      <elementParameter field="CHECK" name="RENAME" value="false"/>
+      <elementParameter field="TEXT" name="DESTINATION_RENAME" show="false" value="&quot;NewName.temp&quot;"/>
+      <elementParameter field="CHECK" name="REMOVE_FILE" value="false"/>
+      <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+      <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+      <elementParameter field="CHECK" name="FAILON" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileCopy"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileCopy_1"/>
+    </node>
+    <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="864">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_2"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+      <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/pwang/workspace_0629&quot;"/>
+      <elementParameter field="DIRECTORY" name="DESTINATION" value="((String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;))"/>
+      <elementParameter field="CHECK" name="RENAME" value="false"/>
+      <elementParameter field="TEXT" name="DESTINATION_RENAME" show="false" value="&quot;NewName.temp&quot;"/>
+      <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+      <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+      <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+      <elementParameter field="CHECK" name="FAILON" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileMove"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileCopy_2"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="800">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- File operation None is specified, nothing to do.&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="none"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_1"/>
+    </node>
+    <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="864">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_3"/>
+      <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+      <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/pwang/workspace_0629&quot;"/>
+      <elementParameter field="DIRECTORY" name="DESTINATION" value="((String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;))"/>
+      <elementParameter field="CHECK" name="RENAME" value="true"/>
+      <elementParameter field="TEXT" name="DESTINATION_RENAME" value="((String)globalMap.get(&quot;FILE_BASENOEXT&quot;))+&quot;_&quot;+((String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;))+&quot;.&quot;+((String)globalMap.get(&quot;FILE_EXTENSION&quot;))"/>
+      <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+      <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+      <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+      <elementParameter field="CHECK" name="FAILON" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileRename"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileCopy_3"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="10" offsetLabelY="3" posX="160" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;File Operation Failed  &quot;+((String)globalMap.get(&quot;tFileCopy_3_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50609"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileOpFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_3"/>
+    </node>
+    <node componentName="tFileTouch" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="608">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileTouch_1"/>
+      <elementParameter field="FILE" name="FILENAME" value="(String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;)+&quot;/junk.txt&quot;"/>
+      <elementParameter field="CHECK" name="CREATEDIR" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="createDirIfNotExist"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileTouch_1"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="736">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="String NewFileName=((String)globalMap.get(&quot;FILE_BASENOEXT&quot;))+&quot;_&quot;+((String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;))+&#10;  &quot;.&quot;+((String)globalMap.get(&quot;FILE_EXTENSION&quot;));&#10;if (((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Rename&quot;)) {&#10;  System.out.println(&quot; -- NewFileName: &quot;+NewFileName);&#10;}&#10;&#10;//System.out.println(&quot; -- Operation: &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;));&#10;&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="collector"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_2"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="608">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Create Directory Failed. Error Message :&quot;+((String)globalMap.get(&quot;tFileTouch_1_ERROR_MESSAGE&quot;))+(String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;)+&quot;/junk.txt&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="50609"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="createDirFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_2"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="10" offsetLabelY="3" posX="928" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;File Operation Failed  &quot;+((String)globalMap.get(&quot;tFileDelete_1_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50609"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileOpFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_4"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="10" offsetLabelY="3" posX="704" posY="1024">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;File Operation Failed  &quot;+((String)globalMap.get(&quot;tFileCopy_1_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50609"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileOpFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_5"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="10" offsetLabelY="3" posX="384" posY="1024">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;File Operation Failed  &quot;+((String)globalMap.get(&quot;tFileCopy_2_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50609"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileOpFail"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_6"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- Operation Success: &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="deleteOK"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_2"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1024">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- Operation Success: &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="copyOK"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_3"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1024">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- Operation Success: &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="moveOK"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_4"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_5"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- Operation Success: &quot;+(String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="rensmeOK"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_5"/>
+    </node>
+    <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="1184">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+      <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="First"/>
+      <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="syncOutput"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1312">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;--- Joblet complete! &quot;;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="done"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_1"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;     &#10;/* Variables to check&#10;&#10;((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;))==null&#10;((String)globalMap.get(&quot;HAS_COPYDIR_POST_PROCESS&quot;))==null&#10;((String)globalMap.get(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;))==null&#10;((String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;))==null&#10;((String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;))==null&#10;((String)globalMap.get(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;))==null&#10;     &#10;*/&#10;&#10;///VALIDATE ALL VARIABLES&#10;while (true)&#10;{&#10;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;N&quot;);&#10;&#10;&#9;///CHECK FILE_OPERATION_POST_PROCESS&#10;&#9;if   (((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;))==null)&#10;&#9;{&#9;&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;FILE_OPERATION_POST_PROCESS  not provided&quot;);&#10;&#9;&#9;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;&#9;&#9;break;&#10;&#9;}&#10;&#9;///END CHECK FILE_OPERATION_POST_PROCESS&#10;&#10;&#9;///CHECK HAS_COPYDIR_POST_PROCESS&#10;&#9;if   (((String)globalMap.get(&quot;HAS_COPYDIR_POST_PROCESS&quot;))==null)&#10;&#9;{&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;HAS_COPYDIR_POST_PROCESS  not provided&quot;);&#10;&#9;&#9;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;&#9;&#9;break;&#10;&#9;}&#10;&#9;///END CHECK HAS_COPYDIR_POST_PROCESS&#10;&#10;&#9;///CHECK HAS_FILE_MODIFIER_POST_PROCESS&#10;&#9;if   (((String)globalMap.get(&quot;HAS_FILE_MODIFIER_POST_PROCESS&quot;))==null)&#10;&#9;{&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;HAS_FILE_MODIFIER_POST_PROCESS  not provided&quot;);&#10;&#9;&#9;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;&#9;&#9;break;&#10;&#9;}&#10;&#9;///END CHECK HAS_FILE_MODIFIER_POST_PROCESS&#10;&#9;&#10;&#9;///CHECK FILE_COPYDIR_POST_PROCESS&#10;&#9;if   (((String)globalMap.get(&quot;FILE_COPYDIR_POST_PROCESS&quot;))==null)&#10;&#9;{&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;FILE_COPYDIR_POST_PROCESS  not provided&quot;);&#10;&#9;&#9;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;&#9;&#9;break;&#10;&#9;}&#10;&#9;///END CHECK FILE_COPYDIR_POST_PROCESS&#10;&#10;&#9;///CHECK FILE_MODIFIER_POST_PROCESS&#10;&#9;if   (((String)globalMap.get(&quot;FILE_MODIFIER_POST_PROCESS&quot;))==null)&#10;&#9;{&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;&#9;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;FILE_MODIFIER_POST_PROCESS  not provided&quot;);&#10;&#9;&#9;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;&#9;&#9;break;&#10;&#9;}&#10;&#9;///END CHECK FILE_MODIFIER_POST_PROCESS&#10;&#10;&#9;break;&#10;}&#10;&#10;&#10;/*&#10;&#10;///REPCLAE STRING METHOD (OLY METHOD FOR NOW) BEGIN&#10;if (((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_METHOD&quot;)).equalsIgnoreCase(&quot;ReplaceString&quot;)==true) &#10;{&#10;&#10;if   (((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_STRING_TO_REPLACE&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_NAME_METHOD=ReplaceString, but DECRYPTED_FILE_NAME_STRING_TO_REPLACE  not provided&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;break;&#10;}&#10;if   (((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_REPLACMENT_STRING&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_NAME_METHOD=ReplaceString, but DECRYPTED_FILE_NAME_REPLACMENT_STRING  not provided&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;break;&#10;}&#10;&#10;String NewFileNameBase=StringHandling.CHANGE(((String)globalMap.get(&quot;FILE_NAME_BASE&quot;)), ((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_STRING_TO_REPLACE&quot;)), ((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_REPLACMENT_STRING&quot;))&#10;);&#10;globalMap.put(&quot;DECRYPTED_FILE_NAME_BASE&quot;,NewFileNameBase);&#10;};&#10;&#10;if   (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR not provided&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;break;&#10;}&#10;&#10;&#10;if   (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==false &amp;&amp; ((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;N&quot;)==false)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR WRONG VALUE=&quot;+((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)) +&quot; VALID VALUES IS Y AND N&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10;break;&#10;}&#10;&#10;if (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==true) &#10;{//BEGIN NEW DIRECTORY&#10;if  (((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;))==null)&#10;{///BEGIN NEW DIR NOT PROVIDED&#10;&#9;///Means we neee to use default&#10;boolean isItWindows=routines.OSValidator.isWindows();&#10;String slash=&quot;/&quot;;&#10;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;String&#9;LastChar=context.ImportRoot.substring(context.ImportRoot.length() - 1);&#10;if (LastChar.equals(slash)==false) &#10;{&#10;globalMap.put(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;,context.ImportRoot+slash+context.ExecutionEnvironment+slash+projectName+slash+((String)globalMap.get(&quot;TalendDataSetName&quot;))+slash+&quot;Decrypted&quot;+slash);&#10;}&#9;&#10;if (LastChar.equals(slash)==true) &#10;{&#10; globalMap.put(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;,context.ImportRoot+context.ExecutionEnvironment+slash+projectName+slash+((String)globalMap.get(&quot;TalendDataSetName&quot;))+slash+&quot;Decrypted&quot;+slash);&#10;}&#9;&#10;&#9;&#10;}///END NEW DIR NOT PROVIDED&#10;if  (((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;))!=null)&#10;{///BEGIN NEW DIRECTORY PROVIED&#10;boolean isItWindows=routines.OSValidator.isWindows();&#10;String slash=&quot;/&quot;;&#10;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;String&#9;LastChar=((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;)).substring(((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;)).length() - 1);&#10;&#10;//System.out.println(&quot;Last character is &quot;+LastChar);&#10;&#10;if (LastChar.equals(slash)==false) &#10;{//BEGIN APPEND SLASH&#10;&#9;String NewFullName=((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;))+slash+((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_BASE&quot;));&#10;&#9;globalMap.put(&quot;DECRYPTED_FILE_FULL_NAME&quot;,NewFullName);&#10;}//END APPEND SLASH&#10;if (LastChar.equals(slash)==true)&#10;{//BEGIN NOT APPEND SLAS&#10;&#9;String NewFullName=((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;))+((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_BASE&quot;));&#10;&#9;globalMap.put(&quot;DECRYPTED_FILE_FULL_NAME&quot;,NewFullName);&#10;}//END NOT APPEND SLASH&#10;&#10;}//END NEW DIR PROVIDED&#10;&#10;}//End New dir&#10;&#10;///Same directory as current file&#10;&#10;&#10;if (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;N&quot;)==true) &#10;{//BEGIN SAME DIRECTORY&#10;if  (((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;))==null)&#10;{///BEGIN NEW DIR NOT PROVIDED&#10;&#9;globalMap.put(&quot;PGP_META_ERROR&quot;,&quot;Y&quot;);&#10;&#9;globalMap.put(&quot;PGP_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR=N, but ENCRYPTED_FILE_DIRECTORY not provided&quot;);&#10;&#9;System.out.println(((String)globalMap.get(&quot;PGP_META_ERROR_MESSAGE&quot;)));&#10;break;&#10;}///END NEW DIR NOT PROVIDED&#10;if  (((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;))!=null)&#10;{///BEGIN  DIRECTORY PROVIED&#10;boolean isItWindows=routines.OSValidator.isWindows();&#10;String slash=&quot;/&quot;;&#10;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;String&#9;LastChar=((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;)).substring(((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;)).length() - 1);&#10;&#10;//System.out.println(&quot;Last character is &quot;+LastChar);&#10;&#10;if (LastChar.equals(slash)==false) &#10;{//BEGIN APPEND SLASH&#10;&#9;String NewFullName=((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;))+slash+((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_BASE&quot;));&#10;&#9;globalMap.put(&quot;DECRYPTED_FILE_FULL_NAME&quot;,NewFullName);&#10;}//END APPEND SLASH&#10;if (LastChar.equals(slash)==true)&#10;{//BEGIN NOT APPEND SLAS&#10;&#9;String NewFullName=((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;))+((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_BASE&quot;));&#10;&#9;globalMap.put(&quot;DECRYPTED_FILE_FULL_NAME&quot;,NewFullName);&#10;}//END NOT APPEND SLASH&#10;&#10;}//END same DIR PROVIDED&#10;&#10;}//End same dir&#10;///REPCLAE STRING METHOD (OLY METHOD FOR NOW) END&#10;&#10;////If file decripted exist begin&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;))==null)&#10;{&#10;globalMap.put(&quot;PGP_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;PGP_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS  not provided&quot;);&#10;System.out.println(((String)globalMap.get(&quot;PGP_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;OVERWRITE&quot;)==false &amp;&amp; ((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;FAIL&quot;)==false &amp;&amp;&#10;((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;RENAME&quot;)==false &amp;&amp;&#10;((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;MOVE&quot;)==false)&#10; {&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;))  +&quot; This is invalid. Valid options are: OVERWRITE, FAIL ,RENAME, MOVE&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10; //Check warning&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;FAIL&quot;)==false ) &#10;///BEGIN ACTION!=FAIL&#10;{&#10;if   (((String)globalMap.get(&quot;WARNING_IF_DECRYPTED_FILE_EXISTS&quot;))==null)&#10;{&#10;///BEGIN WARNING_IF_DECRYPTED_FILE_EXISTS NOT PROVIDED&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;WARNING_IF_DECRYPTED_FILE_EXISTS not provided AND ACTION_IF_DECRYPTED_FILE_EXISTS=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///END  WARNING_IF_DECRYPTED_FILE_EXISTS NOT PROVIDED&#10;if (((String)globalMap.get(&quot;WARNING_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;Y&quot;)==false &amp;&amp; ((String)globalMap.get(&quot;WARNING_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;N&quot;)==false) &#10;{&#10;///BEGIN WARNING_IF_DECRYPTED_FILE_EXISTS WRONG VALUE&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;WARNING_IF_DECRYPTED_FILE_EXISTS=&quot;+((String)globalMap.get(&quot;WARNING_IF_DECRYPTED_FILE_EXISTS&quot;))  +&quot; This is invalid. Valid options are: Y,N&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///END WARNING_IF_DECRYPTED_FILE_EXISTS WRONG VALUE&#10;}&#10;///END ACTION!=FAIL&#10;if   (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR  not provided&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///RENAME&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;RENAME&quot;)==true ) &#10;{&#10;///RENAME BEGIN&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR not provided AND ACTION_IF_DECRYPTED_FILE_EXISTS=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///WRONG VALUE&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==false &amp;&amp; ((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)).equalsIgnoreCase(&quot;N&quot;)==false ) &#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;))+&quot; this is invalid. Valid values Y,N&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///END WRONG VALUE&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==true)&#10;{&#10;///BEGIN MOVE TO DIFF DIR&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;))==null)&#10;{&#10;///BEGIN DIR NOT PROVIDED&#10;&#10;boolean isItWindows=routines.OSValidator.isWindows();&#10;String slash=&quot;/&quot;;&#10;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;String&#9;LastChar=context.ImportRoot.substring(context.ImportRoot.length() - 1);&#10;if (LastChar.equals(slash)==false) &#10;{&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;,context.ImportRoot+slash+context.ExecutionEnvironment+slash+projectName+slash+((String)globalMap.get(&quot;TalendDataSetName&quot;))+slash+&quot;OutOfWay&quot;+slash);&#10;}&#9;&#10;if (LastChar.equals(slash)==true) &#10;{&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;,context.ImportRoot+context.ExecutionEnvironment+slash+projectName+slash+((String)globalMap.get(&quot;TalendDataSetName&quot;))+slash+&quot;OutOfWay&quot;+slash);&#10;}&#9;&#10;&#10;&#10;&#10;}&#10;//END DIRECTORY NOT PROVIDED&#10;&#10;&#10;}//END MOVE TO DIFF DIR&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;))==null)&#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED not provided AND ACTION_IF_DECRYPTED_FILE_EXISTS=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///WRONG VALUE&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;)).equalsIgnoreCase(&quot;Y&quot;)==false &amp;&amp; ((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;)).equalsIgnoreCase(&quot;N&quot;)==false ) &#10;{&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;))+&quot; this is invalid. Valid values Y,N&quot;);&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;}&#10;///END WRONG VALUE&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;)).equalsIgnoreCase(&quot;Y&quot;)==true)&#10;{&#10;///BEGIN MODIFIER REQUERED&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER&quot;))==null)&#10;{&#10;///BEGIN MODIFIER NOT PROVIDED&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER not provided AND ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;&#10;}&#10;//END MODIFIER NOT PROVIDED&#10;}//END MODIFIER REQUIRED&#10;///CHECK FOR RENAME ENDED&#10;///START RENAME&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER_PROVIDED&quot;)).equalsIgnoreCase(&quot;N&quot;)==true)&#10;{&#10;///BEGIN DEFOULT MODIFIEW&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER&quot;, TalendDate.getDate(&quot;CCYYMMDDhhmmss&quot;));&#10;}///END DEFOULT MODIFIER&#10;String name = ((String)globalMap.get(&quot;DECRYPTED_FILE_NAME_BASE&quot;));&#10;int dot = name.lastIndexOf('.');&#10;String baseNoExt = (dot == -1) ? name : name.substring(0, dot);&#10;String extension = (dot == -1) ? &quot;&quot; : name.substring(dot+1);&#10;String modifier = ((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MODIFIER&quot;));&#10;String BaseFileNameEx=baseNoExt+modifier+&quot;.&quot;+extension;&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_NewBaseName&quot;, BaseFileNameEx);&#10;&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==true)&#10;{&#10;///begin move existing to new dir&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_DirForOld&quot;,((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;)));&#10;}&#10;///end  move existing to new dir&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)).equalsIgnoreCase(&quot;N&quot;)==true)&#10;{&#10;///begin do not move existing to new dir&#10;if (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;N&quot;)==true) &#10;{///begin decripted same dir as encripted&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_DirForOld&quot;,((String)globalMap.get(&quot;ENCRYPTED_FILE_DIRECTORY&quot;)));&#10;}&#10;///end decripted same dir as encripted&#10;if (((String)globalMap.get(&quot;DECRYPTED_FILE_MOVE_TO_NEW_DIR&quot;)).equalsIgnoreCase(&quot;Y&quot;)==true) &#10;{&#10;///begin decripted DIFF dir as encripted&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_DirForOld&quot;,((String)globalMap.get(&quot;DECRYPTED_FILE_NEW_DIRECTORY&quot;)));&#10;}&#10;///END decripted DIFF dir as encripted&#10;&#10;}&#10;&#10;///end do not move existing to new dir&#10;&#10;}&#10;&#10;////RENAME END&#10;&#10;if (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS&quot;)).equalsIgnoreCase(&quot;MOVE&quot;)==true)&#10;{&#10;///Move begin&#10;///BEGIN MOVE TO DIFF DIR&#10;if   (((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;))==null)&#10;{&#10;///BEGIN DIR NOT PROVIDED&#10;globalMap.put(&quot;FILEPOST_META_ERROR&quot;,&quot;Y&quot;);&#10;globalMap.put(&quot;FILEPOST_META_ERROR_MESSAGE&quot;,&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME not provided AND ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR=&quot;+((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIFF_DIR&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;)));&#10; break;&#10;&#10;}&#10;//END DIRECTORY NOT PROVIDED&#10;globalMap.put(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_DirForOld&quot;,((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_MOVE_TO_DIR_NAME&quot;)));&#10;&#10;}&#10;///Move end&#10;&#10;////end if FILE DECRYPETED EXIST&#10;&#10;&#10;System.out.println(((String)globalMap.get(&quot;DECRYPTED_FILE_FULL_NAME&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_NewBaseName&quot;)));&#10;System.out.println(((String)globalMap.get(&quot;ACTION_IF_DECRYPTED_FILE_EXISTS_DirForOld&quot;)));&#10;break;&#10;}&#10;&#10;*/"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="validateMetaData"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_3"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="352">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="((String)globalMap.get(&quot;FILEPOST_META_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="errorMetaData"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_7"/>
+    </node>
+    <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_2"/>
+      <elementParameter field="FILE" name="FILE_NAME" value="((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))"/>
+      <elementParameter field="TEXT" name="LABEL" value="checkIfFileExist"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;File Not Found: &quot;+((String)globalMap.get(&quot;FILE_FULL_NAME&quot;))+&quot;  Error Message : &quot;+((String)globalMap.get(&quot;tFileExist_2_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50604"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="fileNotExist"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_8"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_6"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;--- File Post Pocessing MetaData check OK&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tWarn_6"/>
+    </node>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_1" target="tDie_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError3"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="20" source="tFileDelete_1" target="tWarn_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+    </connection>
+    <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJavaRow_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tDie_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJava_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk16"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="dirExist" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_1" target="tJava_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="dirExist"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="dirNotExist" lineStyle="6" metaname="tFileExist_1" offsetLabelX="4" offsetLabelY="-20" outputId="2" source="tFileExist_1" target="tFileTouch_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="dirNotExist"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileCopy_1" offsetLabelX="21" offsetLabelY="-22" source="tFileCopy_1" target="tDie_5">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError4"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tWarn_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileCopy_2" offsetLabelX="-7" offsetLabelY="-22" source="tFileCopy_2" target="tDie_6">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError5"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_2" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_2" target="tWarn_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="50" offsetLabelY="-1" source="tWarn_1" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk13"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileCopy_3" offsetLabelX="-7" offsetLabelY="-22" source="tFileCopy_3" target="tDie_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError2"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_3" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_3" target="tWarn_5">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tFileExist_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileTouch_1" offsetLabelX="0" offsetLabelY="-18" source="tFileTouch_1" target="tJava_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+    </connection>
+    <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFileTouch_1" offsetLabelX="0" offsetLabelY="0" source="tFileTouch_1" target="tDie_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError2"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="none" lineStyle="6" metaname="tJava_2" offsetLabelX="-39" offsetLabelY="-3" outputId="1" source="tJava_2" target="tWarn_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;None&quot;))"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="none"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="rename" lineStyle="6" metaname="tJava_2" offsetLabelX="-17" offsetLabelY="17" outputId="2" source="tJava_2" target="tFileCopy_3">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Rename&quot;))"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="rename"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="move" lineStyle="6" metaname="tJava_2" offsetLabelX="-1" offsetLabelY="-4" outputId="3" source="tJava_2" target="tFileCopy_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Move&quot;))"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="move"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="copy" lineStyle="6" metaname="tJava_2" offsetLabelX="33" offsetLabelY="15" outputId="4" source="tJava_2" target="tFileCopy_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Copy&quot;))"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copy"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="delete" lineStyle="6" metaname="tJava_2" offsetLabelX="50" offsetLabelY="-3" outputId="5" source="tJava_2" target="tFileDelete_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(((String)globalMap.get(&quot;FILE_OPERATION_POST_PROCESS&quot;)).equalsIgnoreCase(&quot;Delete&quot;))"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="delete"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_2" offsetLabelX="39" offsetLabelY="-11" source="tWarn_2" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk11"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_3" offsetLabelX="-15" offsetLabelY="-50" source="tWarn_3" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk10"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_4" offsetLabelX="9" offsetLabelY="-19" source="tWarn_4" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_5" offsetLabelX="-10" offsetLabelY="-21" source="tWarn_5" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
+    </connection>
+    <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="19" offsetLabelY="-7" source="tParallelize_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk14"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="MetaDataError" lineStyle="6" metaname="tJava_3" offsetLabelX="3" offsetLabelY="-20" outputId="1" source="tJava_3" target="tDie_7">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;FILEPOST_META_ERROR&quot;)).equalsIgnoreCase(&quot;Y&quot;)"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MetaDataError"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="MetadataOK" lineStyle="6" metaname="tJava_3" offsetLabelX="3" offsetLabelY="-8" outputId="2" source="tJava_3" target="tWarn_6">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;FILEPOST_META_ERROR&quot;)).equalsIgnoreCase(&quot;N&quot;)"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MetadataOK"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="fileNotExist" lineStyle="6" metaname="tFileExist_2" offsetLabelX="10" offsetLabelY="-23" outputId="1" source="tFileExist_2" target="tDie_8">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_2_EXISTS&quot;))==false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fileNotExist"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="fileExist" lineStyle="6" metaname="tFileExist_2" offsetLabelX="5" offsetLabelY="-10" outputId="2" source="tFileExist_2" target="tFileProperties_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_2_EXISTS&quot;))==true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fileExist"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_6" offsetLabelX="0" offsetLabelY="0" source="tWarn_6" target="tFileExist_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+    </connection>
+    <note opaque="true" posX="544" posY="64" sizeHeight="65" sizeWidth="161" text="Joblet For Post &#13;&#10;Load File Processing">
+      <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;255"/>
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    </note>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileProperties_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileTouch_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_5"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_6"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1312" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d31958cb-1769-44b2-a1e6-7a2e70cd4ba9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xxIqOQ1/YLH08yDraEjqhPWMZJRe7CnFPGd0HnYcZqpJ1UQMGUDJ5uMmSDyrFRBOCDL/HHjgGDSK
+ONRd9oHq7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8377d890-e863-4591-9e05-5d3ac3c9c9d0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w8U2ACnK9E4jVpILJogpJOgPsYKQGxZzCi38t3yT0Kcf9PRNOV+fMKnhMPtaW065VaICyDg8QkoP
+KysRKiXsYQ==</DigestValue></Reference></SignedInfo><SignatureValue>dkxBdFpMd4UqMFPyIfxtz6n+8xfzVxhzn0Khd8WiCQIIIkJt1zITKt2qE+1e0znexWF3nBi5Bszd
+VM7wTE0qpXkomNhMTV7ButBSRSPQlCDX8HpFlCFbon5U0gP+CfpqacPiXLcSedW6DorGzVOaVjox
+pKOKTtY0L9Jt6BW7UdS8GftZ7MsCA/93PLvDfoCSLAcd93nNxyemoswuj/TwAQ7lgsTBto90weP/
+tm8WKA+Wx1P8dzkOhoTopiOq3b4nNUckotUDzCJEORQ872S9r6LLBZLYUcslNMqA5Kbj/FYZempF
+EXqPhkS3Sy9XigaZKDZB7GTNeg0GPWwQs8hR5g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8377d890-e863-4591-9e05-5d3ac3c9c9d0" Target="#_d31958cb-1769-44b2-a1e6-7a2e70cd4ba9"><Timestamp>2020-07-10 12:57:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
