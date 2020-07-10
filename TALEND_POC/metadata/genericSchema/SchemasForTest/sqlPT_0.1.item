@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection comment="connectionComment" dataPackage="_ywExwcGzEeiFO4L2HwoohQ" label="connectionLabel" mappingTypeId="id_MSSQL" mappingTypeUsed="true" xmi:id="_ywExwMGzEeiFO4L2HwoohQ"/>
+  <TalendMetadata:GenericPackage dataManager="_ywExwMGzEeiFO4L2HwoohQ" xmi:id="_ywExwcGzEeiFO4L2HwoohQ">
+    <ownedElement id="_mSKqIMG0EeiFO4L2HwoohQ" label="OCS_test_PaymentTransaction" xmi:id="_ywExwsGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataTable">
+      <feature id="290474" label="Id" length="19" name="Id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_ywExw8GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywExxMGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290475" label="AccountId" length="11" name="AccountId" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywExxcGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywExxsGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290476" label="Amount" length="19" name="Amount" nullable="false" precision="5" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_ywExx8GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywExyMGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290477" label="TransactionStartDate" length="23" name="TransactionStartDate" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_ywExycGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywExysGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290478" label="TransactionEndDate" length="23" name="TransactionEndDate" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_ywExy8GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywExzMGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290479" label="Email_FlaggedforDelete" length="255" name="Email_FlaggedforDelete" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywExzcGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywExzsGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290480" label="RequestId" length="50" name="RequestId" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywExz8GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx0MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290481" label="StatusCode" length="50" name="StatusCode" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx0cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx0sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290482" label="ShopperId" length="10" name="ShopperId" sourceType="INT" talendType="id_Integer" xmi:id="_ywEx08GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx1MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290483" label="PaymentVendor" length="255" name="PaymentVendor" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx1cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx1sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290484" label="PaymentStatus" length="255" name="PaymentStatus" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx18GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx2MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290485" label="PaymentCurrency" length="10" name="PaymentCurrency" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx2cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx2sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290486" label="ExternalTransactionID" length="19" name="ExternalTransactionID" sourceType="BIGINT" talendType="id_Long" xmi:id="_ywEx28GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx3MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290487" label="ExternalTransactionSourceID" length="10" name="ExternalTransactionSourceID" sourceType="INT" talendType="id_Integer" xmi:id="_ywEx3cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx3sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290488" label="AddressId" length="10" name="AddressId" sourceType="INT" talendType="id_Integer" xmi:id="_ywEx38GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx4MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290489" label="GlobalMemberToken" length="36" name="GlobalMemberToken" sourceType="VARBINARY" talendType="id_Object" xmi:id="_ywEx4cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx4sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290490" label="PaymentRequestFk" length="10" name="PaymentRequestFk" nullable="false" sourceType="INT" talendType="id_Integer" xmi:id="_ywEx48GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx5MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290491" label="PaymentProfileId" length="19" name="PaymentProfileId" sourceType="BIGINT" talendType="id_Long" xmi:id="_ywEx5cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx5sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290492" label="PayOnOrderFlag" length="1" name="PayOnOrderFlag" nullable="false" sourceType="BIT" talendType="id_Boolean" xmi:id="_ywEx58GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_ywEx6MGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290493" label="PaymentMethod" length="255" name="PaymentMethod" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx6cGzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx6sGzEeiFO4L2HwoohQ"/>
+      </feature>
+      <feature id="290494" label="EmailSHA256Hash" length="255" name="EmailSHA256Hash" sourceType="VARCHAR" talendType="id_String" xmi:id="_ywEx68GzEeiFO4L2HwoohQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ywEx7MGzEeiFO4L2HwoohQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_62f561b1-9166-4248-849d-82c659b2c318"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g0CR/QQ7EvF/E9XYT0TueSx6cikPjir2qJodoxEWp/nD+ubWjQHFNCgwljjcSqDKDB/NS7a+2D1U
+7lQtw4Gt8A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28c4bdc1-8d87-4654-aa23-f4dd5a242470"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yfFqEI0vD9eGFoAVbVV6l0RateYAjwBlicxQZ90IBG2aORt9RuM0n3VzmyOdkyODdBxGBrjJV/Df
+rALxL2QQgg==</DigestValue></Reference></SignedInfo><SignatureValue>dDPJCKrxOlwVxp7uFBesrXsbT7nXubzdEqONJKz8LPqlh1AarVptIM8jT9AI8dzj8dp/WN+HN6Zq
+1RvdG0Im2t8Pv0kMs9NsegrLmkGMLBeCEQpn0J0WUVHPUShU6pZbzKdHsCGmbXnt38aa+Rb+J2hx
+r2aRAjRchtcZh8+NU35tLesg5n1wpS5+hIvRmdWL8GKlFA7gd/gYZZExNmlRUG9rUBHe/HvKLWSQ
+ZfaADUMon0Ql7K5GbKTXsYo3oXjXhmdOTng8RrlkWW1RFNCwVZsfj9loGskEif5kK9FT/OODQStt
+k2snJxMWoN6DqPlPtSUS7OE6XozKzolKU36+dA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28c4bdc1-8d87-4654-aa23-f4dd5a242470" Target="#_62f561b1-9166-4248-849d-82c659b2c318"><Timestamp>2020-07-10 14:32:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

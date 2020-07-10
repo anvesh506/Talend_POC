@@ -1,0 +1,52 @@
+package routines;
+
+
+public class dpathvariables {
+
+ static boolean  wind =  OSValidator.isWindows();
+ static boolean  linx =  OSValidator.isUnix();
+ 	
+public static String getPathVar(String ...x) {
+    
+    String out = "";
+    
+    typebasedroot[] typeroot =typebasedroot.values();
+    
+    if(wind == true){
+    
+    for (String i: x){
+          
+          out += ("\\"+i);
+    }
+    }
+    
+   
+    if(linx == true){
+    for (String i: x){
+    	
+    	out += ("/"+i );
+    }
+    }
+   return(out); 
+    
+}
+//Java program to demonstrate how values can be assigned to enums. 
+enum typebasedroot 
+{ 
+ // This will call constructor with one String argument 
+ gcs("gs://"), s3("s3://"), hdfs("maprfs:///"),hds3("s3a://"); 
+ // declaring private variable for getting values 
+ private String typebasedvalue; 
+ // getter method 
+ public String getrootvalue() 
+ { 
+     return this.typebasedvalue; 
+ } 
+ //constructor - cannot be public or protected 
+ private typebasedroot(String typebasedvalue) 
+ { 
+     this.typebasedvalue = typebasedvalue; 
+ } 
+} 
+
+}

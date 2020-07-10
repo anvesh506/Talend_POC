@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="cBqDstDataSet1" prompt="cBqDstDataSet1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstDataSet2" prompt="cBqDstDataSet2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstDataSet3" prompt="cBqDstDataSet3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstProject1" prompt="cBqDstProject1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstProject2" prompt="cBqDstProject2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstProject3" prompt="cBqDstProject3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstTable1" prompt="cBqDstTable1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstTable2" prompt="cBqDstTable2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqDstTable3" prompt="cBqDstTable3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcDataSet1" prompt="cBqSrcDataSet1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcDataSet2" prompt="cBqSrcDataSet2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcDataSet3" prompt="cBqSrcDataSet3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcProject1" prompt="cBqSrcProject1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcProject2" prompt="cBqSrcProject2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcProject3" prompt="cBqSrcProject3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcQuery1" prompt="cBqSrcQuery1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcQuery2" prompt="cBqSrcQuery2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcQuery3" prompt="cBqSrcQuery3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcTable1" prompt="cBqSrcTable1?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcTable2" prompt="cBqSrcTable2?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cBqSrcTable3" prompt="cBqSrcTable3?" promptNeeded="false" repositoryContextId="_VNBBMNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cGCPClientId" prompt="cGCPClientId?" promptNeeded="false" repositoryContextId="_hn4YcNIfEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cGCPClientSecret" prompt="cGCPClientSecret?" promptNeeded="false" repositoryContextId="_hn4YcNIfEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cGCPProjectId" prompt="cGCPProjectId?" promptNeeded="false" repositoryContextId="_hn4YcNIfEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cGCPRelativeTokenLocation" prompt="cGCPRelativeTokenLocation?" promptNeeded="false" repositoryContextId="_hn4YcNIfEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_AdditionalParams" prompt="cSqlMetaDataDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Database" prompt="cSqlMetaDataDB_Database?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Login" prompt="cSqlMetaDataDB_Login?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Password" prompt="cSqlMetaDataDB_Password?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_Password" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Port" prompt="cSqlMetaDataDB_Port?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Schema" prompt="cSqlMetaDataDB_Schema?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Server" prompt="cSqlMetaDataDB_Server?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlDstTable1" prompt="cSqlDstTable1?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlDstTable2" prompt="cSqlDstTable2?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlDstTable3" prompt="cSqlDstTable3?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlSrcTable1" prompt="cSqlSrcTable1?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlSrcTable2" prompt="cSqlSrcTable2?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlSrcTable3" prompt="cSqlSrcTable3?" promptNeeded="false" repositoryContextId="_f-JBcNGFEei1hsAwD5azGQ" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_AdditionalParams" prompt="cSqlSingleSchemaDis_AdditionalParams?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="integratedsecurity=true;domain=CLASSIC"/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Database" prompt="cSqlSingleSchemaDis_Database?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="ImportExportData"/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Login" prompt="cSqlSingleSchemaDis_Login?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="app_Tal_DISvc_SQL_de"/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Password" prompt="cSqlSingleSchemaDis_Password?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_Password" value="enc:system.encryption.key.v1:e/mQP6M9rsWBc32/904/w+nzkhzb7QKONeJRgRH3zVe4Z6l5rw=="/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Port" prompt="cSqlSingleSchemaDis_Port?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Schema" prompt="cSqlSingleSchemaDis_Schema?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="IMPORTS"/>
+    <contextParameter comment="" name="cSqlSingleSchemaDis_Server" prompt="cSqlSingleSchemaDis_Server?" promptNeeded="false" repositoryContextId="_RfLqoMgbEeiLgcyu39Obxg" type="id_String" value="pwintdw01.classic.pchad.com"/>
+    <contextParameter comment="" name="BundleRunEndDate" prompt="BundleRunEndDate?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="BundleRunStartDate" prompt="BundleRunStartDate?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="C_MessageType" prompt="C_MessageType?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="CodePriority" prompt="CodePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ContextDumpOnError" prompt="ContextDumpOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ContextDumpOnSuccess" prompt="ContextDumpOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="createBundleLog" prompt="createBundleLog?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="EmailOnError" prompt="EmailOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="EmailOnSuccess" prompt="EmailOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="EmailSubject" prompt="EmailSubject?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="EndBoundary" prompt="EndBoundary?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorCode" prompt="ErrorCode?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorEmailFrom" prompt="ErrorEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+    <contextParameter comment="" name="ErrorEmailTo" prompt="ErrorEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+    <contextParameter comment="" name="ErrorMessage" prompt="ErrorMessage?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorMessageInEmail" prompt="ErrorMessageInEmail?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ErrorNotificationSent" prompt="ErrorNotificationSent?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="ExecutionEnvironment" prompt="ExecutionEnvironment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ExportRoot" prompt="ExportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="HtmlEmailBody" prompt="HtmlEmailBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="HTMLLogOnError" prompt="HTMLLogOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="HTMLLogOnSuccess" prompt="HTMLLogOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ImportRoot" prompt="ImportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="IntegrationLevel" prompt="IntegrationLevel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="IsSelfManaged" prompt="IsSelfManaged?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="JobIndexHTMLFileLocal" prompt="JobIndexHTMLFileLocal?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="JobServerSystem" prompt="JobServerSystem?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="KillJobOnJavaExeption" prompt="KillJobOnJavaExeption?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LocalBundleLogDirHTML" prompt="LocalBundleLogDirHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogDirXML" prompt="LocalBundleLogDirXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogFileNameHTML" prompt="LocalBundleLogFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogFileNameXML" prompt="LocalBundleLogFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogIndexHTML" prompt="LocalBundleLogIndexHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogIndexXML" prompt="LocalBundleLogIndexXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameDel" prompt="LocalContextDumpFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameHTML" prompt="LocalContextDumpFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameXML" prompt="LocalContextDumpFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalHTMLContextDir" prompt="LocalHTMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalHTMLLogDir" prompt="LocalHTMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameDel" prompt="LocalLogFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameHTML" prompt="LocalLogFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameXML" prompt="LocalLogFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogRoot" prompt="LocalLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLContextDir" prompt="LocalXMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLFileJobIndex" prompt="LocalXMLFileJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLLogDir" prompt="LocalXMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogToDb" prompt="LogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="LogToFile" prompt="LogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="Moment" prompt="Moment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="NotificationFailure" prompt="NotificationFailure?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="NotificationToBeSentAux" prompt="NotificationToBeSentAux?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="OpsGenieAlertTag" prompt="OpsGenieAlertTag?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="afa61d1e-c1a5-4e34-9900-453a2ebe22a3"/>
+    <contextParameter comment="" name="OpsGeniePriority" prompt="OpsGeniePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="P3"/>
+    <contextParameter comment="" name="OpsGenieRequestBody" prompt="OpsGenieRequestBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="OpsGenieRequestOnError" prompt="OpsGenieRequestOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="OpsGenieUrl" prompt="OpsGenieUrl?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="https://api.opsgenie.com/v2/alerts"/>
+    <contextParameter comment="" name="PassString" prompt="PassString?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value="enc:system.encryption.key.v1:Z6KuQJ0/jfX96tgMbx6mkgOcXAWG76IEsVuZV0E4Ed+bbjQURTvKr0r88o4="/>
+    <contextParameter comment="" name="ReadyToLogToDb" prompt="ReadyToLogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="ReadyToLogToFile" prompt="ReadyToLogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="S3BunldleLogFileName" prompt="S3BunldleLogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3BunldleLogIndex" prompt="S3BunldleLogIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3ContextDumpDirName" prompt="S3ContextDumpDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3ContextDumpFileName" prompt="S3ContextDumpFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3JobIndexHTMLFile" prompt="S3JobIndexHTMLFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogAccessKey" prompt="S3LogAccessKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogBucket" prompt="S3LogBucket?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogDirName" prompt="S3LogDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogFileName" prompt="S3LogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogSecretKey" prompt="S3LogSecretKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value=""/>
+    <contextParameter comment="" name="S3RootLogRoot" prompt="S3RootLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="sentBundleEmail" prompt="sentBundleEmail?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="SentNotificationOnWarning" prompt="SentNotificationOnWarning?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="SetUpFile" prompt="SetUpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SetUpRoot" prompt="SetUpRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SetUpRootBD" prompt="SetUpRootBD?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SingleErrorNotification" prompt="SingleErrorNotification?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="SmptServer" prompt="SmptServer?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="smtp.prod.pch.com"/>
+    <contextParameter comment="" name="SmtpPort" prompt="SmtpPort?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="25"/>
+    <contextParameter comment="" name="SparkTempRoot" prompt="SparkTempRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="StartBoundary" prompt="StartBoundary?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="StatusCode" prompt="StatusCode?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SuccessEmailFrom" prompt="SuccessEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SuccessEmailTo" prompt="SuccessEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="TalendJobBundleName" prompt="TalendJobBundleName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="TalendJobBundleRunId" prompt="TalendJobBundleRunId?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+    <contextParameter comment="" name="TalendLogID" prompt="TalendLogID?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+    <contextParameter comment="" name="URLBunldleLogFileName" prompt="URLBunldleLogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLBunldleLogIndex" prompt="URLBunldleLogIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLContextDumpFile" prompt="URLContextDumpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLJobIndex" prompt="URLJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLLogFile" prompt="URLLogFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLLogRoot" prompt="URLLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="VarPid" prompt="VarPid?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="WarningEmailFrom" prompt="WarningEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="WarningEmailTo" prompt="WarningEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileName" prompt="XSLfileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForBundleIndex" prompt="XSLfileNameForBundleIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForBundleLog" prompt="XSLfileNameForBundleLog?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForContext" prompt="XSLfileNameForContext?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForJobIndex" prompt="XSLfileNameForJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLForJobIndexFullIntegration" prompt="XSLForJobIndexFullIntegration?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="TalendDataSetName" prompt="TalendDataSetName?" promptNeeded="false" type="id_String" value="SearchAndWinCongratEmails"/>
+    <contextParameter comment="" name="TransferLogID" prompt="TransferLogID?" promptNeeded="false" type="id_String" value="1705"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Port" prompt="cSqlSingleSchemaLoggingDis_Port?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Login" prompt="cSqlSingleSchemaLoggingDis_Login?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="app_Tal_DISvc_SQL_de"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Database" prompt="cSqlSingleSchemaLoggingDis_Database?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="CustomerProfileData"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Password" prompt="cSqlSingleSchemaLoggingDis_Password?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_Password" value="enc:system.encryption.key.v1:bGK8WCOfdlb0jA+8luk/4pmLB20w3rC1xI8jzLANxmhcMKx3RQ=="/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Schema" prompt="cSqlSingleSchemaLoggingDis_Schema?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="LOGGING"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_Server" prompt="cSqlSingleSchemaLoggingDis_Server?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="pwintdw01.classic.pchad.com"/>
+    <contextParameter comment="" name="cSqlSingleSchemaLoggingDis_AdditionalParams" prompt="cSqlSingleSchemaLoggingDis_AdditionalParams?" promptNeeded="false" repositoryContextId="_zBd6kNMIEei1hsAwD5azGQ" type="id_String" value="integratedsecurity=true;domain=CLASSIC"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wgrSRkTxxIRNKCiVD42cP+1ckxVhif0b/LH2wWjE"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/pwang/workspace651/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kV8/pqifTacrNXgxsUiFXarhfne/qcZW6sFF7JIT"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_93YTwCYrEeitB6Cxa_Ohbg" name="DQTechnical"/>
+    <routinesParameter id="_92-rICYrEeitB6Cxa_Ohbg" name="DataMasking"/>
+    <routinesParameter id="_9xaOoCYrEeitB6Cxa_Ohbg" name="DataOperation"/>
+    <routinesParameter id="_93F_4CYrEeitB6Cxa_Ohbg" name="DataQualityDependencies"/>
+    <routinesParameter id="_93CVgCYrEeitB6Cxa_Ohbg" name="DataQuality"/>
+    <routinesParameter id="_93TbQCYrEeitB6Cxa_Ohbg" name="DqStringHandling"/>
+    <routinesParameter id="_92WZACYrEeitB6Cxa_Ohbg" name="Mathematical"/>
+    <routinesParameter id="_92dGsCYrEeitB6Cxa_Ohbg" name="Numeric"/>
+    <routinesParameter id="_92imQCYrEeitB6Cxa_Ohbg" name="Relational"/>
+    <routinesParameter id="_927AwCYrEeitB6Cxa_Ohbg" name="SQLike"/>
+    <routinesParameter id="_92mQoCYrEeitB6Cxa_Ohbg" name="StringHandling"/>
+    <routinesParameter id="_92qiECYrEeitB6Cxa_Ohbg" name="TalendDataGenerator"/>
+    <routinesParameter id="_92uMcCYrEeitB6Cxa_Ohbg" name="TalendDate"/>
+    <routinesParameter id="_923WYCYrEeitB6Cxa_Ohbg" name="TalendStringUtil"/>
+    <routinesParameter id="_92zE8CYrEeitB6Cxa_Ohbg" name="TalendString"/>
+    <routinesParameter id="_aTKvMPpLEeeyKtqaT_p1lg" name="Encrypt"/>
+    <routinesParameter id="_r4PHoOvVEeequ4npDh9sDw" name="OSValidator"/>
+  </parameters>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BqDtoNiFEeiEgr_CGKRieA - Dst_BQConversionLogic_Optins"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:6Nrekd0IxsaeDyB0848xJbPcoE5NUp6UHp231fH4h9SbZOmjqoe4oiZh3x02UwiuaI1JhMx3"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;  fullVisitorId,&#13;&#10;  visitNumber,&#13;&#10;  visitId,&#13;&#10;  visitStartTime,&#13;&#10;  date,&#13;&#10;  totals.timeOnSite,&#13;&#10;  totals.totalTransactionRevenue,&#13;&#10;  totals.transactionRevenue,&#13;&#10;  totals.transactions,&#13;&#10;  totals.UniqueScreenViews,&#13;&#10;  totals.visits,&#13;&#10;  trafficSource.adContent,&#13;&#10;  trafficSource.adwordsClickInfo.adGroupId,&#13;&#10;  trafficSource.adwordsClickInfo.adNetworkType,&#13;&#10;  trafficSource.adwordsClickInfo.campaignId,&#13;&#10;  trafficSource.adwordsClickInfo.creativeId,&#13;&#10;  trafficSource.adwordsClickInfo.criteriaId,&#13;&#10;  trafficSource.adwordsClickInfo.criteriaParameters,&#13;&#10;  trafficSource.adwordsClickInfo.customerId,&#13;&#10;  trafficSource.adwordsClickInfo.gclId,&#13;&#10;  trafficSource.adwordsClickInfo.isVideoAd,&#13;&#10;  trafficSource.adwordsClickInfo.page,&#13;&#10;  trafficSource.adwordsClickInfo.slot,&#13;&#10;  trafficSource.adwordsClickInfo.targetingCriteria.boomUserlistId,&#13;&#10;  trafficSource.campaign,&#13;&#10;  trafficSource.campaignCode,&#13;&#10;  trafficSource.isTrueDirect,&#13;&#10;  trafficSource.keyword,&#13;&#10;  trafficSource.medium,&#13;&#10;  trafficSource.referralPath,&#13;&#10;  trafficSource.source,&#13;&#10;  socialEngagementType,&#13;&#10;  channelGrouping,&#13;&#10;  device.deviceCategory,&#13;&#10;  device.mobileDeviceBranding,&#13;&#10;  geoNetwork.country,&#13;&#10;  geoNetwork.region,&#13;&#10;  geoNetwork.city,&#13;&#10;  hits.eventInfo.eventAction Optin_Conversion,&#13;&#10;  PathType,&#13;&#10;  GA_CookieID,&#13;&#10;  CL_CookieID&#13;&#10;  Date(date) as EventDate,&#13;&#10;  CURRENT_TIMESTAMP() as LoadTimeUTC&#13;&#10;  &#13;&#10;FROM (&#13;&#10;  SELECT&#13;&#10;    fullVisitorId,&#13;&#10;    visitNumber,&#13;&#10;    visitId,&#13;&#10;    visitStartTime,&#13;&#10;    date,&#13;&#10;    totals.timeOnSite,&#13;&#10;    totals.totalTransactionRevenue,&#13;&#10;    totals.transactionRevenue,&#13;&#10;    totals.transactions,&#13;&#10;    totals.UniqueScreenViews,&#13;&#10;    totals.visits,&#13;&#10;    trafficSource.adContent,&#13;&#10;    trafficSource.adwordsClickInfo.adGroupId,&#13;&#10;    trafficSource.adwordsClickInfo.adNetworkType,&#13;&#10;    trafficSource.adwordsClickInfo.campaignId,&#13;&#10;    trafficSource.adwordsClickInfo.creativeId,&#13;&#10;    trafficSource.adwordsClickInfo.criteriaId,&#13;&#10;    trafficSource.adwordsClickInfo.criteriaParameters,&#13;&#10;    trafficSource.adwordsClickInfo.customerId,&#13;&#10;    trafficSource.adwordsClickInfo.gclId,&#13;&#10;    trafficSource.adwordsClickInfo.isVideoAd,&#13;&#10;    trafficSource.adwordsClickInfo.page,&#13;&#10;    trafficSource.adwordsClickInfo.slot,&#13;&#10;    trafficSource.adwordsClickInfo.targetingCriteria.boomUserlistId,&#13;&#10;    trafficSource.campaign,&#13;&#10;    trafficSource.campaignCode,&#13;&#10;    trafficSource.isTrueDirect,&#13;&#10;    trafficSource.keyword,&#13;&#10;    trafficSource.medium,&#13;&#10;    trafficSource.referralPath,&#13;&#10;    trafficSource.source,&#13;&#10;    socialEngagementType,&#13;&#10;    channelGrouping,&#13;&#10;    device.deviceCategory,&#13;&#10;    device.mobileDeviceBranding,&#13;&#10;    geoNetwork.country,&#13;&#10;    geoNetwork.region,&#13;&#10;    geoNetwork.city,&#13;&#10;    hits.eventInfo.eventAction,&#13;&#10;    hits.eventInfo.eventCategory,&#13;&#10;    MAX(IF(customDimensions.index=5,customDimensions.value,NULL)) WITHIN RECORD AS PathType,&#13;&#10;    MAX(IF(customDimensions.index=94,customDimensions.value,NULL)) WITHIN RECORD AS GA_CookieID,&#13;&#10;    MAX(IF(customDimensions.index=95,customDimensions.value,NULL)) WITHIN RECORD AS CL_CookieID&#13;&#10;  FROM&#13;&#10;    TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#9;DATE_ADD(CURRENT_TIMESTAMP(), -1, 'DAY'),CURRENT_TIMESTAMP())&#13;&#10;)&#13;&#10;WHERE&#13;&#10;  hits.eventInfo.eventAction IN ('NewOptin','ReActivate','ReOptin','FTOptin' )&#13;&#10;  AND hits.eventInfo.eventCategory = 'PCHCOM'&#13;&#10;&#13;&#10;Limit 100  &#13;&#10;&#13;&#10;&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryInput_3">
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//pwexportdw01/Import/DataIntegrationServices/DEV/Optins.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BqDtoNiFEeiEgr_CGKRieA - Dst_BQConversionLogic_Optins"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:IV/HrhfyPYjPVEkec+3vqw98SzrgCNTSX2UB9wpQz2EnvTPfuM+nXJebqjLwuC/zPaqOyb5f"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;DIServices_Temp&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;Optins&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:+3X9PrDSBCrF0ISkRh28wLy9x690UIwIfGyZoLo819/YMBJwflhBFMt3T4vEckrzIaARqCAzAHr5P+xwekvazP5ZtdCDdA=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/ConversionLogic&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/ConversionLogic/Optins.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;~&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryOutput_1">
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BqDtoNiFEeiEgr_CGKRieA - Dst_BQConversionLogic_Optins"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:3ZdbxaJSDhA129o1dcRQMaL1Mf7Ybee/U8pBlDq7bq2Lb3CYPxtyjkuq9dVtYQkd/U1v+5ZC"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;  fullVisitorId,&#13;&#10;  visitNumber,&#13;&#10;  visitId,&#13;&#10;  visitStartTime,&#13;&#10;  date,&#13;&#10;  totals.timeOnSite,&#13;&#10;  totals.totalTransactionRevenue,&#13;&#10;  totals.transactionRevenue,&#13;&#10;  totals.transactions,&#13;&#10;  totals.UniqueScreenViews,&#13;&#10;  totals.visits,&#13;&#10;  trafficSource.adContent,&#13;&#10;  trafficSource.adwordsClickInfo.adGroupId,&#13;&#10;  trafficSource.adwordsClickInfo.adNetworkType,&#13;&#10;  trafficSource.adwordsClickInfo.campaignId,&#13;&#10;  trafficSource.adwordsClickInfo.creativeId,&#13;&#10;  trafficSource.adwordsClickInfo.criteriaId,&#13;&#10;  trafficSource.adwordsClickInfo.criteriaParameters,&#13;&#10;  trafficSource.adwordsClickInfo.customerId,&#13;&#10;  trafficSource.adwordsClickInfo.gclId,&#13;&#10;  trafficSource.adwordsClickInfo.isVideoAd,&#13;&#10;  trafficSource.adwordsClickInfo.page,&#13;&#10;  trafficSource.adwordsClickInfo.slot,&#13;&#10;  trafficSource.adwordsClickInfo.targetingCriteria.boomUserlistId,&#13;&#10;  trafficSource.campaign,&#13;&#10;  trafficSource.campaignCode,&#13;&#10;  trafficSource.isTrueDirect,&#13;&#10;  trafficSource.keyword,&#13;&#10;  trafficSource.medium,&#13;&#10;  trafficSource.referralPath,&#13;&#10;  trafficSource.source,&#13;&#10;  socialEngagementType,&#13;&#10;  channelGrouping,&#13;&#10;  device.deviceCategory,&#13;&#10;  device.mobileDeviceBranding,&#13;&#10;  geoNetwork.country,&#13;&#10;  geoNetwork.region,&#13;&#10;  geoNetwork.city,&#13;&#10;  hits.eventInfo.eventAction Optin_Conversion,&#13;&#10;  PathType,&#13;&#10;  GA_CookieID,&#13;&#10;  CL_CookieID,&#13;&#10;  Date(date) as EventDate,&#13;&#10;  CURRENT_TIMESTAMP() as LoadTimeUTC&#13;&#10;  &#13;&#10;FROM (&#13;&#10;  SELECT&#13;&#10;    fullVisitorId,&#13;&#10;    visitNumber,&#13;&#10;    visitId,&#13;&#10;    visitStartTime,&#13;&#10;    date,&#13;&#10;    totals.timeOnSite,&#13;&#10;    totals.totalTransactionRevenue,&#13;&#10;    totals.transactionRevenue,&#13;&#10;    totals.transactions,&#13;&#10;    totals.UniqueScreenViews,&#13;&#10;    totals.visits,&#13;&#10;    trafficSource.adContent,&#13;&#10;    trafficSource.adwordsClickInfo.adGroupId,&#13;&#10;    trafficSource.adwordsClickInfo.adNetworkType,&#13;&#10;    trafficSource.adwordsClickInfo.campaignId,&#13;&#10;    trafficSource.adwordsClickInfo.creativeId,&#13;&#10;    trafficSource.adwordsClickInfo.criteriaId,&#13;&#10;    trafficSource.adwordsClickInfo.criteriaParameters,&#13;&#10;    trafficSource.adwordsClickInfo.customerId,&#13;&#10;    trafficSource.adwordsClickInfo.gclId,&#13;&#10;    trafficSource.adwordsClickInfo.isVideoAd,&#13;&#10;    trafficSource.adwordsClickInfo.page,&#13;&#10;    trafficSource.adwordsClickInfo.slot,&#13;&#10;    trafficSource.adwordsClickInfo.targetingCriteria.boomUserlistId,&#13;&#10;    trafficSource.campaign,&#13;&#10;    trafficSource.campaignCode,&#13;&#10;    trafficSource.isTrueDirect,&#13;&#10;    trafficSource.keyword,&#13;&#10;    trafficSource.medium,&#13;&#10;    trafficSource.referralPath,&#13;&#10;    trafficSource.source,&#13;&#10;    socialEngagementType,&#13;&#10;    channelGrouping,&#13;&#10;    device.deviceCategory,&#13;&#10;    device.mobileDeviceBranding,&#13;&#10;    geoNetwork.country,&#13;&#10;    geoNetwork.region,&#13;&#10;    geoNetwork.city,&#13;&#10;    hits.eventInfo.eventAction,&#13;&#10;    hits.eventInfo.eventCategory,&#13;&#10;    MAX(IF(customDimensions.index=5,customDimensions.value,NULL)) WITHIN RECORD AS PathType,&#13;&#10;    MAX(IF(customDimensions.index=94,customDimensions.value,NULL)) WITHIN RECORD AS GA_CookieID,&#13;&#10;    MAX(IF(customDimensions.index=95,customDimensions.value,NULL)) WITHIN RECORD AS CL_CookieID&#13;&#10;  FROM&#13;&#10;    TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#9;DATE_ADD(CURRENT_TIMESTAMP(), -1, 'DAY'),CURRENT_TIMESTAMP())&#13;&#10;)&#13;&#10;WHERE&#13;&#10;  hits.eventInfo.eventAction IN ('NewOptin','ReActivate','ReOptin','FTOptin' )&#13;&#10;  AND hits.eventInfo.eventCategory = 'PCHCOM'&#13;&#10;&#13;&#10;Limit 100  &#13;&#10;&#13;&#10;&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryInput_1">
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fullVisitorId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="visitNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="visitId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="visitStartTime"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_timeOnSite"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_totalTransactionRevenue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_transactionRevenue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_transactions"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_UniqueScreenViews"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totals_visits"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adContent"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_adGroupId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_adNetworkType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_campaignId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_creativeId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_criteriaId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_criteriaParameters"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_customerId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_gclId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_isVideoAd"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_page"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_slot"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_campaign"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_campaignCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_isTrueDirect"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_keyword"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_medium"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_referralPath"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trafficSource_source"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="socialEngagementType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="channelGrouping"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="device_deviceCategory"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="device_mobileDeviceBranding"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geoNetwork_country"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geoNetwork_region"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geoNetwork_city"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Optin_Conversion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PathType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GA_CookieID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CL_CookieID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EventDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadTimeUTC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BqDtoNiFEeiEgr_CGKRieA - Dst_BQConversionLogic_Optins"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:xrgPSpm752YoESig2sv9qVTqJVpZRBtOchvjlp6QqBJ7D3cHGUSqC4jzUT12AHyHpJADMjuC"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;    visitId&#13;&#10;    &#13;&#10;FROM (&#13;&#10;  SELECT&#13;&#10;    visitId,hits.eventInfo.eventAction,hits.eventInfo.eventCategory&#13;&#10;    &#13;&#10;    &#13;&#10;  FROM&#13;&#10;    TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#9;DATE_ADD(CURRENT_TIMESTAMP(), -1, 'DAY'),CURRENT_TIMESTAMP())&#13;&#10;)&#13;&#10;WHERE&#13;&#10;  hits.eventInfo.eventAction IN ('NewOptin','ReActivate','ReOptin','FTOptin' )&#13;&#10;  AND hits.eventInfo.eventCategory = 'PCHCOM'&#13;&#10;&#13;&#10;Limit 100  &#13;&#10;&#13;&#10;&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryInput_2">
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//pwexportdw01/Import/DataIntegrationServices/DEV/Optins.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BqDtoNiFEeiEgr_CGKRieA - Dst_BQConversionLogic_Optins"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:K2MotHRVdGqcZ65cLUiMWm00A0UXoOJpMuAKhr2CIermYAU/R1zaj7kPOPpqpFxDvjitor0V"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;DIServices_Temp&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;Optins1&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:y1bQqskh+0wFYLmdj2yRoSYzN0Nb7i9RB8T2LWTztED6rZcRiUAPgV+myNLafLhmrUq6Z1x2rfjeKD/yqsE3aB0pzGRU9g=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/ConversionLogic&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/ConversionLogic/Optins.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;~&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryOutput_2">
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:VhJeO+HJJFrcxTsCYzRWwADACluEb4s1cn3+KesaYghjONmyp/s6ZGtCywZK8edi0MaF+QFs"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;    visitId&#13;&#10;    &#13;&#10;FROM (&#13;&#10;  SELECT&#13;&#10;    visitId,hits.eventInfo.eventAction,hits.eventInfo.eventCategory&#13;&#10;    &#13;&#10;    &#13;&#10;  FROM&#13;&#10;    TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#9;DATE_ADD(CURRENT_TIMESTAMP(), -1, 'DAY'),CURRENT_TIMESTAMP())&#13;&#10;)&#13;&#10;WHERE&#13;&#10;  hits.eventInfo.eventAction IN ('NewOptin','ReActivate','ReOptin','FTOptin' )&#13;&#10;  AND hits.eventInfo.eventCategory = 'PCHCOM'&#13;&#10;&#13;&#10;Limit 100  &#13;&#10;&#13;&#10;&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryInput_4">
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//pwexportdw01/Import/DataIntegrationServices/DEV/Optins.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:NpLrko9Qxc+09WF87toQ9BZL4OvHR7UCwMDgo3I90opFS6WR/+J8talp801dvwIQzEgVaX9K"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;DIServices_Temp&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;Optins1&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:9Wj0lpL7H/8VzNibgLWaa81g7WPpE9S8z6GGb9VYYYIMEIujaKLl96boGKc4bMneHMamtDne0dc7v3sGh0pvqKT95mz+lw=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/ConversionLogic&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/ConversionLogic/Optins.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;~&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryOutput_3">
+      <column comment="" key="false" length="65" name="visitId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_5"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:dzQrlNJzDews+ogv9sPGG8wtXSfInqhwZw2pp3i7QdvtXqVIZYe5B5EAXJiiW5ZL9BJ+J3hs"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT&#13;&#10;    visitId&#13;&#10;    &#13;&#10;FROM (&#13;&#10;  SELECT&#13;&#10;    visitId,hits.eventInfo.eventAction,hits.eventInfo.eventCategory&#13;&#10;    &#13;&#10;    &#13;&#10;  FROM&#13;&#10;    TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#9;DATE_ADD(CURRENT_TIMESTAMP(), -1, 'DAY'),CURRENT_TIMESTAMP())&#13;&#10;)&#13;&#10;WHERE&#13;&#10;  hits.eventInfo.eventAction IN ('NewOptin','ReActivate','ReOptin','FTOptin' )&#13;&#10;  AND hits.eventInfo.eventCategory = 'PCHCOM'&#13;&#10;&#13;&#10;Limit 100  &#13;&#10;&#13;&#10;&quot;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryInput_5">
+      <column comment="" key="false" length="-1" name="visitId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//pwexportdw01/Import/DataIntegrationServices/DEV/Optins.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;~&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="visitId" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_4"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//pwexportdw01/Import/DataIntegrationServices/DEV/Optins.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:D8Gknqtkk/AvYddxKYHW3lIMIObMfPDRwjtXK/V4cRH+uLuwnyOEnoz9dCxR4zVMf4IXhjXr"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;DIServices_Temp&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;Optins1&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:3w6m1UfYK1rLeHdK/kUfYZxL6m6C2zWx8XMy/r3zYgbRKMhaclPo23TVYJngJ23M8HuyWMWVxu7WI+0v0N2sjX5RCc0rrw=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/ConversionLogic&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/ConversionLogic/Optins.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;~&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Dst_BQConversionLogic_Optins" name="tBigQueryOutput_4">
+      <column comment="" key="false" length="-1" name="visitId" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fullVisitorId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="visitStartTime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_timeOnSite" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_totalTransactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactionRevenue" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_transactions" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_UniqueScreenViews" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="totals_visits" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adContent" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_adGroupId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_adNetworkType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_campaignId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_creativeId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_criteriaId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_criteriaParameters" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_customerId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_gclId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_isVideoAd" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_page" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_adwordsClickInfo_slot" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_adwordsClickInfo_targetingCriteria_boomUserlistId" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaign" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_campaignCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="-1" name="trafficSource_isTrueDirect" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_keyword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_medium" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_referralPath" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="trafficSource_source" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="socialEngagementType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="channelGrouping" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_deviceCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="device_mobileDeviceBranding" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_country" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="geoNetwork_city" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Optin_Conversion" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="PathType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="GA_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CL_CookieID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EventDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LoadTimeUTC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_3" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_3" target="tBigQueryOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQueryOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tBigQueryInput_4" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_4" target="tBigQueryOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tBigQueryInput_5" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_5" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tBigQueryOutput_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Visitid"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="vistitid manual data type"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_5"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="vistitid manual data type file"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6bc5c008-d071-46ae-8de5-0b14a5243f69"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2o56PoFdTmd06Ieksk1SCaHgSruXlDAabxAhM7JqayJ9+nVZnkDjPmmgv2RXq5uYUbXfdtYviwAH
+hyV3dTaSgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d23403cc-c2be-4d8b-973c-0c1d96038907"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Dwd60IyrUHj3p99vSLcgU1a8nyEC0+7Sp+eenjlRr0vSLJ/2OdfqRos05+VjKa/O17DlMzqwU1rp
+ZiNu348CCQ==</DigestValue></Reference></SignedInfo><SignatureValue>SQFA+P+7oe//j9iGROc7fxZ3faV4SnkM4sjp4M9XOgXecuJfGVenZRy6asFXHmVIPkPjCwd+CQ+Y
+DVzmmi4faWe4wM4VYmJBn8+ekjvalI0eWTuWWSonpOa2SbmO1oLsoAv6Dr+Ak4lko8/cPkNTHqHW
+RBeIGrK9+QLxnWhd7D4+Z/Lmk4wrSv6dBjxhm4vQPQtpvWkKk/mbToCvsYlg0XVn+A4/YhtYTOWb
+y0TmQLgCELDJK4E5bGVZOVQyvFdZoC2qj275sgEBMzXNBHao7LuA6eH9x1P4I4CBGKvfeY0BZwqS
+M0hnKwiQb5WLsVLfm4lPHMxnXAnpLb0LoxITPA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d23403cc-c2be-4d8b-973c-0c1d96038907" Target="#_6bc5c008-d071-46ae-8de5-0b14a5243f69"><Timestamp>2020-07-10 14:31:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

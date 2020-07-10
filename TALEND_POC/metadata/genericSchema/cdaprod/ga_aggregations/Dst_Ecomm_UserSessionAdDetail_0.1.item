@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="_1MIM0KtfEeiJndseL6U5bg" mappingTypeId="bigquery_id" mappingTypeUsed="true" xmi:id="_1MHlwKtfEeiJndseL6U5bg"/>
+  <TalendMetadata:GenericPackage dataManager="_1MHlwKtfEeiJndseL6U5bg" xmi:id="_1MIM0KtfEeiJndseL6U5bg">
+    <ownedElement id="_4QkqsateEeiJndseL6U5bg" label="Dst_EcommUserSessionAdDetail" xmi:id="_1MIM0atfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="EventDt" length="-1" name="EventDt" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="DATE" talendType="id_Date" xmi:id="_1MIM0qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM06tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="FullVisitorId" length="200" name="FullVisitorId" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM1KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM1atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="VisitID" length="200" name="VisitID" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM1qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM16tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GASessionId" length="200" name="GASessionId" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM2KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM2atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="VisitSequenceNo" length="65" name="VisitSequenceNo" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_1MIM2qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM26tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="VisitStartTS" length="25" name="VisitStartTS" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'UTC'&quot;" precision="-1" sourceType="TIMESTAMP" talendType="id_String" xmi:id="_1MIM3KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM3atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceOSName" length="200" name="DeviceOSName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM3qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM36tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPCountryName" length="200" name="IPCountryName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM4KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM4atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPRegionName" length="200" name="IPRegionName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM4qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM46tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPDMACd" length="200" name="IPDMACd" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM5KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM5atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPCityName" length="200" name="IPCityName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM5qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM56tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GAIPCityId" length="200" name="GAIPCityId" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM6KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM6atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPCityLatitude" length="200" name="IPCityLatitude" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM6qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM66tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IPCityLongitude" length="200" name="IPCityLongitude" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM7KtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM7atfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="EventType" length="200" name="EventType" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_nzwFIMb4EeitL6K7EjhCLg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PageNamePathName" length="200" name="PageNamePathName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MIM_qtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIM_6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="PageHostNameURL" length="200" name="PageHostNameURL" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINAKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINAatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="PageTitle" length="200" name="PageTitle" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINAqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINA6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="PageTime" length="65" name="PageTime" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_sfO80Mb4EeitL6K7EjhCLg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SessionPageViewsCnt" length="65" name="SessionPageViewsCnt" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_1MINBKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINBatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="IsBouncedSessionInd" length="65" name="IsBouncedSessionInd" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_1MINBqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINB6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GADeviceBrowserName" length="200" name="GADeviceBrowserName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINCKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINCatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="BrowserVersion" length="200" name="BrowserVersion" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINCqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINC6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="BrowserViewportDimensionPix" length="200" name="BrowserViewportDimensionPix" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINDKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINDatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceScreenResolutionPix" length="200" name="DeviceScreenResolutionPix" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINDqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MIND6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceFlashVersion" length="200" name="DeviceFlashVersion" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINEKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINEatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GASessionOrderCnt" length="65" name="GASessionOrderCnt" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_1MINEqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINE6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GADeviceType" length="200" name="GADeviceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINFKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINFatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceInputSelectorName" length="200" name="DeviceInputSelectorName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINFqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINF6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceBrandName" length="200" name="DeviceBrandName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINGKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINGatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="ViewDefaultChannelGroupName" length="200" name="ViewDefaultChannelGroupName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINGqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MING6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GAMailingID" length="200" name="GAMailingID" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINHKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINHatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="TrafficSourceType" length="200" name="TrafficSourceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINHqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINH6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="TrafficSource" length="200" name="TrafficSource" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_2b-SwMb4EeitL6K7EjhCLg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="GlobalMemberToken" length="200" name="GlobalMemberToken" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINIKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINIatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="DeviceType" length="200" name="DeviceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINIqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINI6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="GenderInd" length="200" name="GenderInd" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINJKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINJatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="Age" length="200" name="Age" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINJqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINJ6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="LoginPasswordStatus" length="200" name="LoginPasswordStatus" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINKKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINKatfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="UserCurrentPCHLevel" length="200" name="UserCurrentPCHLevel" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINKqtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINK6tfEeiJndseL6U5bg"/>
+      </feature>
+      <feature label="SiteUserStatus" length="200" name="SiteUserStatus" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_1MINLKtfEeiJndseL6U5bg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_1MINLatfEeiJndseL6U5bg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_563ff3d3-b6da-4982-91c8-5658e27ef0bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a97+M37CiNmIASrLpMc7EVpBrCMfMZbR86QjhyYloYRIYGpI5Lzdc5aacALu93l7S0eTTUdZaI1Q
+/uJeY5BbmA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d6a1f90-f580-4cb1-9bf4-e5a7c5a081ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ej4v2tnVAH1W4wWeFZRMWOJdFrsJlrrGbytp31OiKPMppNaOHQVk0UlTrg+/ZLspqjQjpC7/I/Ct
+mmlRa67bkA==</DigestValue></Reference></SignedInfo><SignatureValue>DF5M6ZtBCCObC4mHwHMDcZZRy4PrEfAgl9T4I27IM+CQ4ZAiXKtUJ0RwT2otJXOUBZnRdgjKjncr
+9fNuSXffkqoN1gH2hm4WLbzYvFtAfWngtamK7oNvNaYIw6mTGWPNHve1EmtEvVFn8HKp4rTVNRYJ
+aViDZUIuCXLhmxZzgjpS69ioH08bTYMC5emj0LC3C+7qGqzJrNSupoMdicxjlZwOT7km+39T0dT4
+Mw0pUFXdj3c4QpNQ+V/FoydJmDxVOipARR4M0FSDXG23UrNfEEcN6heQlHsOJzak1+mXgOU4B8yI
+Ux2PnEyJkeXJLagTk0WOFOAa2MoPZ5D00FAXSQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d6a1f90-f580-4cb1-9bf4-e5a7c5a081ee" Target="#_563ff3d3-b6da-4982-91c8-5658e27ef0bc"><Timestamp>2020-07-10 14:32:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="__nZ68X6TEeijK4l2TlR1jg" mappingTypeId="bigquery_id" mappingTypeUsed="true" xmi:id="__nZ68H6TEeijK4l2TlR1jg"/>
+  <TalendMetadata:GenericPackage dataManager="__nZ68H6TEeijK4l2TlR1jg" xmi:id="__nZ68X6TEeijK4l2TlR1jg">
+    <ownedElement id="_tOJhIX6SEeijK4l2TlR1jg" label="dst_ecomm_daily_order_item_agg" xmi:id="__nZ68n6TEeijK4l2TlR1jg" xsi:type="TalendMetadata:MetadataTable">
+      <feature comment="The date when the event occurred. The date is using YYYYMMDD format." label="EventDate" length="-1" name="EventDate" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="DATE" talendType="id_Date" xmi:id="_Empu4INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu4YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Count of GA Sessions per an Event Category during the Aggregation period. Google Analytics Identifier of a Session Id is a concatenation of a VisitId with a Fullvisitorid. A GA Session starts when an On-line User signs in OR lands on a site in a recognize" label="MailingId" length="200" name="MailingId" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu4oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu44NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="GA determination of the type of an electronic device used to access a PCH Site/Application. Examples of values include: Desktop, Mobile, and Tablet." label="GADeviceType" length="200" name="GADeviceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu5INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu5YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="A code that identifies how the customer arrived to the PCH property; either by an email link, acquisition partner, or main path.  It also indicates the campaign information for email campaigns." label="TrackingToken" length="200" name="TrackingToken" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu5oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu54NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="The type of tracking source. &#13;&#10;Examples:  &#13;&#10;Acquisition - Indicates both external acquisition sources (Social Media, Paid Acquisition, Post Card etc.) as well as internal acquisition sources (Evergage offers within the PCH internal site)&#13;&#10;Main Path - Internal site paths, such as a banner from the Lotto page&#13;&#10;House Email - PCH subscribed emails" label="TrackingSourceName" length="200" name="TrackingSourceName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu6INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu6YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Describes the purpose of the tracking token and contains more details regarding the source.&#13;&#10;Examples:  PCH.com - Mobile Portal, House, Acquisition, Lotto, Postcard, PCH - Cross Promote , PlayWin, Social Media" label="CampaignType" length="200" name="CampaignType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu6oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu64NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="An optional, freeform field.  Generally it is populated with details about the campaign such as the mailing id, placement location, and the deployment week.  This field is populated when the tracking_source_name is 'Internal'.&#10;Examples:&#10;PCH.com Opt in&#10;Playwin Opt in&#10;Games Opt in&#10;2018955AUHDLPT1_Wk7&#10;2018955aaAUHDLP_Wk7&#10;2018956AUHDLP_Wk8&#10;2018960AUHDLP_Wk13&#10;2018961AUHDLPT1_Wk11" label="CampaignDescription" length="200" name="CampaignDescription" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu7INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu7YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Identifies an App/Site/Tab where the Event took place.  (Example: PCHCOM, Lotto, Blog, Every Day Life, Search&amp;Win, PCH App) It is also known as Centralized Business Location (CBL)." label="CentralizedBusinessLocation" length="200" name="CentralizedBusinessLocation" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu7oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu74NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Count of GA Sessions per an Event Category during the Aggregation period. Google Analytics Identifier of a Session Id is a concatenation of a VisitId with a Fullvisitorid. A GA Session starts when an On-line User signs in OR lands on a site in a recognized state OR enters site via a Marketing Campaign." label="GASessionCount" length="65" name="GASessionCount" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_Empu8INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu8YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Daily Orders total for the specified Event Date, Mailing ID, GA Device Type, Tracking Token, and Centralized Business Location." label="OrderCount" length="200" name="OrderCount" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_Empu8oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu84NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Total number of Item Units ordered for the specified Event Date, Mailing ID, GA Device Type, Tracking Token, and Centralized Business Location.  (this differrs from the OrderCount, i.e. if an Order was placed for two SKUs (SKU1 and SKU2), and for the SKU1 - a quantity of one Unit was ordered, while for the SKU2 - a quantiy of two Units were ordered - number 3 will be added to the Total Quantity Count." label="TotalQuantityCount" length="65" name="TotalQuantityCount" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_Empu9INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu9YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Total revenue amount associated with all counted Order Items. The amount is expressed as an integer number. In order to translate the number to $ it has to be multiplied by .000001 for each Item revenue amount and added to the total amount." label="EcommTotalRrevenueAmt" length="-1" name="EcommTotalRrevenueAmt" pattern="dd-MM-yyyy" precision="-1" sourceType="FLOAT" talendType="id_Float" xmi:id="_Empu9oNEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu94NEEeiB3ssZFpYhSQ"/>
+      </feature>
+      <feature comment="Total number of distinct On-line Users that were active during the specified Event Date, Mailing ID, GA Device Type, Tracking Token, and Centralized Business Location." label="OnLineUserCount" length="-1" name="OnLineUserCount" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_Empu-INEEeiB3ssZFpYhSQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="&quot;null&quot;" xmi:id="_Empu-YNEEeiB3ssZFpYhSQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_59921260-d7dd-44c9-97f9-453cacdc865c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sSOdAuUTbV+AU4JsuD07djE+UjRXZYPoQel5SHAtPLxPbusai0zXywK7sEjQRAmQOJsRvmXZPoZR
+qQ2W2FuPKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6654a2b6-8100-402f-b06b-150680233d69"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k0zdsX8paBtvpyyB6DHsFVeHr1lkW5mTTxoA6Ivo3GOEMJ6InsWtrzh+n1C3Z/eXepUPIKAML3Ka
+9aUUlKwHcQ==</DigestValue></Reference></SignedInfo><SignatureValue>PxwWCeHt9QV5W0NX6NeissIeZhMt/VzX5M2Sw9i7BjvcLVolpyDG3HjURJZHjs7E52CaIbIbQnrn
+QCOf7XUAekF0pnYx7MBS1Ec68hV3Yw8Kt95yCUS4Vul2+UNGvb5riB6XkfF6Fpn/4bpoKxiPyPcG
+Wn4qfv/gRczF7+jedOzchEmaX4qz0qmXzAgJ3C0YjinL2jQ5bsP8mrQXVcINxJMTEk/QT0QjezM6
+R/viw/Vw1AbryEBW/7e4UWLpxOT0/Xp9sJh/e0AsnZ1NB3vjFRh1whYo1scLVq3WT5t7EdI8YGow
+tmyBdA4Mkjj46wB3Q5f9NDoq2/fOJBZvNqj5vQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6654a2b6-8100-402f-b06b-150680233d69" Target="#_59921260-d7dd-44c9-97f9-453cacdc865c"><Timestamp>2020-07-10 14:32:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

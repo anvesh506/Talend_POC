@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_8xTgcH6nEeiTGtb6_Dsf9Q" xmi:version="2.0">
+  <contextParameter comment="" name="cMaprCluster_JobHistory" prompt="cMaprCluster_JobHistory?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgcX6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_ResourceManager" prompt="cMaprCluster_ResourceManager?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgcn6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_Group" prompt="cMaprCluster_Group?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgc36nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_StagingDirectory" prompt="cMaprCluster_StagingDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgdH6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_User" prompt="cMaprCluster_User?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgdX6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_ResourceManagerScheduler" prompt="cMaprCluster_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgdn6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_NameNodeUri" prompt="cMaprCluster_NameNodeUri?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgd36nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_yarn_client_failover_proxy_provider" prompt="cMaprCluster_yarn_client_failover_proxy_provider?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgeH6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_yarn_application_classpath" prompt="cMaprCluster_yarn_application_classpath?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgeX6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_yarn_resourcemanager_ha_custom_ha_enabled" prompt="cMaprCluster_yarn_resourcemanager_ha_custom_ha_enabled?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgen6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_yarn_queue" prompt="cMaprCluster_spark_yarn_queue?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTge36nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_network_buffer_timeout" prompt="cMaprCluster_spark_network_buffer_timeout?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgfH6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_sql_shuffle_partitions" prompt="cMaprCluster_spark_sql_shuffle_partitions?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgfX6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_sql_parquet_writeLegacyFormat" prompt="cMaprCluster_spark_sql_parquet_writeLegacyFormat?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgfn6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_serializer" prompt="cMaprCluster_spark_serializer?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgf36nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_Kryoserializer_buffer_max" prompt="cMaprCluster_spark_Kryoserializer_buffer_max?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTggH6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_spark_task_maxFailures" prompt="cMaprCluster_spark_task_maxFailures?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTggX6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_SparkEventLogDirectory" prompt="cMaprCluster_SparkEventLogDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTggn6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprCluster_SparkHistoryServer" prompt="cMaprCluster_SparkHistoryServer?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTgg36nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprClusterSparkWebUIPort" prompt="cMaprClusterSparkWebUIPort?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTghH6nEeiTGtb6_Dsf9Q"/>
+  <contextParameter comment="" name="cMaprClusterHistoryServerURL" prompt="cMaprClusterHistoryServerURL?" promptNeeded="false" type="id_String" value="" xmi:id="_8xTghX6nEeiTGtb6_Dsf9Q"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_605abbc9-af71-4196-b731-b06039a3b5ee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uZUFE6WNqJDsspK/M+slSDzaU39Jnd42b6wsJXS0yfzXlTwHC81MeweFqi+hdxoLKxRy84KgH4Ub
+/onCwKq5KA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_46e55b8d-107e-4fc3-9e1e-d5c860b93e63"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7IeOlv9c5zvZzz63XGJz0wAT2fsVek0tNfw9xB48OChQOkA9dQ2EFnoj7g9nwAJsOAXDfdyZ6CiJ
+hffGlQOEEQ==</DigestValue></Reference></SignedInfo><SignatureValue>WFuX2qSlgbc3NvbiAJLbJKjf3IxbNGNtrMOgzI401cvipnf2moksr6xf+bw/0Eu/sut90EouCBOg
+0/mA7XvzfdUnKxhtqUViKihqhJ/CvAHWF0NZgGXXnh9j/B5JLMEyVcEZI4jMdUse8JgRc9bsA71a
+yrOY6wCQpICPlK2HGJZLYj94q01CBYvXsiegvjJYt64KHheykSD03pOjnYofE0gcWXaKcc7Nqh7R
+JmL2g1ukJUEJ6rhQA1pHkI7+j/VysFo6uJzgLtlNrsTOUVMI823EnsIGSVrbAWf/EZjS+dI3FcEO
+jKxV67hq9Pn2KzTWFHiZH3A/c3H8UC3tAvMTGA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_46e55b8d-107e-4fc3-9e1e-d5c860b93e63" Target="#_605abbc9-af71-4196-b731-b06039a3b5ee"><Timestamp>2020-07-10 14:31:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="obtained from the dummy talend account &quot;accnt_talend_conn&quot; reference location &quot;https://console.cloud.google.com/apis/credentials?project=alert-impulse-704&quot;" name="s_clientid" prompt="s_clientid?" promptNeeded="false" type="id_String" value="919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com"/>
+    <contextParameter comment="obtained from the dummy talend account &quot;accnt_talend_conn&quot; reference location &quot;https://console.cloud.google.com/apis/credentials?project=alert-impulse-704&quot;" name="s_clientsecret" prompt="s_clientsecret?" promptNeeded="false" type="id_String" value="_aFj_Hd9yIX0kYDWWCVl9ht_"/>
+    <contextParameter comment="obtained from the dummy talend account &quot;accnt_talend_conn&quot; reference location &quot;https://console.cloud.google.com/apis/credentials?project=alert-impulse-704&quot;" name="s_projectid" prompt="s_projectid?" promptNeeded="false" type="id_String" value="alert-impulse-704"/>
+    <contextParameter comment="use the dev volume as this is the only folder accessable by the cluster." name="s_refreshtokenpath" prompt="s_refreshtokenpath?" promptNeeded="false" type="id_String" value="/opt/Talend/Setup/Keyfiles/"/>
+    <contextParameter comment="" name="cSqlDWRpt_AdditionalParams" prompt="cSqlDWRpt_AdditionalParams?" promptNeeded="false" type="id_String" value="integratedsecurity=true;domain=CLASSIC"/>
+    <contextParameter comment="" name="cSqlDWRpt_Database" prompt="cSqlDWRpt_Database?" promptNeeded="false" type="id_String" value="DW"/>
+    <contextParameter comment="" name="cSqlDWRpt_Login" prompt="cSqlDWRpt_Login?" promptNeeded="false" type="id_String" value="App_Tal_DISvc_SQL_de"/>
+    <contextParameter comment="" name="cSqlDWRpt_Password" prompt="cSqlDWRpt_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:K1W6X9NvxVwU0+lNRkaxoOYrCM6kuSjep9xKmk8vnKHKwwf2Ng=="/>
+    <contextParameter comment="" name="cSqlDWRpt_Port" prompt="cSqlDWRpt_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="cSqlDWRpt_Schema" prompt="cSqlDWRpt_Schema?" promptNeeded="false" type="id_String" value="Staging"/>
+    <contextParameter comment="" name="cSqlDWRpt_Server" prompt="cSqlDWRpt_Server?" promptNeeded="false" type="id_String" value="dw-test.classic.pchad.com"/>
+    <contextParameter comment="" name="cSqlMetaDataDB_AdditionalParams" prompt="cSqlMetaDataDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Database" prompt="cSqlMetaDataDB_Database?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Login" prompt="cSqlMetaDataDB_Login?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Password" prompt="cSqlMetaDataDB_Password?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_Password" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Port" prompt="cSqlMetaDataDB_Port?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Schema" prompt="cSqlMetaDataDB_Schema?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="cSqlMetaDataDB_Server" prompt="cSqlMetaDataDB_Server?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+    <contextParameter comment="" name="BundleRunEndDate" prompt="BundleRunEndDate?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="BundleRunStartDate" prompt="BundleRunStartDate?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="C_MessageType" prompt="C_MessageType?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="CodePriority" prompt="CodePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ContextDumpOnError" prompt="ContextDumpOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ContextDumpOnSuccess" prompt="ContextDumpOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="createBundleLog" prompt="createBundleLog?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="EmailOnError" prompt="EmailOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="EmailOnSuccess" prompt="EmailOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="EmailSubject" prompt="EmailSubject?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="EndBoundary" prompt="EndBoundary?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorCode" prompt="ErrorCode?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorEmailFrom" prompt="ErrorEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+    <contextParameter comment="" name="ErrorEmailTo" prompt="ErrorEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+    <contextParameter comment="" name="ErrorMessage" prompt="ErrorMessage?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorMessageInEmail" prompt="ErrorMessageInEmail?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ErrorNotificationSent" prompt="ErrorNotificationSent?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="ExecutionEnvironment" prompt="ExecutionEnvironment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="ExportRoot" prompt="ExportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="HtmlEmailBody" prompt="HtmlEmailBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="HTMLLogOnError" prompt="HTMLLogOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="HTMLLogOnSuccess" prompt="HTMLLogOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="ImportRoot" prompt="ImportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="IntegrationLevel" prompt="IntegrationLevel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="IsSelfManaged" prompt="IsSelfManaged?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="JobIndexHTMLFileLocal" prompt="JobIndexHTMLFileLocal?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="JobServerSystem" prompt="JobServerSystem?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="KillJobOnJavaExeption" prompt="KillJobOnJavaExeption?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LocalBundleLogDirHTML" prompt="LocalBundleLogDirHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogDirXML" prompt="LocalBundleLogDirXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogFileNameHTML" prompt="LocalBundleLogFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogFileNameXML" prompt="LocalBundleLogFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogIndexHTML" prompt="LocalBundleLogIndexHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalBundleLogIndexXML" prompt="LocalBundleLogIndexXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameDel" prompt="LocalContextDumpFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameHTML" prompt="LocalContextDumpFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalContextDumpFileNameXML" prompt="LocalContextDumpFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalHTMLContextDir" prompt="LocalHTMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalHTMLLogDir" prompt="LocalHTMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameDel" prompt="LocalLogFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameHTML" prompt="LocalLogFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogFileNameXML" prompt="LocalLogFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalLogRoot" prompt="LocalLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLContextDir" prompt="LocalXMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLFileJobIndex" prompt="LocalXMLFileJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalXMLLogDir" prompt="LocalXMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogToDb" prompt="LogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="LogToFile" prompt="LogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="Moment" prompt="Moment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="NotificationFailure" prompt="NotificationFailure?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="NotificationToBeSentAux" prompt="NotificationToBeSentAux?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="OpsGenieAlertTag" prompt="OpsGenieAlertTag?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="afa61d1e-c1a5-4e34-9900-453a2ebe22a3"/>
+    <contextParameter comment="" name="OpsGeniePriority" prompt="OpsGeniePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="P3"/>
+    <contextParameter comment="" name="OpsGenieRequestBody" prompt="OpsGenieRequestBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="OpsGenieRequestOnError" prompt="OpsGenieRequestOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="OpsGenieUrl" prompt="OpsGenieUrl?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="https://api.opsgenie.com/v2/alerts"/>
+    <contextParameter comment="" name="PassString" prompt="PassString?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value="enc:system.encryption.key.v1:kaoVgkk+ZdBQa4EBTidd8JqvLyycNyoLVasXj5IHjXb0n0GoPm2QBlDugkY="/>
+    <contextParameter comment="" name="ReadyToLogToDb" prompt="ReadyToLogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="ReadyToLogToFile" prompt="ReadyToLogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="S3BunldleLogFileName" prompt="S3BunldleLogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3BunldleLogIndex" prompt="S3BunldleLogIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3ContextDumpDirName" prompt="S3ContextDumpDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3ContextDumpFileName" prompt="S3ContextDumpFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3JobIndexHTMLFile" prompt="S3JobIndexHTMLFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogAccessKey" prompt="S3LogAccessKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogBucket" prompt="S3LogBucket?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogDirName" prompt="S3LogDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogFileName" prompt="S3LogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="S3LogSecretKey" prompt="S3LogSecretKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value=""/>
+    <contextParameter comment="" name="S3RootLogRoot" prompt="S3RootLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="sentBundleEmail" prompt="sentBundleEmail?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="SentNotificationOnWarning" prompt="SentNotificationOnWarning?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="SetUpFile" prompt="SetUpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SetUpRoot" prompt="SetUpRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SetUpRootBD" prompt="SetUpRootBD?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SingleErrorNotification" prompt="SingleErrorNotification?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="SmptServer" prompt="SmptServer?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="smtp.prod.pch.com"/>
+    <contextParameter comment="" name="SmtpPort" prompt="SmtpPort?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="25"/>
+    <contextParameter comment="" name="SparkTempRoot" prompt="SparkTempRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="StartBoundary" prompt="StartBoundary?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="StatusCode" prompt="StatusCode?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SuccessEmailFrom" prompt="SuccessEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SuccessEmailTo" prompt="SuccessEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="TalendJobBundleName" prompt="TalendJobBundleName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="TalendJobBundleRunId" prompt="TalendJobBundleRunId?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+    <contextParameter comment="" name="TalendLogID" prompt="TalendLogID?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+    <contextParameter comment="" name="URLBunldleLogFileName" prompt="URLBunldleLogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLBunldleLogIndex" prompt="URLBunldleLogIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLContextDumpFile" prompt="URLContextDumpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLJobIndex" prompt="URLJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLLogFile" prompt="URLLogFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="URLLogRoot" prompt="URLLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="VarPid" prompt="VarPid?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="WarningEmailFrom" prompt="WarningEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="WarningEmailTo" prompt="WarningEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileName" prompt="XSLfileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForBundleIndex" prompt="XSLfileNameForBundleIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForBundleLog" prompt="XSLfileNameForBundleLog?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForContext" prompt="XSLfileNameForContext?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLfileNameForJobIndex" prompt="XSLfileNameForJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="XSLForJobIndexFullIntegration" prompt="XSLForJobIndexFullIntegration?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    <contextParameter comment="" name="SQLDestinationTable" prompt="SQLDestinationTable?" promptNeeded="false" type="id_String" value="TestData"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UNOHEqgCnYO6oxdRtnv0TOWHAISuQHqjtEHkK9tZ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/pwang/workspace651/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MEtOw8cDnVbsOJEJMOywSYGmjj6lwodhmS4W190g"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_93YTwCYrEeitB6Cxa_Ohbg" name="DQTechnical"/>
+    <routinesParameter id="_92-rICYrEeitB6Cxa_Ohbg" name="DataMasking"/>
+    <routinesParameter id="_9xaOoCYrEeitB6Cxa_Ohbg" name="DataOperation"/>
+    <routinesParameter id="_93F_4CYrEeitB6Cxa_Ohbg" name="DataQualityDependencies"/>
+    <routinesParameter id="_93CVgCYrEeitB6Cxa_Ohbg" name="DataQuality"/>
+    <routinesParameter id="_93TbQCYrEeitB6Cxa_Ohbg" name="DqStringHandling"/>
+    <routinesParameter id="_92WZACYrEeitB6Cxa_Ohbg" name="Mathematical"/>
+    <routinesParameter id="_92dGsCYrEeitB6Cxa_Ohbg" name="Numeric"/>
+    <routinesParameter id="_92imQCYrEeitB6Cxa_Ohbg" name="Relational"/>
+    <routinesParameter id="_927AwCYrEeitB6Cxa_Ohbg" name="SQLike"/>
+    <routinesParameter id="_92mQoCYrEeitB6Cxa_Ohbg" name="StringHandling"/>
+    <routinesParameter id="_92qiECYrEeitB6Cxa_Ohbg" name="TalendDataGenerator"/>
+    <routinesParameter id="_92uMcCYrEeitB6Cxa_Ohbg" name="TalendDate"/>
+    <routinesParameter id="_923WYCYrEeitB6Cxa_Ohbg" name="TalendStringUtil"/>
+    <routinesParameter id="_92zE8CYrEeitB6Cxa_Ohbg" name="TalendString"/>
+    <routinesParameter id="_aTKvMPpLEeeyKtqaT_p1lg" name="Encrypt"/>
+    <routinesParameter id="_r4PHoOvVEeequ4npDh9sDw" name="OSValidator"/>
+  </parameters>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:B1D6/VAYJMHv5AYMYbBhzPdvZ8g5URSBbmVj1N6b6x6wgEpTxGPqjxCqbdV/9xkqt0RtvsX4"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardsql&quot;+&#13;&#10;&quot;\n&quot;+&#13;&#10;&quot;SELECT MemberEmailID,GlobalMemberToken FROM `alert-impulse-704.Dimensions.MemberEmail` LIMIT 1000&quot; &#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_2">
+      <column comment="" key="false" length="-1" name="MemberEmailID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GlobalMemberToken" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:\\Temp\\Talend\\BQtoBQTestZA.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:qg7MEQ9YQqymhQhbmJUybU7R9J9phwvgaMPyew5Dh/fdoLWZe1wDScVNlHGtVkwEDxgaRCaS"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;CoReg&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TestBQStandard&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:VxkDVAs3dGS/KGYrIcBPhRFYI8kE3Bej8rDTDsRsjYgjarSbaDTP3+voA3zJpfNjwQDsnZnnKCk81AHU1SnWX7gOTKqZiw=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/standardjobload&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/standardjobload/BQtoBQTestZA.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Temp/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="true"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutput_1">
+      <column comment="" key="false" length="-1" name="MemberEmailID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GlobalMemberToken" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:M5JrX/3uuFCkWOQVsiH7GXdi9hB0pZZimmdpdBtYLMhq9FcaRb6F5V3l3rAVyitb9gZuGQox"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select &#13;&#10;Oat, CurrDay_Step,PrevDay_Step,&#13;&#10;CurrDay_Last_Earned_Tokens_Dt,PrevDay_Last_Earned_Tokens_Dt,&#13;&#10;CurrDay_Earned_30_DaysAgo_Ind,PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;Curr_Step_Date,CurrDay_DayNo,PrevDay_Step_Date,PrevDay_DayNo,&#13;&#10;CurrDay_Segment, StepDiff, CurrDay_Segment_15_24_30,CurrDay_TotalVIP ,&#13;&#10;case &#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing],&#13;&#10;case &#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat2],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating2],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment_15_24_30 &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing2],&#13;&#10;case &#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat3],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1 else 0 end as [Decelerating3],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_TotalVIP &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing3]&#13;&#10;from&#13;&#10;&#13;&#10;(SELECT&#13;&#10;a.OAT as OAT, d.OAT as P_OAT,  &#13;&#10;a.Step as CurrDay_Step,&#13;&#10;d.step as PrevDay_Step,&#13;&#10;&#13;&#10;a.Last_Earned_Tokens_Dt as CurrDay_Last_Earned_Tokens_Dt,&#13;&#10;d.Last_Earned_Tokens_Dt as PrevDay_Last_Earned_Tokens_Dt, &#13;&#10;&#13;&#10;a.Earned_30_DaysAgo_Ind as CurrDay_Earned_30_DaysAgo_Ind,&#13;&#10;d.Earned_30_DaysAgo_Ind as PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;&#13;&#10;a.Step_Date as Curr_Step_Date ,a.DayNo  as CurrDay_DayNo,&#13;&#10;d.Step_Date as PrevDay_Step_Date,d.DayNo  as PrevDay_DayNo,&#13;&#10;(case when a.step is null then 0 else a.step end  - &#13;&#10;case when d.step is null then 0 else d.step end ) as StepDiff, &#13;&#10;&#13;&#10;case   &#13;&#10; when a.Step =0 then 'Step 0'&#13;&#10; when a.Step &gt;=1 and a.Step &lt;=9 then 'Player: 1-9'&#13;&#10; when a.Step &gt;=10 and a.Step &lt;= 14 then 'Pre-VIPs: 10-14'&#13;&#10; when a.Step =14 then 'One Away From VIP: 14' &#13;&#10; when a.Step &gt;=15 and a.Step &lt;= 24 then 'CF_VIP: 15-24'&#13;&#10; when a.Step &gt;=25 and a.Step &lt;= 30 then 'CF_VIP_Elite: 25-30'&#13;&#10;else 'Other'&#13;&#10;end as CurrDay_Segment,&#13;&#10;case &#9;&#13;&#10; when a.Step =15 then 'Step 15'  &#13;&#10; when a.Step =24 then 'One Away From VIP_Elite: 24'&#13;&#10; when a.Step =30 then 'Step 30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_Segment_15_24_30,&#13;&#10;Case &#9;&#13;&#10;when a.Step &gt;=15 and a.Step &lt;= 30 then 'Total VIP: 15-30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_TotalVIP&#13;&#10; from &#13;&#10;(SELECT OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date , &#13;&#10;DayofWeek(Step_Date) as DayNo, &#13;&#10;Date(DATE_ADD(Step_Date,-1,'Day'))     as PrevDay_Step_Date, &#13;&#10;Date(DATE_ADD(Step_Date,-7,'Day'))     as PrevWeek_Step_Date,&#13;&#10;&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) lastDaymonth,&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(DATE_ADD(Step_Date,-1,'Month'), 1, 'month' ) ), -1, 'second' )) PrevlastDaymonth,&#13;&#10;case when date(Step_Date) = Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) then 'Y' else 'N' end as LastDayMth_Flag&#13;&#10;&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -5, 'DAY'),CURRENT_TIMESTAMP()) a&#13;&#10;) a     &#13;&#10;left join &#13;&#10;(select OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date, DayofWeek(Step_Date) as DayNo&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -6, 'DAY'),CURRENT_TIMESTAMP()) &#13;&#10;) d&#13;&#10;on a.OAT = d.OAT and a.PrevDay_Step_Date = d.Step_Date&#13;&#10;) &#13;&#10;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Temp/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_1">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:\\Temp\\Talend\\BQtoBQTestZABig.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:pKL2RBU76Rnm4VNwrAGE9EDt3eVso3FLFt+Q6DX7/ARiByJwYInt/7y2tf70hmo2UosIdBho"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;CoReg&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TestBQStandard_Big&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:7ithtkSYsXaS2PLe7hoMRuwLAPy1l0ZpoWASxIIe7zN7H0rv4TOvItDnkGWNOi0d20HOnj3imNu/IKmH0FiSUz8Lowl8gQ=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/standardjobload&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/standardjobload/BQtoBQTestZABig.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Temp/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="true"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutput_2">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:WyF722jl7na+4NlS+aS7bBYSp1L3j869C0Iwy32bXVcTMTkmpnlDHZiQWZUfNXek5ZG9NokW"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select &#13;&#10;Oat, CurrDay_Step,PrevDay_Step,&#13;&#10;CurrDay_Last_Earned_Tokens_Dt,PrevDay_Last_Earned_Tokens_Dt,&#13;&#10;CurrDay_Earned_30_DaysAgo_Ind,PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;Curr_Step_Date,CurrDay_DayNo,PrevDay_Step_Date,PrevDay_DayNo,&#13;&#10;CurrDay_Segment, StepDiff, CurrDay_Segment_15_24_30,CurrDay_TotalVIP ,&#13;&#10;case &#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing],&#13;&#10;case &#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat2],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating2],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment_15_24_30 &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing2],&#13;&#10;case &#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat3],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1 else 0 end as [Decelerating3],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_TotalVIP &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing3]&#13;&#10;from&#13;&#10;&#13;&#10;(SELECT&#13;&#10;a.OAT as OAT, d.OAT as P_OAT,  &#13;&#10;a.Step as CurrDay_Step,&#13;&#10;d.step as PrevDay_Step,&#13;&#10;&#13;&#10;a.Last_Earned_Tokens_Dt as CurrDay_Last_Earned_Tokens_Dt,&#13;&#10;d.Last_Earned_Tokens_Dt as PrevDay_Last_Earned_Tokens_Dt, &#13;&#10;&#13;&#10;a.Earned_30_DaysAgo_Ind as CurrDay_Earned_30_DaysAgo_Ind,&#13;&#10;d.Earned_30_DaysAgo_Ind as PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;&#13;&#10;a.Step_Date as Curr_Step_Date ,a.DayNo  as CurrDay_DayNo,&#13;&#10;d.Step_Date as PrevDay_Step_Date,d.DayNo  as PrevDay_DayNo,&#13;&#10;(case when a.step is null then 0 else a.step end  - &#13;&#10;case when d.step is null then 0 else d.step end ) as StepDiff, &#13;&#10;&#13;&#10;case   &#13;&#10; when a.Step =0 then 'Step 0'&#13;&#10; when a.Step &gt;=1 and a.Step &lt;=9 then 'Player: 1-9'&#13;&#10; when a.Step &gt;=10 and a.Step &lt;= 14 then 'Pre-VIPs: 10-14'&#13;&#10; when a.Step =14 then 'One Away From VIP: 14' &#13;&#10; when a.Step &gt;=15 and a.Step &lt;= 24 then 'CF_VIP: 15-24'&#13;&#10; when a.Step &gt;=25 and a.Step &lt;= 30 then 'CF_VIP_Elite: 25-30'&#13;&#10;else 'Other'&#13;&#10;end as CurrDay_Segment,&#13;&#10;case &#9;&#13;&#10; when a.Step =15 then 'Step 15'  &#13;&#10; when a.Step =24 then 'One Away From VIP_Elite: 24'&#13;&#10; when a.Step =30 then 'Step 30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_Segment_15_24_30,&#13;&#10;Case &#9;&#13;&#10;when a.Step &gt;=15 and a.Step &lt;= 30 then 'Total VIP: 15-30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_TotalVIP&#13;&#10; from &#13;&#10;(SELECT OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date , &#13;&#10;DayofWeek(Step_Date) as DayNo, &#13;&#10;Date(DATE_ADD(Step_Date,-1,'Day'))     as PrevDay_Step_Date, &#13;&#10;Date(DATE_ADD(Step_Date,-7,'Day'))     as PrevWeek_Step_Date,&#13;&#10;&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) lastDaymonth,&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(DATE_ADD(Step_Date,-1,'Month'), 1, 'month' ) ), -1, 'second' )) PrevlastDaymonth,&#13;&#10;case when date(Step_Date) = Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) then 'Y' else 'N' end as LastDayMth_Flag&#13;&#10;&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -5, 'DAY'),CURRENT_TIMESTAMP()) a&#13;&#10;) a     &#13;&#10;left join &#13;&#10;(select OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date, DayofWeek(Step_Date) as DayNo&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -6, 'DAY'),CURRENT_TIMESTAMP()) &#13;&#10;) d&#13;&#10;on a.OAT = d.OAT and a.PrevDay_Step_Date = d.Step_Date&#13;&#10;) &#13;&#10;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_3">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/mnt/TalendExport/DataIntegrationServices/BQtoBQTestZABig.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:YunXtF6O+SNMQWgkSedDFMf6uZJNNIKSneQoR0bmMkUdfKFw4EssVPdoz35zsAzS7oXQQgAh"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;CoReg&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TestBQStandard_Big&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:JqsOICK+9EbvL9l5tZKVdfb8AA0yKY2bUycZr5u7iPZhTvQoTt6ceiRvuWzwywOWEY7+gJYESoilg8j93TgCe1caGvuQHA=="/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/standardjobload&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/standardjobload/BQtoBQTestZABig.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="true"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="10000"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutput_3">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryBulkExec_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_jTZIsMGwEei5pO804QwS4Q - TestDataBig"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:g20PO8+z8EpfZp/c0o9GN+YGtybfZ7MK5tsH0lMXf/4UTMoWXFdQKEBM1pWvNXFFtEmiY/Y0"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;CoReg&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TestDataBig2&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:7fQumPoQDyRB2yVX3ionUM2SrLOLlRzUMC/CjCgzsWu6Oe4gzPRJrTZz/eH8LDci+Cz2dPckfpg19npdwJfMIy7ZcLrYRQ=="/>
+    <elementParameter field="FILE" name="GS_LOCAL_FILE" value="&quot;//jwdevjob01/opt/Test/NewTestStd.csv&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/standardjobload&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/standardjobload/NewTestStd.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TestDataBig" name="tBigQueryBulkExec_2">
+      <column comment="" key="false" length="0" name="Oat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Curr_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment_15_24_30" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_TotalVIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:V7jEWc05gMSav2GpPpgAMV/UVFO1eO7fJnCwqqrWI3YpsYzOju7L0/xea3NrdJim7qqFWptZ"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select &#13;&#10;Oat, CurrDay_Step,PrevDay_Step,&#13;&#10;CurrDay_Last_Earned_Tokens_Dt,PrevDay_Last_Earned_Tokens_Dt,&#13;&#10;CurrDay_Earned_30_DaysAgo_Ind,PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;Curr_Step_Date,CurrDay_DayNo,PrevDay_Step_Date,PrevDay_DayNo,&#13;&#10;CurrDay_Segment, StepDiff, CurrDay_Segment_15_24_30,CurrDay_TotalVIP ,&#13;&#10;case &#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing],&#13;&#10;case &#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat2],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1&#13;&#10;else 0 end as [Decelerating2],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_Segment_15_24_30 &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_Segment_15_24_30 = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing2],&#13;&#10;case &#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 0&#13;&#10;when stepdiff = 0  then 1 &#13;&#10;else 0 end as [Flat3],&#13;&#10;case &#13;&#10;when  stepdiff &lt; 0  then 1 else 0 end as [Decelerating3],&#13;&#10;case&#13;&#10;when  stepdiff &gt;=1 then 1&#13;&#10;when  CurrDay_TotalVIP &lt;&gt; 'Step 0' and PrevDay_Step is null    then 1&#13;&#10;when  CurrDay_TotalVIP = 'Step 0' and PrevDay_Step is null  then 1&#13;&#10;else 0 end as [Progressing3]&#13;&#10;from&#13;&#10;&#13;&#10;(SELECT&#13;&#10;a.OAT as OAT, d.OAT as P_OAT,  &#13;&#10;a.Step as CurrDay_Step,&#13;&#10;d.step as PrevDay_Step,&#13;&#10;&#13;&#10;a.Last_Earned_Tokens_Dt as CurrDay_Last_Earned_Tokens_Dt,&#13;&#10;d.Last_Earned_Tokens_Dt as PrevDay_Last_Earned_Tokens_Dt, &#13;&#10;&#13;&#10;a.Earned_30_DaysAgo_Ind as CurrDay_Earned_30_DaysAgo_Ind,&#13;&#10;d.Earned_30_DaysAgo_Ind as PrevDay_Earned_30_DaysAgo_Ind,&#13;&#10;&#13;&#10;a.Step_Date as Curr_Step_Date ,a.DayNo  as CurrDay_DayNo,&#13;&#10;d.Step_Date as PrevDay_Step_Date,d.DayNo  as PrevDay_DayNo,&#13;&#10;(case when a.step is null then 0 else a.step end  - &#13;&#10;case when d.step is null then 0 else d.step end ) as StepDiff, &#13;&#10;&#13;&#10;case   &#13;&#10; when a.Step =0 then 'Step 0'&#13;&#10; when a.Step &gt;=1 and a.Step &lt;=9 then 'Player: 1-9'&#13;&#10; when a.Step &gt;=10 and a.Step &lt;= 14 then 'Pre-VIPs: 10-14'&#13;&#10; when a.Step =14 then 'One Away From VIP: 14' &#13;&#10; when a.Step &gt;=15 and a.Step &lt;= 24 then 'CF_VIP: 15-24'&#13;&#10; when a.Step &gt;=25 and a.Step &lt;= 30 then 'CF_VIP_Elite: 25-30'&#13;&#10;else 'Other'&#13;&#10;end as CurrDay_Segment,&#13;&#10;case &#9;&#13;&#10; when a.Step =15 then 'Step 15'  &#13;&#10; when a.Step =24 then 'One Away From VIP_Elite: 24'&#13;&#10; when a.Step =30 then 'Step 30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_Segment_15_24_30,&#13;&#10;Case &#9;&#13;&#10;when a.Step &gt;=15 and a.Step &lt;= 30 then 'Total VIP: 15-30'&#13;&#10;else 'No'&#13;&#10;end as CurrDay_TotalVIP&#13;&#10; from &#13;&#10;(SELECT OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date , &#13;&#10;DayofWeek(Step_Date) as DayNo, &#13;&#10;Date(DATE_ADD(Step_Date,-1,'Day'))     as PrevDay_Step_Date, &#13;&#10;Date(DATE_ADD(Step_Date,-7,'Day'))     as PrevWeek_Step_Date,&#13;&#10;&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) lastDaymonth,&#13;&#10;Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(DATE_ADD(Step_Date,-1,'Month'), 1, 'month' ) ), -1, 'second' )) PrevlastDaymonth,&#13;&#10;case when date(Step_Date) = Date(DATE_ADD( UTC_USEC_TO_MONTH( DATE_ADD(Step_Date, 1, 'month' ) ), -1, 'second' )) then 'Y' else 'N' end as LastDayMth_Flag&#13;&#10;&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -5, 'DAY'),CURRENT_TIMESTAMP()) a&#13;&#10;) a     &#13;&#10;left join &#13;&#10;(select OAT, Step, Date(Last_Earned_Tokens_Dt) as Last_Earned_Tokens_Dt,&#13;&#10;Earned_30_DaysAgo_Ind, Date(Step_Date) as Step_Date, DayofWeek(Step_Date) as DayNo&#13;&#10;FROM TABLE_DATE_RANGE([pch-app-2014:VIPDailyAggregate.VIP_Player_DailyAggregate_], &#13;&#10;     DATE_ADD(CURRENT_TIMESTAMP(), -6, 'DAY'),CURRENT_TIMESTAMP()) &#13;&#10;) d&#13;&#10;on a.OAT = d.OAT and a.PrevDay_Step_Date = d.Step_Date&#13;&#10;) &#13;&#10;&#13;&#10;Limit 10&#13;&#10;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Temp/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_4">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_5"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:KK3f7ZyPQvriAzSWgLA5/evDBG7QCiP4ZkQX1Yt8gQSbkIFG6SnTM4ysRrrA9hMY7s1XppmR"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&#13;&#10;&quot;SELECT * FROM [alert-impulse-704:CoReg.AGGVIPD01] &quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_5">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutputBulk_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//jwdevjob01/opt/Test/NewTestStd.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutputBulk_2">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryBulkExec_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_jTZIsMGwEei5pO804QwS4Q - TestDataBig"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:NdXedxQerxv4ze+KIweT7oA9f5mQqPIIUH9zp7BsP89D0ZT14S6FKm783aOyZ9AFw66wCavw"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;CoReg&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TestDataBig2&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false"/>
+    <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG7HAG2ZBPYXWYHV4A&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:YxH4nDj7z5Hz6HSUxwQ8o0tYaFkxwMZkNzhhk1Gg81LhF3lxMKwT8RtozohBY/YSGqLXwHOmCW3evZntu6r4pU8zOhnLUA=="/>
+    <elementParameter field="FILE" name="GS_LOCAL_FILE" value="&quot;//jwtestjob01/opt/Test/NewTestStd.csv&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;diservices_pchdev/DEV/ANALYTICS/standardjobload&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://diservices_pchdev/DEV/ANALYTICS/standardjobload/NewTestStd.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TestDataBig" name="tBigQueryBulkExec_1">
+      <column comment="" key="false" length="0" name="Oat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Curr_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment_15_24_30" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_TotalVIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_6"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_jTZIsMGwEei5pO804QwS4Q - TestDataBig"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:uqBG8ai+V2YfMaZD3HbG88gNy/GxtMcipcxYFLnsYvH2CTPoMAQpA8ZwrXzUVtW6yodfR9Mp"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardsql&quot;+&#13;&#10;&quot;\n&quot;+&#13;&#10;&quot;SELECT * FROM `alert-impulse-704.CoReg.AGGVIPD01`&quot; &#13;&#10;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TestDataBig" name="tBigQueryInput_6">
+      <column comment="" key="false" length="0" name="Oat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Curr_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment_15_24_30" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_TotalVIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlOutputBulk_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//jwtestjob01/opt/Test/NewTestStd2.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\r\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TestDataBig" name="tMSSqlOutputBulk_1">
+      <column comment="" key="false" length="0" name="Oat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Curr_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PrevDay_Step_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_Segment_15_24_30" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrDay_TotalVIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_7"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;919533371883-m95tkedepg2mtuqpmtj1ialmhhqa031j.apps.googleusercontent.com&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:4k9lH2U2EBw4V60SLlsOQuvmgDCIuwxIQ2rFL+wogf9+aFJ8CHNHjBdoKx2pkcYfLUaao4RO"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;alert-impulse-704&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM [alert-impulse-704:CoReg.AGGVIPD01] &quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="LARGE"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;/opt/Talend/Setup/Keyfiles/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="BQSourceQuery"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_7">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutputBulk_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/mnt/TalendExport/DataIntegrationServices/BQtoBQTestZABig.csv&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="10000"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryOutputBulk_1">
+      <column comment="" key="false" length="-1" name="Oat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Last_Earned_Tokens_Dt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Earned_30_DaysAgo_Ind" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Curr_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_Step_Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PrevDay_DayNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StepDiff" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_Segment_15_24_30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CurrDay_TotalVIP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flat3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Decelerating3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Progressing3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQueryOutput_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Oat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StepDiff"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment_15_24_30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_TotalVIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Curr_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tBigQueryOutput_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Oat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StepDiff"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment_15_24_30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_TotalVIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Curr_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tBigQueryInput_3" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_3" target="tBigQueryOutput_3">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Oat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StepDiff"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Segment_15_24_30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Progressing"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_TotalVIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Flat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrDay_Step"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Last_Earned_Tokens_Dt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Earned_30_DaysAgo_Ind"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_DayNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Curr_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Decelerating3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrevDay_Step_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tBigQueryInput_5" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_5" target="tBigQueryOutputBulk_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutputBulk_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryOutputBulk_2" target="tBigQueryBulkExec_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tBigQueryInput_6" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_6" target="tMSSqlOutputBulk_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tBigQueryInput_7" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_7" target="tBigQueryOutputBulk_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_Small"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_Big_Local"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_Big_Remote"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryBulkExec_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_5"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_MoreData_RemoteSrv_TblSrc"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryBulkExec_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_6"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_MoreData_BulkTest"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInput_7"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BQQueryToSQL_Big_Remote"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3cfb6139-10af-47a7-85b1-f8fa8e373b77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p2UQCT1kJtrPmyO2jTZc/bDa61nF0Zd3HpfFlToEwb1I4dTTbaqBq9E09muhuP57enEWE2ruSp+6
+J5jTpXvCMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e18f13ef-aa33-499c-81a2-39d69fcbaaf2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4Qh/j0sOK/F2w7KDBARqFfyy0gmMi16Gv7HvTr2eKzux61xAhfV90yKCfgEYHtEVeLJ5h/FryA8E
+L9bYYyTfkQ==</DigestValue></Reference></SignedInfo><SignatureValue>ENkNq4kTFrN6wfaf7LN5Bj5BqBVMQ3+5nMJBfuSX2Wnm/r65cTZYooWmjqKtErQT4fuxxI32zbPK
+l5td5ZXCBstQ9oiYW3tTivMW/AfexFDL6r2MXyoEnGQwpf4MtuVfkVGizU4G7G0OoI1NGImgkw1G
+ghvO3sLIEebojFp4m0jHqRaPvqkijGzczV1/WBu0DgvJra/2cJv2Yy25QyPnCb+ny3eEb3Z+2uTM
+JEFZ8QSuuDZAsFFuuRO5m4mSjl+Z4juXBti7/giREp6NgGlYUkOQZYZATDFacZeyd9dw1CUZ4Rjc
+l8upWl2vdKm1Y9jg6XgrC6FL/HbtBwOTaQzsQQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e18f13ef-aa33-499c-81a2-39d69fcbaaf2" Target="#_3cfb6139-10af-47a7-85b1-f8fa8e373b77"><Timestamp>2020-07-10 14:31:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

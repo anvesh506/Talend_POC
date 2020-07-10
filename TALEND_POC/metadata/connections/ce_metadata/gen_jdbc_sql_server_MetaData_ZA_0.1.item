@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="JDBC" DatasourceName="" DbmsId="id_MSSQL" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" DriverJarPath="mssql-jdbc-6.2.2.jre8.jar" FileFieldName="" Password="enc:system.encryption.key.v1:kdw4p2MYl2QY+wY+gXrrPWzRbjm+1se+4hO39t8dxZUGGQ==" Port="xxxx" ProductId="JDBC" SID="" SQLMode="false" ServerName="" SqlSynthax="SQL Syntax" StandardSQL="true" URL="jdbc:sqlserver://dw-devl.classic.pchad.com;database=dw;" UiSchema="dbo" Username="DTS_Scheduler" compProperties="{&quot;@type&quot;:&quot;org.talend.components.jdbc.wizard.JDBCConnectionWizardProperties&quot;,&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:&quot;_GuCjoMgYEeirXIRsQMUDuw&quot;,&quot;connection&quot;:{&quot;jdbcUrl&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;jdbc:sqlserver://dw-devl.classic.pchad.com;database=dw;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;jdbcUrl&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;jdbcUrl&quot;,&quot;tags&quot;:null},&quot;driverTable&quot;:{&quot;drivers&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;\&quot;mvn:org.talend.libraries/mssql-jdbc-6.2.2.jre8/6.0.0-SNAPSHOT/jar\&quot;&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;drivers&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;drivers&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;driverTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;driverClass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;com.microsoft.sqlserver.jdbc.SQLServerDriver&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;driverClass&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;driverClass&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;DTS_Scheduler&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;userId&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:QJyz3ICnMgW2Uedj/ofmXTRkU7vbtSmY6cB0KO58XtkzNQ==&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;password&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useInWizard&quot;:true,&quot;name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mappingFile&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;id_MSSQL&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;mappingFile&quot;,&quot;tags&quot;:null},&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}" dataPackage="_ZvsPoMgYEeirXIRsQMUDuw _ZvsPosgYEeirXIRsQMUDuw _ZvsPpMgYEeirXIRsQMUDuw _ZvsPpsgYEeirXIRsQMUDuw _ZvsPqMgYEeirXIRsQMUDuw _ZvsPqsgYEeirXIRsQMUDuw _ZvsPrMgYEeirXIRsQMUDuw _ZvsPrsgYEeirXIRsQMUDuw _ZvsPr8gYEeirXIRsQMUDuw _ZvsPscgYEeirXIRsQMUDuw _ZvsPssgYEeirXIRsQMUDuw _ZvsPtMgYEeirXIRsQMUDuw _ZvsPtsgYEeirXIRsQMUDuw _ZvsPuMgYEeirXIRsQMUDuw _ZvsPusgYEeirXIRsQMUDuw _ZvsPvMgYEeirXIRsQMUDuw _ZvsPvsgYEeirXIRsQMUDuw _ZvsPv8gYEeirXIRsQMUDuw _ZvsPwcgYEeirXIRsQMUDuw _ZvsPw8gYEeirXIRsQMUDuw _ZvsPxcgYEeirXIRsQMUDuw" id="_GuCjoMgYEeirXIRsQMUDuw" label="gen_jdbc_sql_server_MetaData_ZA" name="gen_jdbc_sql_server_MetaData_ZA" xmi:id="_GuIqQMgYEeirXIRsQMUDuw">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="__vhEIQU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="package filter" value="" xmi:id="__v6swAU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="Status" value="" xmi:id="__wDPoAU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="__wDPoQU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="Purpose" value="" xmi:id="__wDPogU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="Description" value="" xmi:id="__wDPowU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="Author" value="" xmi:id="__wDPpAU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="otherParameter" xmi:id="__wDPpQU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="DB ProductName" value="Microsoft SQL Server" xmi:id="__wmCMAU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="DB ProductVersion" value="11.00.6251" xmi:id="__wmCMQU8EeiaNNruSp5H8g"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="__wmCMgU8EeiaNNruSp5H8g"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_4dh5cAXaEei7mbu-yw-Q1Q"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="CustomerProfileData" xmi:id="_ZvsPoMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykCzsgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="DW" xmi:id="_ZvsPosgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC0MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="ExternalFeeds" xmi:id="_ZvsPpMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC0sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="hdl_calc_engine_metastore" xmi:id="_ZvsPpsgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC1MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="IM" xmi:id="_ZvsPqMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC1sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="ImportExportData" xmi:id="_ZvsPqsgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC2MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="LiquidEPS" xmi:id="_ZvsPrMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC2sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="master" xmi:id="_ZvsPrsgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC3MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="model" xmi:id="_ZvsPr8gYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC3sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="msdb" xmi:id="_ZvsPscgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC4MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="Profiler" xmi:id="_ZvsPssgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC4sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="ReportServer" xmi:id="_ZvsPtMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC5MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="ReportServerTempDB" xmi:id="_ZvsPtsgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC5sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="Spirion " xmi:id="_ZvsPuMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC6MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="SSISDB" xmi:id="_ZvsPusgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC6sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="teleprod" xmi:id="_ZvsPvMgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC7MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="tempdb" xmi:id="_ZvsPvsgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC7sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="ThirdPartyData" xmi:id="_ZvsPv8gYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC8MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="todata" xmi:id="_ZvsPwcgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC8sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="Transfer" xmi:id="_ZvsPw8gYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC9MgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_GuIqQMgYEeirXIRsQMUDuw" name="Work" xmi:id="_ZvsPxcgYEeirXIRsQMUDuw">
+    <ownedElement name="dbo" xmi:id="_jykC9sgYEeirXIRsQMUDuw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d966655b-81cc-4774-b7b7-d4ca24b2ba8b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TqDmN4lipUcS9ZcEe0k9GJOQo8/wejWqGqBiiEg2ITldvsE024C6nHwUSWeqNfn5AHjb7GMcaUNp
+TCKR0/6EvA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d2a8e59a-27ae-434c-a5f0-3e26d9341153"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xWw410+07DGXWS0Y5dc67dJJkhm+98TSvIsXT9E6WN2xWDWUf+r/QLrEsHs+cFyqMuqA7ipNiqIl
+C7THeK6C6w==</DigestValue></Reference></SignedInfo><SignatureValue>Wz/s9LfSIehP0ZSYSsQfGDEYBSwXe+trMJLfyQLeF9K2628HOF4gaFaldSnH8524IHU20CWxyj2d
+uRiRF90lwiGMAXL1rqhxrQndzjscHWGc+M3+pBBctrtt1LQxle/vXpZaQtEtPyyss/sC67kHrQs2
+nPUMoK7Y7SkxWZ8sv/4YUovK11LggCCOZESXTv/iLB1wlBhrER1HfVD1p4RtuypvfK6Jdihx+mHz
+lLiojg6E39X28AlCL9QO2VWm2/oXLnV1u8FdrWygkOFU5AENdtQUWvXwgnixnGIceBigdZPyrd0a
+HSCL+lYFOch2Xe7Zu8+SQnpRpSo2HuwuWiwidw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d2a8e59a-27ae-434c-a5f0-3e26d9341153" Target="#_d966655b-81cc-4774-b7b7-d4ca24b2ba8b"><Timestamp>2020-07-10 14:31:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

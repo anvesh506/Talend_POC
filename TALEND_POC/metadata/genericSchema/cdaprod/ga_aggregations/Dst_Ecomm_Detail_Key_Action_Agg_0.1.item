@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="_x4N0wbAwEeigfu5AFWsmlQ" label="Dst_Ecomm_Detail_Key_Action_Agg" mappingTypeId="bigquery_id" mappingTypeUsed="true" name="Dst_Ecomm_Detail_Key_Action_Agg" xmi:id="_9SVHoLAwEeigfu5AFWsmlQ"/>
+  <TalendMetadata:GenericPackage dataManager="_9SVHoLAwEeigfu5AFWsmlQ" xmi:id="_x4N0wbAwEeigfu5AFWsmlQ">
+    <ownedElement id="_cfPFAbAwEeigfu5AFWsmlQ" label="Dst_Ecomm_Daily_Key_Action_Agg" xmi:id="_x4N0wrAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="EventDate" length="-1" name="EventDate" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="DATE" talendType="id_Date" xmi:id="_x4N0w7AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0xLAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="GADeviceType" length="200" name="GADeviceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0xbAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0xrAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="GACampaignName" length="200" name="GACampaignName" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0x7AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0yLAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="GASource" length="200" name="GASource" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0ybAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0yrAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="GAMediumType" length="200" name="GAMediumType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0y7AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0zLAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="PCHCOMTSource1" length="200" name="PCHCOMTSource1" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0zbAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N0zrAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="PCHCOMTSource2" length="200" name="PCHCOMTSource2" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N0z7AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N00LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="SEARCHTSource1" length="200" name="SEARCHTSource1" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N00bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N00rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="SEARCHTSource2" length="200" name="SEARCHTSource2" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N007AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N01LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="LOTTOTSource1" length="200" name="LOTTOTSource1" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N01bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N01rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="LOTTOTSource2" length="200" name="LOTTOTSource2" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N017AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N02LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="KENOTSource1" length="200" name="KENOTSource1" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N02bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N02rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="KENOTSource2" length="200" name="KENOTSource2" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N027AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N03LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="FRONTPAGETSource1" length="200" name="FRONTPAGETSource1" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N03bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N03rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="FRONTPAGETSource2" length="200" name="FRONTPAGETSource2" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N037AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N04LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="KeyAction" length="200" name="KeyAction" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N04bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N04rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="KeyActionCnt" length="65" name="KeyActionCnt" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" talendType="id_Long" xmi:id="_x4N047AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N05LAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="UserAgentId" length="200" name="UserAgentId" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N05bAwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N05rAwEeigfu5AFWsmlQ"/>
+      </feature>
+      <feature label="DeviceType" length="200" name="DeviceType" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" talendType="id_String" xmi:id="_x4N057AwEeigfu5AFWsmlQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_x4N06LAwEeigfu5AFWsmlQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2ffd0781-dc06-4b80-913b-adcb6834b819"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kUTnTeG3lKwfefER/tHkTDD9a2fdXrmvmtyBw1X+wHZazO9yO8YPQ1296QCLrsHjqhfCGK3Kazp2
+eUaImDdogg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_43dd3f7b-e4af-46ef-aec2-d3abe5e714ae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ITbnqgQAhvP6Moz2UnNjXOKiaaJKBSBtKksKnPS+n1MVcegPJ1s9xT0xnO2Cg4+iM7gjPmkBWUOF
+PwkBE7n7fw==</DigestValue></Reference></SignedInfo><SignatureValue>jd9tUg/tsY7LCTG2YpnhQcm2iIfNzvNgMZEwjbWsOowUUpA3HtsDkxU4aRSsqVRvPRp4XnhNJVet
+CVDnatRsETEvLqA7a8F6n40ulDnG5dWQxpQf/apRvBcIJyyJWW9KJLyGkmXuZ66FsWLibecTrMcf
+O+rICbiMH2ktbefNOWOhXHHBXjxUZ9ktBWgtbO9wWZg7V01wlOjf8G3b40PtEtt6veAYo9yAtQ4j
+hpk4sDjoZ51qvquc7pXaBFMFm5Ny+IdWL4Q4suNb3Qj7sobvyd19MUYmuv0Q29XPkaK3JjSQTekr
+mwitXumdq9ek5yNJhYFGDrjj/lo0AYQf2q4bew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_43dd3f7b-e4af-46ef-aec2-d3abe5e714ae" Target="#_2ffd0781-dc06-4b80-913b-adcb6834b819"><Timestamp>2020-07-10 14:32:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

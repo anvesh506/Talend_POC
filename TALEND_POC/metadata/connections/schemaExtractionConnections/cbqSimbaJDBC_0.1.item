@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DBRootPath="" DatabaseType="JDBC" DatasourceName="" DbmsId="mysql_id" DriverClass="com.simba.googlebigquery.jdbc41.Driver" DriverJarPath="google-api-client-1.23.0.jar;google-api-services-bigquery-v2-rev377-1.23.0.jar;GoogleBigQueryJDBC41.jar;google-http-client-1.23.0.jar;google-http-client-jackson2-1.23.0.jar;google-oauth-client-1.23.0.jar;jackson-core-2.5.3.jar" FileFieldName="" Password="enc:system.encryption.key.v1:q/LHCVwCd3qIfE91DcMvpA4ur6ZoxFuPMOszhg==" Port="xxxx" ProductId="JDBC" SID="" SQLMode="false" ServerName="" SqlSynthax="SQL Syntax" StandardSQL="true" URL="jdbc:bigquery://https://www.googleapis.com/bigquery/v2:443;ProjectId=alert-impulse-704;OAuthType=0;OAuthServiceAcctEmail=829458642175-mgl39vntgrrr87mrvmuq0c4pmice8dq8@developer.gserviceaccount.com;OAuthPvtKeyPath=/opt/Talend/Setup/Keyfiles/PCHDW-193a8679c61a.p12;" UiSchema="" Username="notrequired" compProperties="{&quot;@type&quot;:&quot;org.talend.components.jdbc.wizard.JDBCConnectionWizardProperties&quot;,&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:&quot;_F7hvEIbREeiuioBuFHKk8g&quot;,&quot;connection&quot;:{&quot;jdbcUrl&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;jdbc:bigquery://https://www.googleapis.com/bigquery/v2:443;ProjectId=alert-impulse-704;OAuthType=0;OAuthServiceAcctEmail=829458642175-mgl39vntgrrr87mrvmuq0c4pmice8dq8@developer.gserviceaccount.com;OAuthPvtKeyPath=/opt/Talend/Setup/Keyfiles/PCHDW-193a8679c61a.p12;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;jdbcUrl&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;jdbcUrl&quot;,&quot;tags&quot;:null},&quot;driverTable&quot;:{&quot;drivers&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;\&quot;mvn:org.talend.libraries/google-api-client-1.23.0/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/google-api-services-bigquery-v2-rev377-1.23.0/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/GoogleBigQueryJDBC41/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/google-http-client-1.23.0/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/google-http-client-jackson2-1.23.0/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/google-oauth-client-1.23.0/6.0.0-SNAPSHOT/jar\&quot;&quot;,&quot;\&quot;mvn:org.talend.libraries/jackson-core-2.5.3/6.0.0-SNAPSHOT/jar\&quot;&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;drivers&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;drivers&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;driverTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;driverClass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;com.simba.googlebigquery.jdbc41.Driver&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;driverClass&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;driverClass&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;notrequired&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;userId&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:PJqh6VLuVMLtcsrPxnvAp52FuWzkQJo4a5l/iw==&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;password&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useInWizard&quot;:true,&quot;name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mappingFile&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;mysql_id&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;mappingFile&quot;,&quot;tags&quot;:null},&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}" contextName="Default" dataPackage="_TjdB4J9-Eeim-vH2mmplqw _TjdB5J9-Eeim-vH2mmplqw _TjdCNZ9-Eeim-vH2mmplqw _TjdCQp9-Eeim-vH2mmplqw _TjdCdZ9-Eeim-vH2mmplqw _TjdCjJ9-Eeim-vH2mmplqw _TjdCop9-Eeim-vH2mmplqw _TjdCvJ9-Eeim-vH2mmplqw" id="_F7hvEIbREeiuioBuFHKk8g" label="cbqSimbaJDBC" name="cbqSimbaJDBC" xmi:id="_Hx8AoIbdEeiuioBuFHKk8g">
+    <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_Hx8AoYbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="package filter" value="" xmi:id="_HyO7kIbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="Status" value="" xmi:id="_HyYskIbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_HyYskYbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_HyYskobdEeiuioBuFHKk8g"/>
+    <taggedValue tag="Description" value="" xmi:id="_HyYsk4bdEeiuioBuFHKk8g"/>
+    <taggedValue tag="Author" value="" xmi:id="_HyYslIbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="otherParameter" xmi:id="_HyYslYbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="DB ProductName" value="Google BigQuery" xmi:id="_H5wf4IbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="DB ProductVersion" value="2.0" xmi:id="_H5wf4YbdEeiuioBuFHKk8g"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="`" xmi:id="_H5wf4obdEeiuioBuFHKk8g"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_MYk0kIbdEeiuioBuFHKk8g"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="smaple" xmi:id="_IHykwJ9bEeiFiM2Th3c9ZQ"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="advertising-aggregates" xmi:id="_TjdB4J9-Eeim-vH2mmplqw">
+    <ownedElement name="DFP_Ad_Revenue_SuperUser_Tier" xmi:id="_TjdB4Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdB4p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="adaggregate" xmi:id="_TjdB459-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="alert-impulse-704" xmi:id="_TjdB5J9-Eeim-vH2mmplqw">
+    <ownedElement name="AdSuperUser" xmi:id="_TjdB5Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AdTracking" xmi:id="_TjdB5p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus" xmi:id="_TjdB559-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus_Dev" xmi:id="_TjdB6J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus_Qa" xmi:id="_TjdB6Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus_Stg" xmi:id="_TjdB6p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer" xmi:id="_TjdB659-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="CoReg" xmi:id="_TjdB7J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DFP" xmi:id="_TjdB7Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DFPTemp" xmi:id="_TjdB7p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdB759-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Dimensions" xmi:id="_TjdB8J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="EcommerceActivity" xmi:id="_TjdB8Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="EmailActivity" xmi:id="_TjdB8p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Experian" xmi:id="_TjdB859-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GDFP_Line_Item" xmi:id="_TjdB9J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Keno" xmi:id="_TjdB9Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OnlineEcommerceScores" xmi:id="_TjdB9p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PATRICK" xmi:id="_TjdB959-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHDEV_QUERY_Logs" xmi:id="_TjdB-J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHLottoGamePlay" xmi:id="_TjdB-Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PrizeEngineTokenTransaction" xmi:id="_TjdB-p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Reporting" xmi:id="_TjdB-59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SEARCHPOC" xmi:id="_TjdB_J9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SEARCHPOCddddddd" xmi:id="_TjdB_Z9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SPIKE_SAL_ACTIVITY_GMT" xmi:id="_TjdB_p9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchActivity" xmi:id="_TjdB_59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchLog" xmi:id="_TjdCAJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Segment_logs" xmi:id="_TjdCAZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Segments" xmi:id="_TjdCAp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Soph" xmi:id="_TjdCA59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SpectrumPathVisitDetails" xmi:id="_TjdCBJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Standard_logs" xmi:id="_TjdCBZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Surveys" xmi:id="_TjdCBp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TOM" xmi:id="_TjdCB59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TOM2DATA_PARQUET" xmi:id="_TjdCCJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Talend_Test" xmi:id="_TjdCCZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCCp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Test_MissingGmt" xmi:id="_TjdCC59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VIP" xmi:id="_TjdCDJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VIPDailyAggregate" xmi:id="_TjdCDZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VIPFIX" xmi:id="_TjdCDp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Value_to_date" xmi:id="_TjdCD59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Repository" xmi:id="_TjdCEJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Staging" xmi:id="_TjdCEZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Variables" xmi:id="_TjdCEp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreDeltaRepository" xmi:id="_TjdCE59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoresCurrent" xmi:id="_TjdCFJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_Variables" xmi:id="_TjdCFZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_Variables_Temp" xmi:id="_TjdCFp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SEG_Repository" xmi:id="_TjdCF59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SEG_Variables" xmi:id="_TjdCGJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Snapshot" xmi:id="_TjdCGZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Staging" xmi:id="_TjdCGp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Repository" xmi:id="_TjdCG59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Staging" xmi:id="_TjdCHJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Variables" xmi:id="_TjdCHZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Temp" xmi:id="_TjdCHp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_WIP_Staging" xmi:id="_TjdCH59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_WIP_Variables" xmi:id="_TjdCIJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Vip_compare" xmi:id="_TjdCIZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="adaggregate" xmi:id="_TjdCIp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ga_aggregations" xmi:id="_TjdCI59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="mz_pchapp_custv_oct" xmi:id="_TjdCJJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="poc_appnexuslogs" xmi:id="_TjdCJZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="poc_segment_logs" xmi:id="_TjdCJp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="poc_standard_logs" xmi:id="_TjdCJ59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="refernece" xmi:id="_TjdCKJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="talend_uploadtest" xmi:id="_TjdCKZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset2c64ebdca4e2419bba0e523db3cf8561tbigqueryinput01cba0dc56" xmi:id="_TjdCKp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset357463823d114f4786a705b6239d7730tbigqueryinput016399938d" xmi:id="_TjdCK59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset58d878f615dd49f88b1eed61d30d72cbtbigqueryinput01f5d47198" xmi:id="_TjdCLJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset83596b3f0cab45818a046bc23d9e8f7btbigqueryinput03712af15b" xmi:id="_TjdCLZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset839e5649f6ff42dc9a49f28c58de8ca6tbigqueryinput01e3026bb6" xmi:id="_TjdCLp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset96189eb76cbd4519b31c78d1209aca66tbigqueryinput023979d04d" xmi:id="_TjdCL59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataset9bdf839bf97c420a8ad1b18d5df8e681tbigqueryinput0136346ca8" xmi:id="_TjdCMJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_dataseta30e03e3fbc644b190a80ce35436ec3etbigqueryinput019bd8e342" xmi:id="_TjdCMZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_datasetbcf366773d8640e5a40f9e243e9e4d13tbigqueryinput01fe6747d5" xmi:id="_TjdCMp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="temp_datasetc4cc118edf164ddfb590300120d8ab61tbigqueryinput02804c18b4" xmi:id="_TjdCM59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="vip_compare" xmi:id="_TjdCNJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="compact-medium-798" xmi:id="_TjdCNZ9-Eeim-vH2mmplqw">
+    <ownedElement name="104328964" xmi:id="_TjdCNp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="64018469" xmi:id="_TjdCN59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="8222576" xmi:id="_TjdCOJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DCM_5685" xmi:id="_TjdCOZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCOp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GDFP_5499" xmi:id="_TjdCO59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GDFP_Line_Item" xmi:id="_TjdCPJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GoogleAnalyticsBQ_QUERY_Logs" xmi:id="_TjdCPZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Social" xmi:id="_TjdCPp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="adhoc" xmi:id="_TjdCP59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ecommerce" xmi:id="_TjdCQJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="logs" xmi:id="_TjdCQZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="pch-app-2014" xmi:id="_TjdCQp9-Eeim-vH2mmplqw">
+    <ownedElement name="Addresses" xmi:id="_TjdCQ59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus" xmi:id="_TjdCRJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer" xmi:id="_TjdCRZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Archive" xmi:id="_TjdCRp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="BillMeEntries" xmi:id="_TjdCR59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="BlackJack" xmi:id="_TjdCSJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="CashCasino" xmi:id="_TjdCSZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="CoReg" xmi:id="_TjdCSp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCS59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DoubleClickForPublishers" xmi:id="_TjdCTJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="EDialog" xmi:id="_TjdCTZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Experian" xmi:id="_TjdCTp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="FrontPage" xmi:id="_TjdCT59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Fusion" xmi:id="_TjdCUJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GA_DFP_Impressions" xmi:id="_TjdCUZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GA_GameActivity" xmi:id="_TjdCUp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Keno" xmi:id="_TjdCU59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="LW_OfferConversions" xmi:id="_TjdCVJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Leanplum" xmi:id="_TjdCVZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Lookups" xmi:id="_TjdCVp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="LottoBlastGamePlay" xmi:id="_TjdCV59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ManagingExits" xmi:id="_TjdCWJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OnlineAccounts" xmi:id="_TjdCWZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OnlineEcommerceScores" xmi:id="_TjdCWp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OrderHeader" xmi:id="_TjdCW59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OrderItems" xmi:id="_TjdCXJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OrderSourceTracking" xmi:id="_TjdCXZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OverAllActivityAttributes" xmi:id="_TjdCXp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHGames" xmi:id="_TjdCX59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHLottoGamePlay" xmi:id="_TjdCYJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHRAW_Query_Logs" xmi:id="_TjdCYZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHTV" xmi:id="_TjdCYp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PrizeEngineTokenTransaction" xmi:id="_TjdCY59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PrizeEngineWinnerCalls" xmi:id="_TjdCZJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PrizeEngineWinners" xmi:id="_TjdCZZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Scores" xmi:id="_TjdCZp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchAndWin" xmi:id="_TjdCZ59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ShopperSubscriptionHistory" xmi:id="_TjdCaJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SingleSchema" xmi:id="_TjdCaZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SpectrumPathVisitDetails" xmi:id="_TjdCap9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SubscriberAddresses" xmi:id="_TjdCa59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SubscriberPreferences" xmi:id="_TjdCbJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Subscribers" xmi:id="_TjdCbZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Surveys" xmi:id="_TjdCbp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TE_Entries" xmi:id="_TjdCb59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCcJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TrackingTokens" xmi:id="_TjdCcZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="UserAgents" xmi:id="_TjdCcp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VIPDailyAggregate" xmi:id="_TjdCc59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Views" xmi:id="_TjdCdJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="pch-bak-2014" xmi:id="_TjdCdZ9-Eeim-vH2mmplqw">
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCdp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHVARS_QUERY_Logs" xmi:id="_TjdCd59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCeJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Repository" xmi:id="_TjdCeZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Staging" xmi:id="_TjdCep9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Variables" xmi:id="_TjdCe59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreDeltaRepository" xmi:id="_TjdCfJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreRepository" xmi:id="_TjdCfZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreRepository_Temp" xmi:id="_TjdCfp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoresCurrent" xmi:id="_TjdCf59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_Variables" xmi:id="_TjdCgJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SEG_Repository" xmi:id="_TjdCgZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SEG_Variables" xmi:id="_TjdCgp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Snapshot" xmi:id="_TjdCg59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Staging" xmi:id="_TjdChJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Repository" xmi:id="_TjdChZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Staging" xmi:id="_TjdChp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_TOM_Variables" xmi:id="_TjdCh59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Temp" xmi:id="_TjdCiJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_WIP_Repository" xmi:id="_TjdCiZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_WIP_Staging" xmi:id="_TjdCip9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_WIP_Variables" xmi:id="_TjdCi59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="pch-dw-2014" xmi:id="_TjdCjJ9-Eeim-vH2mmplqw">
+    <ownedElement name="AllSearchActivity" xmi:id="_TjdCjZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppNexus" xmi:id="_TjdCjp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ContestEntryActivity" xmi:id="_TjdCj59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCkJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Dimensions" xmi:id="_TjdCkZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="EcommerceActivity" xmi:id="_TjdCkp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="EmailActivity" xmi:id="_TjdCk59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="ExternalOfferActivity" xmi:id="_TjdClJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="GamesActivity" xmi:id="_TjdClZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="NonConverter" xmi:id="_TjdClp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="OffilneContestEntryActivity" xmi:id="_TjdCl59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHDW_QUERY_Logs" xmi:id="_TjdCmJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="RegistrationSubscriptionActivity" xmi:id="_TjdCmZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Reporting" xmi:id="_TjdCmp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Segment_Cleanup" xmi:id="_TjdCm59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Segments" xmi:id="_TjdCnJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Surveys" xmi:id="_TjdCnZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TOM_Scoring" xmi:id="_TjdCnp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCn59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="TokenLedgerActivity" xmi:id="_TjdCoJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="WinnerHistory" xmi:id="_TjdCoZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="pch-sw-2014" xmi:id="_TjdCop9-Eeim-vH2mmplqw">
+    <ownedElement name="AdTracking" xmi:id="_TjdCo59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AdTracking_Dev" xmi:id="_TjdCpJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AdTracking_Qa" xmi:id="_TjdCpZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AdTracking_Stg" xmi:id="_TjdCpp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer" xmi:id="_TjdCp59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer_Dev" xmi:id="_TjdCqJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer_Qa" xmi:id="_TjdCqZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="AppsFlyer_Stg" xmi:id="_TjdCqp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCq59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="PCHSW_QUERY_Logs" xmi:id="_TjdCrJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchLog" xmi:id="_TjdCrZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchLog_Dev" xmi:id="_TjdCrp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchLog_Qa" xmi:id="_TjdCr59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="SearchLog_Stg" xmi:id="_TjdCsJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCsZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_OCM_Variables" xmi:id="_TjdCsp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreDeltaRepository" xmi:id="_TjdCs59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoreRepository" xmi:id="_TjdCtJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_ScoresCurrent" xmi:id="_TjdCtZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_Variables" xmi:id="_TjdCtp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_SAS_Variables_Temp" xmi:id="_TjdCt59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Snapshot" xmi:id="_TjdCuJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Staging" xmi:id="_TjdCuZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="VariableEngine_Temp" xmi:id="_TjdCup9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="sample" xmi:id="_TjdCu59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Hx8AoIbdEeiuioBuFHKk8g" name="thirdparty-1026" xmi:id="_TjdCvJ9-Eeim-vH2mmplqw">
+    <ownedElement name="AlliantScoringModel" xmi:id="_TjdCvZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="DIServices_Temp" xmi:id="_TjdCvp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merkle" xmi:id="_TjdCv59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merkle_Archive" xmi:id="_TjdCwJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores" xmi:id="_TjdCwZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores_Current" xmi:id="_TjdCwp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores_Delta" xmi:id="_TjdCw59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores_Delta_Current" xmi:id="_TjdCxJ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores_Repository" xmi:id="_TjdCxZ9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Merklealliantscores_sanpshot" xmi:id="_TjdCxp9-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="Temp" xmi:id="_TjdCx59-Eeim-vH2mmplqw" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7981e201-b8ae-4ee8-84af-acd0895e291f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LoDE55IaQM4AqJMP2agxQh6YxghLVBfKEni9z1d4HjeSUabq8RoAS/Z7IzF7pw7saShzSupV1R9j
+ULzDyC/XbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1548a9ef-ae11-44fb-aab5-385c31264972"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qmEQFbybKyWLMhWQO2ii751Dx4eUrd7FiFfPhm4a/Zg2P/Ypv6noHw8kbHQZCeQCkoXebVETGvzE
+Z997XnUrxw==</DigestValue></Reference></SignedInfo><SignatureValue>cOqnRrr5gwOMp4C49Ut3zZjgHVuasbSqFIFDI0f4AK1/2BdSsFUXFRsIumtQ9XNjsiM7B8rGjkc6
+jm7zZMjSWOIKFN+MXtXA25PllaQ8L8ptAJJmL7Xm4ZQM6caU0EHdLluo4kFNvS99gBhn9zuuhFHo
+4xXkD0dpVYqkUt2j5y1GaXVTA/0rxo99F+a7wMR0ngfQIqvAyGn4FFJR26o8OjR8yC0W3UuzCYTG
+RgJ4uL7XeSgfMiwKs8fQxcPih8ZTR5NBMVW+JRgS3UqM/0eJ6+omksMJKE3pv/a3epSx1OygauG3
+bqZp67ycHIPE+2zbjGDO20KKOsaRSZYxc9Oewg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1548a9ef-ae11-44fb-aab5-385c31264972" Target="#_7981e201-b8ae-4ee8-84af-acd0895e291f"><Timestamp>2020-07-10 14:32:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" framework="Spark" jobType="Big_Data_Batch" xmi:id="_xz32gObGEeil38I7eXh73A" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_xz32gebGEeil38I7eXh73A">
+    <contextParameter comment="Landing location for the spillied files in the dataproc cluster" name="cDataprocProcessFolder" prompt="cDataprocProcessFolder?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/process/" xmi:id="_xz32gubGEeil38I7eXh73A"/>
+    <contextParameter comment="export/archive bucket location" name="cDataprocCloudStorageBucket" prompt="cDataprocCloudStorageBucket?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="diservices_pchdev" xmi:id="_xz32g-bGEeil38I7eXh73A"/>
+    <contextParameter comment="Cluster Spill location" name="cDataprocCloudStorageTempFolder" prompt="cDataprocCloudStorageTempFolder?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="/tmp" xmi:id="_xz32hObGEeil38I7eXh73A"/>
+    <contextParameter comment="Final Destination Output Dataset Name " name="cDataprocBqDstDatasetName" prompt="cDataprocBqDstDatasetName?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="ga_aggregations" xmi:id="_xz32hebGEeil38I7eXh73A"/>
+    <contextParameter comment="Final Destination Output table Name " name="cDataprocBqDstTableName" prompt="cDataprocBqDstTableName?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="GA_User_Session_Detail" xmi:id="_xz32hubGEeil38I7eXh73A"/>
+    <contextParameter comment="Export Location for files to be pumped into Hadoop" name="cDataprocGcsExportLocation" prompt="cDataprocGcsExportLocation?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/export/" xmi:id="_xz32h-bGEeil38I7eXh73A"/>
+    <contextParameter comment="ProjectId for the cluster configuraiton" name="cDataprocClusterProjectId" prompt="cDataprocClusterProjectId?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="alert-impulse-704" xmi:id="_xz32iObGEeil38I7eXh73A"/>
+    <contextParameter comment="Name of the Cluster where the job is being submitted" name="cDataprocClusterId" prompt="cDataprocClusterId?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="diservices" xmi:id="_xz32iebGEeil38I7eXh73A"/>
+    <contextParameter comment="Jar Location for file being processed" name="cDataprocClusterJarFolder" prompt="cDataprocClusterJarFolder?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/talend/jars/" xmi:id="_xz32iubGEeil38I7eXh73A"/>
+    <contextParameter comment="Region for the cluster" name="cDataprocClusterRegion" prompt="cDataprocClusterRegion?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="global" xmi:id="_xz32i-bGEeil38I7eXh73A"/>
+    <contextParameter comment="Service Account used to Connect to the BQ cluster" name="cDataprocClusterCredentialFiles" prompt="cDataprocClusterCredentialFiles?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="/mapr/pchmaprclt01.qa.pch.com/TALEND_WS/Setup/Keyfiles/PCHDW-d3157e2edb5d.json" xmi:id="_xz32jObGEeil38I7eXh73A"/>
+    <contextParameter comment="Extract Start Date- Loaded from the BQ landing table" name="cDataprocBqprocessstartdate" prompt="cDataprocBqprocessstartdate?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="" xmi:id="_xz32jebGEeil38I7eXh73A"/>
+    <contextParameter comment="Extract End Date - Loaded from the BQ landing table" name="cDataprocBqprocessenddate" prompt="cDataprocBqprocessenddate?" promptNeeded="false" repositoryContextId="_M6OAcObBEeil38I7eXh73A" type="id_String" value="" xmi:id="_xz32jubGEeil38I7eXh73A"/>
+  </context>
+  <parameters xmi:id="_xz32j-bGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_xz32kObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_xz32kebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_xz32kubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_xz32k-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_xz32lObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_xz32lebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_xz32lubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_xz32l-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_xz32mObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_xz32mebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_xz32mubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_xz32m-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_xz32nObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_xz32nebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_xz32nubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_xz32n-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_xz32oObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_xz32oebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_xz32oubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" xmi:id="_xz32o-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" xmi:id="_xz32pObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" xmi:id="_xz32pebGEeil38I7eXh73A"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_xz32pubGEeil38I7eXh73A"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_xz32p-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;" xmi:id="_xz32qObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;" xmi:id="_xz32qebGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value="" xmi:id="_xz32qubGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value="" xmi:id="_xz32q-bGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_xz32rObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_xz32rebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32rubGEeil38I7eXh73A"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false" xmi:id="_xz32r-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32sObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32sebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32subGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32s-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32tObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32tebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32tubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32t-bGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:349+M0j1P5Y/JtSyelOpglrh0Dxm3sazz5n/xhmn" xmi:id="_xz32uObGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32uebGEeil38I7eXh73A"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32uubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_xz32u-bGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning" xmi:id="_xz32vObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning" xmi:id="_xz32vebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false" xmi:id="_xz32vubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false" xmi:id="_xz32v-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false" xmi:id="_xz32wObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false" xmi:id="_xz32webGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false" xmi:id="_xz32wubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false" xmi:id="_xz32w-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false" xmi:id="_xz32xObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false" xmi:id="_xz32xebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false" xmi:id="_xz32xubGEeil38I7eXh73A"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/pwang/workspace651/.metadata&quot;" xmi:id="_xz32x-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;" xmi:id="_xz32yObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;" xmi:id="_xz32yebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;" xmi:id="_xz32yubGEeil38I7eXh73A"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15" xmi:id="_xz32y-bGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_xz32zObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false" xmi:id="_xz32zebGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput" xmi:id="_xz32zubGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11" xmi:id="_xz32z-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;" xmi:id="_xz320ObGEeil38I7eXh73A"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false" xmi:id="_xz320ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;" xmi:id="_xz320ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;" xmi:id="_xz320-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;" xmi:id="_xz321ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;" xmi:id="_xz321ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;" xmi:id="_xz321ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_xz321-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;" xmi:id="_xz322ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;" xmi:id="_xz322ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;" xmi:id="_xz322ubGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2V4d2CpnRC2btjbihHQb8FNJnKEGaLNnx3xuRzQp" xmi:id="_xz322-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;" xmi:id="_xz323ObGEeil38I7eXh73A"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;" xmi:id="_xz323ebGEeil38I7eXh73A"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;" xmi:id="_xz323ubGEeil38I7eXh73A"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;" xmi:id="_xz323-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true" xmi:id="_xz324ObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true" xmi:id="_xz324ebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true" xmi:id="_xz324ubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false" xmi:id="_xz324-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value="" xmi:id="_xz325ObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false" xmi:id="_xz325ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value="" xmi:id="_xz325ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value="" xmi:id="_xz325-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value="" xmi:id="_xz326ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value="" xmi:id="_xz326ebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false" xmi:id="_xz326ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value="" xmi:id="_xz326-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value="" xmi:id="_xz327ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value="" xmi:id="_xz327ebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SPARK_LOCAL_MODE" value="false" xmi:id="_xz327ubGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" show="false" value="SPARK_2_0_0" xmi:id="_xz327-bGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="GOOGLE_CLOUD_DATAPROC" xmi:id="_xz328ObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_VERSION" value="DATAPROC_1_1" xmi:id="_xz328ebGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_2_0_0" xmi:id="_xz328ubGEeil38I7eXh73A"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value="" xmi:id="_xz328-bGEeil38I7eXh73A"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_xz329ObGEeil38I7eXh73A"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="** The version of Spark must be 1.3.0 or later." xmi:id="_xz329ebGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_API_VERSION" show="false" value="SPARK_200" xmi:id="_xz329ubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_HDP_VERSION" show="false" value="false" xmi:id="_xz329-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HDP_VERSION" show="false" value="&quot;x.x.x.x-x&quot;" xmi:id="_xz32-ObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT" xmi:id="_xz32-ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" show="false" value="context.cMaprCluster_ResourceManager" xmi:id="_xz32-ubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" show="false" value="true" xmi:id="_xz32--bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="context.cMaprCluster_ResourceManagerScheduler" xmi:id="_xz32_ObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" show="false" value="true" xmi:id="_xz32_ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="context.cMaprCluster_JobHistory" xmi:id="_xz32_ubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" show="false" value="true" xmi:id="_xz32_-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" show="false" value="context.cMaprCluster_StagingDirectory" xmi:id="_xz33AObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_ENDPOINT" show="false" value="&quot;https://xxxx.azurehdinsight.net&quot;" xmi:id="_xz33AebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_xz33AubGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_xz33A-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LIVY_HOST" show="false" value="&quot;&quot;" xmi:id="_xz33BObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LIVY_PORT" show="false" value="&quot;443&quot;" xmi:id="_xz33BebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LIVY_USERNAME" show="false" value="&quot;&quot;" xmi:id="_xz33BubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_xz33B-bGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_xz33CObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="WASB_HOST" show="false" value="&quot;&quot;" xmi:id="_xz33CebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" show="false" value="&quot;&quot;" xmi:id="_xz33CubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" show="false" value="&quot;&quot;" xmi:id="_xz33C-bGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_xz33DObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;" xmi:id="_xz33DebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_HOST" show="false" value="&quot;spark://localhost:7077&quot;" xmi:id="_xz33DubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_HOME" show="false" value="&quot;/usr/lib/spark&quot;" xmi:id="_xz33D-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_HOME_DIR" show="false" value="false" xmi:id="_xz33EObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HADOOP_HOME_DIR" show="false" value="&quot;C:/Talend/winutils&quot;" xmi:id="_xz33EebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" show="false" value="false" xmi:id="_xz33EubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_HOST" show="false" value="&quot;127.0.0.1&quot;" xmi:id="_xz33E-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="context.cDataprocClusterProjectId" xmi:id="_xz33FObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="context.cDataprocClusterId" xmi:id="_xz33FebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="context.cDataprocClusterRegion" xmi:id="_xz33FubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="context.cDataprocClusterJarFolder" xmi:id="_xz33F-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="true" xmi:id="_xz33GObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="context.cDataprocClusterCredentialFiles" xmi:id="_xz33GebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ALTUS_SET_CREDENTIALS" show="false" value="false" xmi:id="_xz33GubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_xz33G-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="ALTUS_SECRET_KEY" show="false" value="&quot;&quot;" xmi:id="_xz33HObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_CLI_PATH" show="false" value="&quot;/opt/altuscli/altusclienv/bin/altus&quot;" xmi:id="_xz33HebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ALTUS_REUSE_CLUSTER" show="false" value="false" xmi:id="_xz33HubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_CLUSTER_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_xz33H-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_ENVIRONMENT_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_xz33IObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="ALTUS_CLOUD_PROVIDER" show="false" value="&quot;AWS&quot;" xmi:id="_xz33IebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ALTUS_DELETE_AFTER_EXECUTION" show="false" value="false" xmi:id="_xz33IubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_S3_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_xz33I-bGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="ALTUS_S3_SECRET_KEY" show="false" value="0RMsyjmybrE=" xmi:id="_xz33JObGEeil38I7eXh73A"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_S3_REGION" show="false" value="&quot;us-east-1&quot;" xmi:id="_xz33JebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_BUCKET_NAME" show="false" value="&quot;my-bucket&quot;" xmi:id="_xz33JubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_JARS_BUCKET" show="false" value="&quot;talend/jars/&quot;" xmi:id="_xz33J-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ALTUS_USE_CUSTOM_JSON" show="false" value="false" xmi:id="_xz33KObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="ALTUS_CUSTOM_JSON" show="false" value="{}" xmi:id="_xz33KebGEeil38I7eXh73A"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_INSTANCE_TYPE" show="false" value="&quot;c4.2xlarge&quot;" xmi:id="_xz33KubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_WORKER_NODE" show="false" value="&quot;10&quot;" xmi:id="_xz33K-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="ALTUS_SSH_PRIVATE_KEY" show="false" value="" xmi:id="_xz33LObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ALTUS_CLOUDERA_MANAGER_USERNAME" show="false" value="&quot;altus&quot;" xmi:id="_xz33LebGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="ALTUS_CLOUDERA_MANAGER_PASSWORD" show="false" value="" xmi:id="_xz33LubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false" xmi:id="_xz33L-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" xmi:id="_xz33MObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" show="false" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" xmi:id="_xz33MebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false" xmi:id="_xz33MubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;" xmi:id="_xz33M-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;" xmi:id="_xz33NObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="context.MaprHdfs_HdfsUser" xmi:id="_xz33NebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false" xmi:id="_xz33NubGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_xz33N-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;" xmi:id="_xz33OObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L" xmi:id="_xz33OebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false" xmi:id="_xz33OubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;" xmi:id="_xz33O-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false" xmi:id="_xz33PObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;" xmi:id="_xz33PebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false" xmi:id="_xz33PubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_MEM" show="false" value="&quot;512m&quot;" xmi:id="_xz33P-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_CORES" show="false" value="&quot;1&quot;" xmi:id="_xz33QObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SPARK_YARN_AM_SETTINGS_CHECK" show="false" value="false" xmi:id="_xz33QebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_MEM" show="false" value="context.cSparkProperties_ApplicationMasterMemory " xmi:id="_xz33QubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_CORES" show="false" value="context.cSparkProperties_ApplicationMasterCores" xmi:id="_xz33Q-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM" show="false" value="&quot;&quot;" xmi:id="_xz33RObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="true" xmi:id="_xz33RebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="&quot;&quot;" xmi:id="_xz33RubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" show="false" value="false" xmi:id="_xz33R-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_CORES" show="false" value="&quot;&quot;" xmi:id="_xz33SObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" show="false" value="FIXED" xmi:id="_xz33SebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_INSTANCES" show="false" value="&quot;&quot;" xmi:id="_xz33SubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_INIT" show="false" value="&quot;1&quot;" xmi:id="_xz33S-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MIN" show="false" value="&quot;0&quot;" xmi:id="_xz33TObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MAX" show="false" value="&quot;MAX&quot;" xmi:id="_xz33TebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="WEB_UI_PORT_CHECK" show="false" value="false" xmi:id="_xz33TubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="WEB_UI_PORT" show="false" value="context.cMaprClusterSparkWebUIPort" xmi:id="_xz33T-bGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" show="false" value="AUTO" xmi:id="_xz33UObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" show="false" value="false" xmi:id="_xz33UebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_SERIALIZER" show="false" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" xmi:id="_xz33UubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false" xmi:id="_xz33U-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" show="false" value="false" xmi:id="_xz33VObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_EVENT_LOG_DIR" show="false" value="context.cMaprCluster_SparkEventLogDirectory&#9;&#9;&#9;" xmi:id="_xz33VebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARKHISTORY_ADDRESS" show="false" value="context.cMaprCluster_SparkHistoryServer" xmi:id="_xz33VubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;" xmi:id="_xz33V-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_CHECKPOINT" value="false" xmi:id="_xz33WObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CHECKPOINT_DIR" show="false" value="&quot;file:///tmp/mycheckpoint&quot;" xmi:id="_xz33WebGEeil38I7eXh73A"/>
+    <elementParameter field="TABLE" name="SPARK_ADVANCED_PROPERTIES" xmi:id="_xz33WubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_CLOUDERA_NAVIGATOR" show="false" value="false" xmi:id="_xz33W-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" show="false" value="&quot;username&quot;" xmi:id="_xz33XObGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A==" xmi:id="_xz33XebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_URL" show="false" value="&quot;http://localhost:7187/api/v8/&quot;" xmi:id="_xz33XubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" show="false" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" xmi:id="_xz33X-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" show="false" value="&quot;http://localhost&quot;" xmi:id="_xz33YObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" show="false" value="false" xmi:id="_xz33YebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" show="false" value="false" xmi:id="_xz33YubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" show="false" value="true" xmi:id="_xz33Y-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_ATLAS" show="false" value="false" xmi:id="_xz33ZObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ATLAS_URL" show="false" value="&quot;http://localhost:21000&quot;" xmi:id="_xz33ZebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ATLAS_USERNAME" show="false" value="&quot;admin&quot;" xmi:id="_xz33ZubGEeil38I7eXh73A"/>
+    <elementParameter field="PASSWORD" name="ATLAS_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_xz33Z-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" show="false" value="false" xmi:id="_xz33aObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" show="false" value="&quot;/user/atlas/atlas-application.properties&quot;" xmi:id="_xz33aebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ATLAS_DIE_ON_ERROR" show="false" value="false" xmi:id="_xz33aubGEeil38I7eXh73A"/>
+    <routinesParameter id="_jy5Q8DEdEeijkvkPtcNkKw" name="DQTechnical" xmi:id="_fTGxxuN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyqAYDEdEeijkvkPtcNkKw" name="DataMasking" xmi:id="_fTGxx-N0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jxLZsDEdEeijkvkPtcNkKw" name="DataOperation" xmi:id="_fTGxyON0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyxVIDEdEeijkvkPtcNkKw" name="DataQualityDependencies" xmi:id="_fTGxyeN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jytqwDEdEeijkvkPtcNkKw" name="DataQuality" xmi:id="_fTGxyuN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jy0_gDEdEeijkvkPtcNkKw" name="DqStringHandling" xmi:id="_fTGxy-N0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jxSucDEdEeijkvkPtcNkKw" name="Mathematical" xmi:id="_fTGxzON0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyK4MDEdEeijkvkPtcNkKw" name="Numeric" xmi:id="_fTGxzeN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyPJoDEdEeijkvkPtcNkKw" name="Relational" xmi:id="_fTGxzuN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jymWADEdEeijkvkPtcNkKw" name="SQLike" xmi:id="_fTGxz-N0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyTbEDEdEeijkvkPtcNkKw" name="StringHandling" xmi:id="_fTGx0ON0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyXFcDEdEeijkvkPtcNkKw" name="TalendDataGenerator" xmi:id="_fTGx0eN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyav0DEdEeijkvkPtcNkKw" name="TalendDate" xmi:id="_fTGx0uN0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyjSsDEdEeijkvkPtcNkKw" name="TalendStringUtil" xmi:id="_fTGx0-N0Eei7WP8ErWO5Uw"/>
+    <routinesParameter id="_jyeaMDEdEeijkvkPtcNkKw" name="TalendString" xmi:id="_fTGx1ON0Eei7WP8ErWO5Uw"/>
+  </parameters>
+  <node componentName="tBigQueryConfiguration" componentVersion="0.101" offsetLabelX="49" offsetLabelY="-2" posX="96" posY="32" xmi:id="_xz33a-bGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryConfiguration_1" xmi:id="_xz33bObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="context.cGoogleBigqueryServiceAccount_Project" xmi:id="_xz33bebGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;C:/BQUtil/PCHDW/PCHDW-d3157e2edb5d.json&quot;" xmi:id="_xz33bubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_P12_CREDENTIALS_FILE" show="false" value="true" xmi:id="_xz33b-bGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_P12_KEYFILE" show="false" value="context.cGoogleBigqueryServiceAccount_CredentialsFile" xmi:id="_xz33cObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SERVICE_ACCOUNT_ID" show="false" value="context.cGoogleBigqueryServiceAccount_ServiceAccountId" xmi:id="_xz33cebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="EXECUTE_GCP_STORAGE_TEMP_PATH" value="context.cDataprocProcessFolder" xmi:id="_xz33cubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_xz33c-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Config_bq_alertimpulse704                " xmi:id="_xz33dObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__The project id needs to be appended as suffix to the __" xmi:id="_xz33debGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33dubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33d-bGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Proposed Configuration Naming Conventions:&#13;&#10;&#9;1. The configuration component should have the project id attached to the end of the name.&#13;&#10;        2. eg. the name in the flower brackets would change when we configure connections for multiple projects" xmi:id="_xz33eObGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tGSConfiguration" componentVersion="0.101" offsetLabelX="10" offsetLabelY="0" posX="448" posY="32" xmi:id="_xz33eebGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConfiguration_1" xmi:id="_xz33eubGEeil38I7eXh73A"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="SPARKBATCH" show="false" value="" xmi:id="_xz33e-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="context.cGoogleCloudstorageServiceAccount_Project" xmi:id="_xz33fObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="context.cDataprocCloudStorageBucket" xmi:id="_xz33febGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="TEMP_FOLDER" value="context.cDataprocCloudStorageTempFolder" xmi:id="_xz33fubGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;" xmi:id="_xz33f-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="SET_P12_CREDENTIALS_FILE" show="false" value="true" xmi:id="_xz33gObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SERVICE_ACCOUNT_ID" show="false" value="context.cGoogleCloudstorageServiceAccount_ServiceAccountId" xmi:id="_xz33gebGEeil38I7eXh73A"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_P12_KEYFILE" show="false" value="context.cGoogleCloudstorageServiceAccount_CredentialsFile" xmi:id="_xz33gubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_xz33g-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Config_gcs_alertimpulse704                       " xmi:id="_xz33hObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33hebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33hubGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Proposed Template Naming Conventions:&#13;&#10;&#9;*The configuration component should have the project id attached to the end of the name." xmi:id="_xz33h-bGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="11" offsetLabelY="-9" posX="64" posY="576" xmi:id="_xz33iObGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1" xmi:id="_xz33iebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" xmi:id="_xz33iubGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.YarnJobName=ctx.appName();&#10;context.YarnJobId=ctx.sc().applicationId();&#10;java.time.format.DateTimeFormatter dtf = java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);&#10;java.time.LocalDateTime now = java.time.LocalDateTime.now();&#10;context.Moment=dtf.format(now);&#10;System.out.println(&quot;Job Name is:&quot;+context.YarnJobName+&quot;Job id is:&quot;+context.YarnJobId);&#10;context.cMaprClusterHistoryServerURL=context.cMaprClusterHistoryServerURL+&quot;/history/&quot;+context.YarnJobId;&#10;context.message=&quot;Spark history url is:&quot;+context.cMaprClusterHistoryServerURL;&#10;context.IsBigData=true;&#10;context.var_root_pid=rootPid;&#10;context.ChildJobName=jobName;&#10;context.var_father_pid=fatherPid;&#10;context.var_pid=pid;&#10;context.var_root_pid=rootPid;&#10;System.out.println(&quot;Message Is:&quot;+context.message);&#10;System.out.println(&quot;Time before calling logger is: &quot;+dtf.format(now));&#10;    " xmi:id="_xz33i-bGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_JAVA" name="CLASS_CODE" value="// Here you can define any classes that you wish to use in with your custom code :&#10;// The input rdd is available as the 'rdd_cid' variable where cid is the name of the tJava component&#10;// The class of the input rdd is called &quot;rowXStruct&quot; where rowX is the name of the incoming connection to tJava component, this class has the input schema columns as attributes.&#10;// The output rdd is available as the 'outputrdd_cid' variable where cid is the name of the tJava component&#10;// The class of the output rdd is called 'RecordOut_cid' where cid is the name of the tJava component, this class has the output schema columns as attributes.&#10;// The java spark context is available as the variable &quot;ctx&quot;&#10;&#10;// Code Samples :&#10;&#10;// public static class DataFrameRowToRddObject implements org.apache.spark.api.java.function.Function&lt;org.apache.spark.sql.Row, RecordOut_tJava_1&gt; {&#10;//  @Override&#10;//  public RecordOut_tJava_1 call(org.apache.spark.sql.Row row){&#10;//        RecordOut_tJava_1 output = new RecordOut_tJava_1();&#10;//        output.col1 = (String) row.get(0);&#10;//        ...&#10;//        return output;&#10;//  }&#10;      " xmi:id="_xz33jObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_xz33jebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Jav_RecordSparkHistoryServer" xmi:id="_xz33jubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33j-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33kObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="- Insert data into context variables and data segregation falls as below&#13;&#10;&#9;Date Time  realated Data&#13;&#10;&#9;Job related Data&#13;&#10;" xmi:id="_xz33kebGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" name="tJava_1" xmi:id="_xz33kubGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="17" offsetLabelY="-1" posX="256" posY="576" xmi:id="_xz33k-bGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1" xmi:id="_xz33lObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" xmi:id="_xz33lebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false" xmi:id="_xz33lubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value="" xmi:id="_xz33l-bGEeil38I7eXh73A"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="diChildLogger" xmi:id="_xz33mObGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default" xmi:id="_xz33mebGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_8woyNX6nEeiTGtb6_Dsf9Q" xmi:id="_xz33mubGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest" xmi:id="_xz33m-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default" xmi:id="_xz33nObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true" xmi:id="_xz33nebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true" xmi:id="_xz33nubGEeil38I7eXh73A"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS" xmi:id="_xz33n-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false" xmi:id="_xz33oObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true" xmi:id="_xz33oebGEeil38I7eXh73A"/>
+    <elementParameter field="LABEL" name="NOTE_INDEPENDANT" value="Following options are not available for Spark Jobs:" xmi:id="_xz33oubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true" xmi:id="_xz33o-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log_RecordSparkHistoryServer" xmi:id="_xz33pObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33pebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33pubGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="It captures log for the Spark History and loads into log table for progress tracking" xmi:id="_xz33p-bGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="736" xmi:id="_xz33qObGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3" xmi:id="_xz33qebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" xmi:id="_xz33qubGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="java.time.format.DateTimeFormatter dtf = java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);&#10;java.time.LocalDateTime now = java.time.LocalDateTime.now();&#10;context.Moment=dtf.format(now);&#10;context.message=&quot;BQ Table &quot;+context.cSparkBqDstDatasetName+ &quot;.&quot;+context.cSparkBqDstTableName+&quot; successfully archived into file &quot;+context.cSparkArchiveFileName;&#10;context.IsBigData=true;&#10;context.var_root_pid=rootPid;&#10;context.ChildJobName=jobName;&#10;context.var_father_pid=fatherPid;&#10;context.var_pid=pid;&#10;context.var_root_pid=rootPid;&#10;&#10;" xmi:id="_xz33q-bGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_JAVA" name="CLASS_CODE" value="// Here you can define any classes that you wish to use in with your custom code :&#10;// The input rdd is available as the 'rdd_cid' variable where cid is the name of the tJava component&#10;// The class of the input rdd is called &quot;rowXStruct&quot; where rowX is the name of the incoming connection to tJava component, this class has the input schema columns as attributes.&#10;// The output rdd is available as the 'outputrdd_cid' variable where cid is the name of the tJava component&#10;// The class of the output rdd is called 'RecordOut_cid' where cid is the name of the tJava component, this class has the output schema columns as attributes.&#10;// The java spark context is available as the variable &quot;ctx&quot;&#10;&#10;// Code Samples :&#10;&#10;// public static class DataFrameRowToRddObject implements org.apache.spark.api.java.function.Function&lt;org.apache.spark.sql.Row, RecordOut_tJava_1&gt; {&#10;//  @Override&#10;//  public RecordOut_tJava_1 call(org.apache.spark.sql.Row row){&#10;//        RecordOut_tJava_1 output = new RecordOut_tJava_1();&#10;//        output.col1 = (String) row.get(0);&#10;//        ...&#10;//        return output;&#10;//  }&#10;      " xmi:id="_xz33rObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;" xmi:id="_xz33rebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Jav_LogItForArchive" xmi:id="_xz33rubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33r-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33sObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="- Insert data into context variables and data segregation falls as below&#13;&#10;&#9;Date Time  realated Data&#13;&#10;&#9;Job related Data&#13;&#10;" xmi:id="_xz33sebGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" name="tJava_3" xmi:id="_xz33subGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="-6" offsetLabelY="0" posX="224" posY="736" xmi:id="_xz33s-bGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3" xmi:id="_xz33tObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" xmi:id="_xz33tebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false" xmi:id="_xz33tubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value="" xmi:id="_xz33t-bGEeil38I7eXh73A"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="diChildLogger" xmi:id="_xz33uObGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default" xmi:id="_xz33uebGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_8woyNX6nEeiTGtb6_Dsf9Q" xmi:id="_xz33uubGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest" xmi:id="_xz33u-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default" xmi:id="_xz33vObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true" xmi:id="_xz33vebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true" xmi:id="_xz33vubGEeil38I7eXh73A"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS" xmi:id="_xz33v-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false" xmi:id="_xz33wObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true" xmi:id="_xz33webGEeil38I7eXh73A"/>
+    <elementParameter field="LABEL" name="NOTE_INDEPENDANT" value="Following options are not available for Spark Jobs:" xmi:id="_xz33wubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true" xmi:id="_xz33w-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log_Archive" xmi:id="_xz33xObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz33xebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz33xubGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="It captures log for the Archive log and loads into log table for progress tracking" xmi:id="_xz33x-bGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tBigQueryInputPCH" componentVersion="0.101" offsetLabelX="29" offsetLabelY="-1" posX="224" posY="288" xmi:id="_xz33yObGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInputPCH_4" xmi:id="_xz33yebGEeil38I7eXh73A"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id" xmi:id="_xz33yubGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="SOURCE_TYPE" value="QUERY" xmi:id="_xz33y-bGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#13;&#10; cast(concat(SUBSTRING(date,0,4),'-',SUBSTRING(date,5,2),'-',SUBSTRING(date,7,2)) as string)  AS EventDt,&#13;&#10;  cast(Fullvisitorid as string) AS FullVisitorId,&#13;&#10;  cast(visitId as string)  AS VisitID,&#13;&#10;  CONCAT(fullvisitorid, STRING(visitid)) AS GASessionId,&#13;&#10;  visitNumber AS VisitSequenceNo,&#13;&#10;concat(substring(cast(SEC_TO_TIMESTAMP(visitStartTime) as string),1,19),' UTC')   AS VisitStartTS ,&#13;&#10;  device.operatingSystem AS DeviceOSName,&#13;&#10;  geoNetwork.country AS IPCountryName,&#13;&#10;  geoNetwork.region AS IPRegionName,&#13;&#10;  geoNetwork.metro AS IPDMACd,&#13;&#10;  geoNetwork.city AS IPCityName,&#13;&#10;  geoNetwork.cityId AS GAIPCityId,&#13;&#10;  geoNetwork.latitude AS IPCityLatitude,&#13;&#10;  geoNetwork.longitude AS IPCityLongitude,&#13;&#10;  hits.type as EventType,&#13;&#10;  hits.page.pagePath AS PageNamePathName,&#13;&#10;  hits.page.hostname AS PageHostNameURL,&#13;&#10;  hits.page.pageTitle AS PageTitle,&#13;&#10;  hits.time  as PageTime,&#13;&#10;  totals.pageviews AS SessionPageViewsCnt,&#13;&#10;  totals.bounces AS IsBouncedSessionInd,&#13;&#10;  device.browser AS GADeviceBrowserName,&#13;&#10;  device.browserVersion AS BrowserVersion,&#13;&#10;  device.browserSize AS BrowserViewportDimensionPix,&#13;&#10;  device.screenResolution AS DeviceScreenResolutionPix,&#13;&#10;  device.flashVersion AS DeviceFlashVersion,&#13;&#10;  totals.transactions AS GASessionOrderCnt,&#13;&#10;  device.deviceCategory AS GADeviceType,&#13;&#10;  device.mobileInputSelector AS DeviceInputSelectorName,&#13;&#10;  device.mobileDeviceBranding AS DeviceBrandName,&#13;&#10;  channelGrouping AS ViewDefaultChannelGroupName,&#13;&#10;  trafficSource.campaign AS GAMailingID,&#13;&#10;  trafficSource.medium AS TrafficSourceType,&#13;&#10;   trafficSource.source AS TrafficSource,&#13;&#10;  MAX (IF(customDimensions.index=8, customDimensions.value,NULL)) WITHIN RECORD AS GlobalMemberToken,&#13;&#10;  MAX(IF(customDimensions.index=6, customDimensions.value,NULL)) WITHIN RECORD AS DeviceType,&#13;&#10;  MAX(IF(customDimensions.index=4, customDimensions.value,NULL)) WITHIN RECORD AS GenderInd,&#13;&#10;  MAX(IF(customDimensions.index=3, customDimensions.value,NULL)) WITHIN RECORD AS Age,&#13;&#10;  MAX(IF(customDimensions.index=7, customDimensions.value,NULL)) WITHIN RECORD AS LoginPasswordStatus,&#13;&#10;  MAX(IF(customDimensions.index=42, customDimensions.value,NULL)) WITHIN RECORD AS UserCurrentPCHLevel,&#13;&#10;  MAX(IF(customDimensions.index=1, customDimensions.value,NULL)) WITHIN RECORD AS SiteUserStatus&#13;&#10;FROM (TABLE_DATE_RANGE([compact-medium-798:104328964.ga_sessions_],&#13;&#10;      TIMESTAMP(&quot;+context.cDataprocBqprocessstartdate+&quot;'),  TIMESTAMP('&quot;+context.cDataprocBqprocessenddate+&quot;')))&quot;&#13;&#10;&#13;&#10;" xmi:id="_xz33zObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="GCP_PROJECT_ID" show="false" value="&quot;&quot;" xmi:id="_xz33zebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="BIGQUERY_DATASET" show="false" value="&quot;&quot;" xmi:id="_xz33zubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="BIGQUERY_TABLE" show="false" value="&quot;&quot;" xmi:id="_xz33z-bGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY" xmi:id="_xz330ObGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_PH0SwKtgEeiJndseL6U5bg - Src_EcommUserSessionAdDetail" xmi:id="_xz330ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="TEMP_DIR" value="&quot;DIServices_Temp&quot;" xmi:id="_xz330ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_EcommDataQuery" xmi:id="_xz330-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz331ObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz331ebGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This component is fetching data through a builin query and passing further to destination component&#13;&#10;" xmi:id="_xz331ubGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" label="Src_EcommUserSessionAdDetail" name="tBigQueryInputPCH_4" xmi:id="_xz331-bGEeil38I7eXh73A">
+      <column comment="" key="false" length="10" name="EventDt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz332ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="FullVisitorId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz332ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="VisitID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz332ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GASessionId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz332-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="VisitSequenceNo" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz333ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="VisitStartTS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz333ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceOSName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz333ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCountryName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz333-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPRegionName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz334ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPDMACd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz334ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz334ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GAIPCityId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz334-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityLatitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz335ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityLongitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz335ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="EventType" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz335ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageNamePathName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz335-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageHostNameURL" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz336ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageTitle" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz336ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="PageTime" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz336ubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="SessionPageViewsCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz336-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="IsBouncedSessionInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz337ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GADeviceBrowserName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz337ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="BrowserVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz337ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="BrowserViewportDimensionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz337-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceScreenResolutionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz338ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceFlashVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz338ebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="GASessionOrderCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz338ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GADeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz338-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceInputSelectorName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz339ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceBrandName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz339ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="ViewDefaultChannelGroupName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz339ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GAMailingID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz339-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSourceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33-ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSource" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33-ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GlobalMemberToken" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33-ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33--bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GenderInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33_ObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="Age" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33_ebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="LoginPasswordStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33_ubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="UserCurrentPCHLevel" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz33_-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="SiteUserStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34AObGEeil38I7eXh73A"/>
+      <additionalProperties key="Comment" value="" xmi:id="_xz34AebGEeil38I7eXh73A"/>
+    </metadata>
+  </node>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288" xmi:id="_xz34AubGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplicate_1" xmi:id="_xz34A-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CACHEOUTPUT" value="false" xmi:id="_xz34BObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="STORAGELEVEL" show="false" value="MEMORY_AND_DISK" xmi:id="_xz34BebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="COMPRESSRDD" show="false" value="false" xmi:id="_xz34BubGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSCODEC" show="false" value="org.apache.spark.io.SnappyCompressionCodec" xmi:id="_xz34B-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="TACHYON_STORE_URL" show="false" value="&quot;tachyon://localhost:19998&quot;" xmi:id="_xz34CObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="TACHYON_STORE_BASEDIR" show="false" value="&quot;/tmp/&quot;" xmi:id="_xz34CebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="duplicate_data" xmi:id="_xz34CubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz34C-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz34DObGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This Component is used to Replicate the input data into multiple output " xmi:id="_xz34DebGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" label="Src_EcommUserSessionAdDetail" name="tReplicate_1" xmi:id="_xz34DubGEeil38I7eXh73A">
+      <column comment="" key="false" length="10" name="EventDt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34D-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="FullVisitorId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34EObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="VisitID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34EebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GASessionId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34EubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="VisitSequenceNo" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34E-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="VisitStartTS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34FObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceOSName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34FebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCountryName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34FubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPRegionName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34F-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPDMACd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34GObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34GebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GAIPCityId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34GubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityLatitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34G-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="IPCityLongitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34HObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="EventType" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34HebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageNamePathName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34HubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageHostNameURL" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34H-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="PageTitle" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34IObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="PageTime" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34IebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="SessionPageViewsCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34IubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="IsBouncedSessionInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34I-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GADeviceBrowserName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34JObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="BrowserVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34JebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="BrowserViewportDimensionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34JubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceScreenResolutionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34J-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceFlashVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34KObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="GASessionOrderCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34KebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GADeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34KubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceInputSelectorName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34K-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceBrandName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34LObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="ViewDefaultChannelGroupName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34LebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GAMailingID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34LubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSourceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34L-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSource" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34MObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GlobalMemberToken" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34MebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="DeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34MubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="GenderInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34M-bGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="Age" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34NObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="LoginPasswordStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34NebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="UserCurrentPCHLevel" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34NubGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="SiteUserStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34N-bGEeil38I7eXh73A"/>
+      <additionalProperties key="Comment" value="" xmi:id="_xz34OObGEeil38I7eXh73A"/>
+    </metadata>
+    <metadata connector="SPARKCOMBINE" name="SPARKCOMBINE" xmi:id="_xz34OebGEeil38I7eXh73A"/>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224" xmi:id="_xz34OubGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_3" xmi:id="_xz34O-bGEeil38I7eXh73A"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id" xmi:id="_xz34PObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="BIGQUERY_DATASET" value="context.cDataprocBqDstDatasetName" xmi:id="_xz34PebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="BIGQUERY_TABLE" value="context.cDataprocBqDstTableName" xmi:id="_xz34PubGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY" xmi:id="_xz34P-bGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_4QkqsKteEeiJndseL6U5bg - Dst_EcommUserSessionAdDetail" xmi:id="_xz34QObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_OPERATION" value="CREATE_IF_NOT_EXISTS" xmi:id="_xz34QebGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_OPERATION" value="APPEND" xmi:id="_xz34QubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="aggEcommDailyOrderItem" xmi:id="_xz34Q-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz34RObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz34RebGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Loads data into the specifc columns from source component.  If table does not exist then it will create the table and data will be appended if exist." xmi:id="_xz34RubGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" label="Dst_EcommUserSessionAdDetail" name="tBigQueryOutput_3" xmi:id="_xz34R-bGEeil38I7eXh73A">
+      <column comment="" defaultValue="" key="false" length="-1" name="EventDt" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true" xmi:id="_xz34SObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="FullVisitorId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34SebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="VisitID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34SubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GASessionId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34S-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="VisitSequenceNo" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34TObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="25" name="VisitStartTS" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'UTC'&quot;" precision="-1" sourceType="TIMESTAMP" type="id_String" usefulColumn="true" xmi:id="_xz34TebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceOSName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34TubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCountryName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34T-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPRegionName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34UObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPDMACd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34UebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34UubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GAIPCityId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34U-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityLatitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34VObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityLongitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34VebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="EventType" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34VubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageNamePathName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34V-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageHostNameURL" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34WObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageTitle" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34WebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="PageTime" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34WubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="SessionPageViewsCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34W-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="IsBouncedSessionInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34XObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GADeviceBrowserName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34XebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="BrowserVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34XubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="BrowserViewportDimensionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34X-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceScreenResolutionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34YObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceFlashVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34YebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="GASessionOrderCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34YubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GADeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34Y-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceInputSelectorName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34ZObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceBrandName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34ZebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="ViewDefaultChannelGroupName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34ZubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GAMailingID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34Z-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="TrafficSourceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34aObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSource" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34aebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GlobalMemberToken" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34aubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34a-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GenderInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34bObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Age" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34bebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="LoginPasswordStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34bubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="UserCurrentPCHLevel" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34b-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="SiteUserStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34cObGEeil38I7eXh73A"/>
+      <additionalProperties key="Comment" value="" xmi:id="_xz34cebGEeil38I7eXh73A"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="6" offsetLabelY="3" posX="672" posY="384" xmi:id="_xz34cubGEeil38I7eXh73A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2" xmi:id="_xz34c-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true" xmi:id="_xz34dObGEeil38I7eXh73A"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tGSConfiguration_1" xmi:id="_xz34debGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY" xmi:id="_xz34dubGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_PH0SwKtgEeiJndseL6U5bg - Src_EcommUserSessionAdDetail" xmi:id="_xz34d-bGEeil38I7eXh73A"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="FOLDER" value="context.cDataprocGcsExportLocation" xmi:id="_xz34eObGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE" xmi:id="_xz34eebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" xmi:id="_xz34eubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true" xmi:id="_xz34e-bGEeil38I7eXh73A"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;" xmi:id="_xz34fObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;" xmi:id="_xz34febGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false" xmi:id="_xz34fubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_xz34f-bGEeil38I7eXh73A"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_xz34gObGEeil38I7eXh73A"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_xz34gebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="true" xmi:id="_xz34gubGEeil38I7eXh73A"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="BZIP2" xmi:id="_xz34g-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="MERGE_RESULT" show="false" value="false" xmi:id="_xz34hObGEeil38I7eXh73A"/>
+    <elementParameter field="FILE_HADOOP" name="MERGE_PATH" show="false" value="&quot;&quot;" xmi:id="_xz34hebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" show="false" value="true" xmi:id="_xz34hubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" show="false" value="true" xmi:id="_xz34h-bGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_xz34iObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_xz34iebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_xz34iubGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_xz34i-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_xz34jObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_xz34jebGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="LOCAL_TIMEZONE_DATE_FORMAT" value="true" xmi:id="_xz34jubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="LABEL" value="HadoopExport_aggEcommDailyOrderItem" xmi:id="_xz34j-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_xz34kObGEeil38I7eXh73A"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true" xmi:id="_xz34kebGEeil38I7eXh73A"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Archive aggregates data into archive location in delimited filre format" xmi:id="_xz34kubGEeil38I7eXh73A"/>
+    <metadata connector="FLOW" label="Src_EcommUserSessionAdDetail" name="tFileOutputDelimited_2" xmi:id="_xz34k-bGEeil38I7eXh73A">
+      <column comment="" defaultValue="" key="false" length="10" name="EventDt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34lObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="FullVisitorId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34lebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="VisitID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34lubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GASessionId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34l-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="VisitSequenceNo" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34mObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="VisitStartTS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34mebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceOSName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34mubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCountryName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34m-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPRegionName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34nObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPDMACd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34nebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34nubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GAIPCityId" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34n-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityLatitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34oObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="IPCityLongitude" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34oebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="EventType" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34oubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageNamePathName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34o-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageHostNameURL" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34pObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="PageTitle" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34pebGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="65" name="PageTime" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34pubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="SessionPageViewsCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34p-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="IsBouncedSessionInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34qObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GADeviceBrowserName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34qebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="BrowserVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34qubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="BrowserViewportDimensionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34q-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceScreenResolutionPix" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34rObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceFlashVersion" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34rebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="65" name="GASessionOrderCnt" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="INTEGER" type="id_Long" usefulColumn="true" xmi:id="_xz34rubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GADeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34r-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceInputSelectorName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34sObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceBrandName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34sebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="ViewDefaultChannelGroupName" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34subGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GAMailingID" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34s-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="TrafficSourceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34tObGEeil38I7eXh73A"/>
+      <column comment="" key="false" length="200" name="TrafficSource" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34tebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GlobalMemberToken" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34tubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="DeviceType" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34t-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="GenderInd" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34uObGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Age" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34uebGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="LoginPasswordStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34uubGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="UserCurrentPCHLevel" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34u-bGEeil38I7eXh73A"/>
+      <column comment="" defaultValue="" key="false" length="200" name="SiteUserStatus" nullable="true" pattern="dd-MM-yyyy" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true" xmi:id="_xz34vObGEeil38I7eXh73A"/>
+      <additionalProperties key="Comment" value="" xmi:id="_xz34vebGEeil38I7eXh73A"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1" xmi:id="_xz34vubGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false" xmi:id="_xz34v-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1" xmi:id="_xz34wObGEeil38I7eXh73A"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tRunJob_3" xmi:id="_xz34webGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false" xmi:id="_xz34wubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7" xmi:id="_xz34w-bGEeil38I7eXh73A"/>
+  </connection>
+  <connection connectorName="FLOW" label="sourceBQquery" lineStyle="0" metaname="tBigQueryInputPCH_4" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInputPCH_4" target="tReplicate_1" xmi:id="_xz34xObGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_xz34xebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sourceBQquery" xmi:id="_xz34xubGEeil38I7eXh73A"/>
+  </connection>
+  <connection connectorName="FLOW" label="DestiantionBQ_Flow" lineStyle="0" metaname="tReplicate_1" offsetLabelX="-12" offsetLabelY="-1" outputId="1" source="tReplicate_1" target="tBigQueryOutput_3" xmi:id="_xz34x-bGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_xz34yObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DestiantionBQ_Flow" xmi:id="_xz34yebGEeil38I7eXh73A"/>
+  </connection>
+  <connection connectorName="FLOW" label="HadoopExportGCS_Flow" lineStyle="0" metaname="tReplicate_1" offsetLabelX="-19" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tFileOutputDelimited_2" xmi:id="_xz34yubGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_xz34y-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="HadoopExportGCS_Flow" xmi:id="_xz34zObGEeil38I7eXh73A"/>
+  </connection>
+  <subjob xmi:id="_xz34zebGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz34zubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryConfiguration_1" xmi:id="_xz34z-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Big Query Configuration   " xmi:id="_xz340ObGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;0" xmi:id="_xz340ebGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz340ubGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz340-bGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz341ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGSConfiguration_1" xmi:id="_xz341ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Google Cloud Storage Configuration" xmi:id="_xz341ubGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;0" xmi:id="_xz341-bGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz342ObGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz342ebGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz342ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1" xmi:id="_xz342-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SPARK SERVER DETAILS" xmi:id="_xz343ObGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" xmi:id="_xz343ebGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz343ubGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz343-bGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz344ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1" xmi:id="_xz344ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DB LOGS" xmi:id="_xz344ubGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" xmi:id="_xz344-bGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz345ObGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz345ebGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz345ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3" xmi:id="_xz345-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="EXECUTION DETAILS " xmi:id="_xz346ObGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" xmi:id="_xz346ebGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz346ubGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz346-bGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz347ObGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3" xmi:id="_xz347ebGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOG DB" xmi:id="_xz347ubGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" xmi:id="_xz347-bGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz348ObGEeil38I7eXh73A"/>
+  </subjob>
+  <subjob xmi:id="_xz348ebGEeil38I7eXh73A">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_xz348ubGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryInputPCH_4" xmi:id="_xz348-bGEeil38I7eXh73A"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOAD DATA FROM QUERY INTO FINAL BQ TABLE- PHASE 1" xmi:id="_xz349ObGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0" xmi:id="_xz349ebGEeil38I7eXh73A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_xz349ubGEeil38I7eXh73A"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a8620676-6e9a-4907-8488-730c640366d8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nQLMeCy9EXfg+WskrVrJJh6+8SvkAnlNL4D6N8b+uQO+bm6ykjoqWLMQMcHkvKKEdebmVQr3SxHu
+aWJfRAIBVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fa342f18-637e-4e63-91a8-c44a22eb9f2b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5f9z+0GJh21pvGVOMHHRYoqBjhjw+OIRJfj5cknCcDTI7fdegLW8PRmNAJEJr1HWvThwU7vnXHL0
+xKHWlK+pBA==</DigestValue></Reference></SignedInfo><SignatureValue>IdbAO8qZvmGhV9Rp0IY6LO6GKGhqAfGolKcwbB34OQlbd2/toNDCbFP9wDo6QvxGyY/ROpVGy+KW
+nIc7mBuuEcFGkQJGT1VbKWWzGUffwBmj3vCi0oz9+9ZIkZetJrdJ8TaULzbQMGPUokG1ahQPAzPY
+DZEAcUYx1wUcUzJk4nTVV94iydXu2/1siW/feKeJRHpMXILkKl+fMz37qhLTdHmbWKKqSRCCJGsz
+EW7wjmsqcv6f9NYfL7y175O1vbQCuKEmHLflKxwCLL7uPfXnov5D2U5kyv3H8bpUqTBc+dqbPT4u
+A/T+91AXPvTFl6VUe5c6At74Vw1M7SY5KX+m6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fa342f18-637e-4e63-91a8-c44a22eb9f2b" Target="#_a8620676-6e9a-4907-8488-730c640366d8"><Timestamp>2020-07-10 14:31:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

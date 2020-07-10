@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" name="Default" xmi:id="_M6POkObBEeil38I7eXh73A" xmi:version="2.0">
+  <contextParameter comment="export/archive bucket location" name="cDataprocCloudStorageBucket" prompt="cDataprocCloudStorageBucket?" promptNeeded="false" type="id_String" value="diservices_pchdev" xmi:id="_M69AQObBEeil38I7eXh73A"/>
+  <contextParameter comment="Service Account used to Connect to the BQ cluster" name="cDataprocClusterCredentialFiles" prompt="cDataprocClusterCredentialFiles?" promptNeeded="false" type="id_String" value="/mapr/pchmaprclt01.qa.pch.com/TALEND_WS/Setup/Keyfiles/PCHDW-d3157e2edb5d.json" xmi:id="_M69AQebBEeil38I7eXh73A"/>
+  <contextParameter comment="Region for the cluster" name="cDataprocClusterRegion" prompt="cDataprocClusterRegion?" promptNeeded="false" type="id_String" value="global" xmi:id="_M69AQubBEeil38I7eXh73A"/>
+  <contextParameter comment="ProjectId for the cluster configuraiton" name="cDataprocClusterProjectId" prompt="cDataprocClusterProjectId?" promptNeeded="false" type="id_String" value="alert-impulse-704" xmi:id="_M69AQ-bBEeil38I7eXh73A"/>
+  <contextParameter comment="Name of the Cluster where the job is being submitted" name="cDataprocClusterId" prompt="cDataprocClusterId?" promptNeeded="false" type="id_String" value="diservices" xmi:id="_M69ARObBEeil38I7eXh73A"/>
+  <contextParameter comment="Landing location for the spillied files in the dataproc cluster" name="cDataprocProcessFolder" prompt="cDataprocProcessFolder?" promptNeeded="false" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/process/" xmi:id="_M69ARebBEeil38I7eXh73A"/>
+  <contextParameter comment="Jar Location for file being processed" name="cDataprocClusterJarFolder" prompt="cDataprocClusterJarFolder?" promptNeeded="false" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/talend/jars/" xmi:id="_M69ARubBEeil38I7eXh73A"/>
+  <contextParameter comment="Final Destination Output table Name " name="cDataprocBqDstTableName" prompt="cDataprocBqDstTableName?" promptNeeded="false" type="id_String" value="GA_User_Session_Detail" xmi:id="_M69AR-bBEeil38I7eXh73A"/>
+  <contextParameter comment="Final Destination Output Dataset Name " name="cDataprocBqDstDatasetName" prompt="cDataprocBqDstDatasetName?" promptNeeded="false" type="id_String" value="ga_aggregations" xmi:id="_M69ASObBEeil38I7eXh73A"/>
+  <contextParameter comment="Extract Start Date- Loaded from the BQ landing table" name="cDataprocBqprocessstartdate" prompt="cDataprocBqprocessstartdate?" promptNeeded="false" type="id_String" value="" xmi:id="_M69ASebBEeil38I7eXh73A"/>
+  <contextParameter comment="Extract End Date - Loaded from the BQ landing table" name="cDataprocBqprocessenddate" prompt="cDataprocBqprocessenddate?" promptNeeded="false" type="id_String" value="" xmi:id="_M69ASubBEeil38I7eXh73A"/>
+  <contextParameter comment="Export Location for files to be pumped into Hadoop" name="cDataprocGcsExportLocation" prompt="cDataprocGcsExportLocation?" promptNeeded="false" type="id_String" value="gs://diservices_pchdev/DEV/ANALYTICS/GA_SESSIONS/export/" xmi:id="_M69AS-bBEeil38I7eXh73A"/>
+  <contextParameter comment="Cluster Spill location" name="cDataprocCloudStorageTempFolder" prompt="cDataprocCloudStorageTempFolder?" promptNeeded="false" type="id_String" value="/tmp" xmi:id="_M69ATObBEeil38I7eXh73A"/>
+  <contextParameter comment="" name="cDataprocBqDstProjectid" prompt="cDataprocBqDstProjectid?" promptNeeded="false" type="id_String" value="alert-impulse-704" xmi:id="_iIbOIObCEeil38I7eXh73A"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_be1ba0e1-2bd1-4b9c-a049-99824f7df204"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PTU3TMf0rs6etYsAeUtzefhAmYxc+u/Q2/fnIoi2aWtGoe95IOie/VFmnAMnJsAFyl8lx2iMlxww
+3cHUSnDQ6g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_149aacab-2f5d-429b-af71-1310bc5c125c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TEpR+JXcNHEFwEJyfGRTTQfbUD38eFhRl75VuDz9Xrpuq92j3+FKaLFy93aqKheyX7CmlEzSOHCI
+40v+cT14SQ==</DigestValue></Reference></SignedInfo><SignatureValue>TjeJO9/YKqSJX0aN32PTheBhZqCdKvXKs4LXFCfWljfmLG2+2DFF6IMVlXuHLZdtaK5FRx/YSG6x
+2dbAP2iSlA6gaiLrH5BLPAs6OMiCnpjOjZg0ThO7izn40ZwL/oXMrIS4EO5YNMQVBdQmG71cpQxo
+iF6Mmx2Q8JKQlJqJAp1O8/QZnemgqrCIba8BdbmMU31+vnbQg1L8LTmc8INrD9RMYdZ+QP4a5/jr
+iZTt8s1jQ0kMJLZaqiHrK8U2Ft9QFHOe6DuBbML0ZPMMVmJj2CLbHXQfvPAyS0UBAvh3COWz5Dt0
+2GuFP+vaT2lqieFZiKMNOU1pl+/Yyv0V9nZqSQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_149aacab-2f5d-429b-af71-1310bc5c125c" Target="#_be1ba0e1-2bd1-4b9c-a049-99824f7df204"><Timestamp>2020-07-10 14:31:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
