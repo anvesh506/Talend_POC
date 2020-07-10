@@ -94,6 +94,27 @@
     <module>jobs/process/TemplateBQToSQL/diloadsqltosqlfixedquerybulk_0.1</module>
     <module>jobs/process/envtest_0.1</module>
     <module>jobs/joblets/Templates/gjverifygcs_0.1</module>
+    <module>jobs/process/ProductionJobs/AppNexusGMTAdRevenue/diloadbqtobqappnexusgmtadrevenuesuperusertierl30medint_0.1</module>
+    <module>jobs/process_mr/Templates/diloadbqappnexusgmt_test_0.1</module>
+    <module>jobs/process_mr/ProductionJobs/AppNexusGMTAdRevenue/diloadbqappnexusgmtadrevenuesuperusertierl30_0.1</module>
+    <module>jobs/joblets/Framework/gjlstartjobbundlerun_0.1</module>
+    <module>jobs/process_mr/testbd1_0.1</module>
+    <module>jobs/joblets/Framework/gjverifygsbq_0.1</module>
+    <module>jobs/process_mr/ProductionJobs/AdvertiserDemandType/diloadbqadvertiserdemandtype_0.1</module>
+    <module>jobs/process/pchUtilities/ddd_0.1</module>
+    <module>jobs/process/ProductionJobs/PerfDashSearchMetricsAB/diloadaggperfdashsearchmetricsabmedint_0.1</module>
+    <module>jobs/process_mr/Templates/test_qnode04_localmode_0.1</module>
+    <module>jobs/process/pchUtilities/appnexus_test_simba_jdbc_0.1</module>
+    <module>jobs/process_mr/diloadadaggregates_0.1</module>
+    <module>jobs/process_mr/Templates/Templates/testtoloadpartitiontables_0.1</module>
+    <module>jobs/process_mr/Templates/qnode04_localmode_customunsupported_0.1</module>
+    <module>jobs/process_mr/Templates/test_adaggs_0.1</module>
+    <module>jobs/process/pchUtilities/test_staq_tpr_job_std_0.1</module>
+    <module>jobs/process/pchUtilities/json_to_generic_0.1</module>
+    <module>jobs/process_mr/Templates/stag_spark_job_test_0.1</module>
+    <module>jobs/process/ProductionJobs/AdvertiserDemandType/diloadmysqltobqadvertiserdemandtypemedint_0.1</module>
+    <module>jobs/process_mr/Templates/copy_of_diloadbqappnexusgmtadrevenuesuperusertierl30_0.1</module>
+    <module>jobs/joblets/Framework/gjlstartjobrun_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

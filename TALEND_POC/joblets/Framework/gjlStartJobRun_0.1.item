@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="cSqlMetaDataDB_Server" prompt="cSqlMetaDataDB_Server?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_Schema" prompt="cSqlMetaDataDB_Schema?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_AdditionalParams" prompt="cSqlMetaDataDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_Password" prompt="cSqlMetaDataDB_Password?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_Password" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_Database" prompt="cSqlMetaDataDB_Database?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_Login" prompt="cSqlMetaDataDB_Login?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="cSqlMetaDataDB_Port" prompt="cSqlMetaDataDB_Port?" promptNeeded="false" repositoryContextId="_gcgKsOwCEeeVWbhzPeguUw" type="id_String" value=""/>
+      <contextParameter comment="" name="SmptServer" prompt="SmptServer?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="smtp.prod.pch.com"/>
+      <contextParameter comment="" name="ErrorEmailTo" prompt="ErrorEmailTo?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+      <contextParameter comment="" name="ErrorEmailFrom" prompt="ErrorEmailFrom?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="DIServices_Dev@pch.com"/>
+      <contextParameter comment="" name="VarPid" prompt="VarPid?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="SetUpFile" prompt="SetUpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ErrorCode" prompt="ErrorCode?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+      <contextParameter comment="" name="SmtpPort" prompt="SmtpPort?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="25"/>
+      <contextParameter comment="" name="ErrorMessage" prompt="ErrorMessage?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="PassString" prompt="PassString?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value="enc:system.encryption.key.v1:X3hHqOS064HGYmyU58OZ99kMaYzry0CU/7QvbaKjjF7x+wMO6iN8sconRf4="/>
+      <contextParameter comment="" name="ErrorNotificationSent" prompt="ErrorNotificationSent?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="SingleErrorNotification" prompt="SingleErrorNotification?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="OpsGeniePriority" prompt="OpsGeniePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="P3"/>
+      <contextParameter comment="" name="OpsGenieUrl" prompt="OpsGenieUrl?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="https://api.opsgenie.com/v2/alerts"/>
+      <contextParameter comment="" name="OpsGenieRequestBody" prompt="OpsGenieRequestBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="OpsGenieAlertTag" prompt="OpsGenieAlertTag?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value="afa61d1e-c1a5-4e34-9900-453a2ebe22a3"/>
+      <contextParameter comment="" name="KillJobOnJavaExeption" prompt="KillJobOnJavaExeption?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="LocalLogFileNameXML" prompt="LocalLogFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3LogAccessKey" prompt="S3LogAccessKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ExecutionEnvironment" prompt="ExecutionEnvironment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalLogFileNameHTML" prompt="LocalLogFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="URLLogRoot" prompt="URLLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3LogFileName" prompt="S3LogFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalContextDumpFileNameHTML" prompt="LocalContextDumpFileNameHTML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3LogSecretKey" prompt="S3LogSecretKey?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Password" value=""/>
+      <contextParameter comment="" name="URLContextDumpFile" prompt="URLContextDumpFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalLogFileNameDel" prompt="LocalLogFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="NotificationFailure" prompt="NotificationFailure?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="NotificationToBeSentAux" prompt="NotificationToBeSentAux?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="EmailOnError" prompt="EmailOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="S3RootLogRoot" prompt="S3RootLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="URLLogFile" prompt="URLLogFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalLogRoot" prompt="LocalLogRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalContextDumpFileNameXML" prompt="LocalContextDumpFileNameXML?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3LogBucket" prompt="S3LogBucket?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="OpsGenieRequestOnError" prompt="OpsGenieRequestOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="LocalContextDumpFileNameDel" prompt="LocalContextDumpFileNameDel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="XSLfileName" prompt="XSLfileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3ContextDumpFileName" prompt="S3ContextDumpFileName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="EmailSubject" prompt="EmailSubject?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="XSLfileNameForContext" prompt="XSLfileNameForContext?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="HtmlEmailBody" prompt="HtmlEmailBody?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalXMLLogDir" prompt="LocalXMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalHTMLLogDir" prompt="LocalHTMLLogDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalXMLContextDir" prompt="LocalXMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="LocalHTMLContextDir" prompt="LocalHTMLContextDir?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="JobServerSystem" prompt="JobServerSystem?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ErrorMessageInEmail" prompt="ErrorMessageInEmail?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="StartBoundary" prompt="StartBoundary?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="Moment" prompt="Moment?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="TalendLogID" prompt="TalendLogID?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+      <contextParameter comment="" name="TalendJobBundleRunId" prompt="TalendJobBundleRunId?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Long" value=""/>
+      <contextParameter comment="" name="CodePriority" prompt="CodePriority?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+      <contextParameter comment="" name="LogToDb" prompt="LogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="ReadyToLogToFile" prompt="ReadyToLogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="ReadyToLogToDb" prompt="ReadyToLogToDb?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="false"/>
+      <contextParameter comment="" name="LogToFile" prompt="LogToFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="XSLfileNameForJobIndex" prompt="XSLfileNameForJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="HTMLLogOnError" prompt="HTMLLogOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="URLJobIndex" prompt="URLJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3ContextDumpDirName" prompt="S3ContextDumpDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="IntegrationLevel" prompt="IntegrationLevel?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Integer" value=""/>
+      <contextParameter comment="" name="S3LogDirName" prompt="S3LogDirName?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="C_MessageType" prompt="C_MessageType?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ContextDumpOnError" prompt="ContextDumpOnError?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="ContextDumpOnSuccess" prompt="ContextDumpOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="JobIndexHTMLFileLocal" prompt="JobIndexHTMLFileLocal?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="HTMLLogOnSuccess" prompt="HTMLLogOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="S3JobIndexHTMLFile" prompt="S3JobIndexHTMLFile?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="EmailOnSuccess" prompt="EmailOnSuccess?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_Boolean" value="true"/>
+      <contextParameter comment="" name="LocalXMLFileJobIndex" prompt="LocalXMLFileJobIndex?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ExportRoot" prompt="ExportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="ImportRoot" prompt="ImportRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+      <contextParameter comment="" name="SetUpRoot" prompt="SetUpRoot?" promptNeeded="false" repositoryContextId="__17A4Po1EeeyKtqaT_p1lg" type="id_String" value=""/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="true"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/dlychev/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:y/l6K7g0ixY9tJVu5+Tuy83lQ3WURts20DotxH0v"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_vMRo4MlzEees4oYfE_mWKQ" name="DQTechnical"/>
+      <routinesParameter id="_vL5OY8lzEees4oYfE_mWKQ" name="DataMasking"/>
+      <routinesParameter id="_vLIZYMlzEees4oYfE_mWKQ" name="DataOperation"/>
+      <routinesParameter id="_vMFboMlzEees4oYfE_mWKQ" name="DataQualityDependencies"/>
+      <routinesParameter id="_vL_VAMlzEees4oYfE_mWKQ" name="DataQuality"/>
+      <routinesParameter id="_vMLiQslzEees4oYfE_mWKQ" name="DqStringHandling"/>
+      <routinesParameter id="_vLOgAMlzEees4oYfE_mWKQ" name="Mathematical"/>
+      <routinesParameter id="_vLUmoMlzEees4oYfE_mWKQ" name="Numeric"/>
+      <routinesParameter id="_vLatQMlzEees4oYfE_mWKQ" name="Relational"/>
+      <routinesParameter id="_uwRpYMlzEees4oYfE_mWKQ" name="SQLike"/>
+      <routinesParameter id="_vLgz4MlzEees4oYfE_mWKQ" name="StringHandling"/>
+      <routinesParameter id="_vLm6gMlzEees4oYfE_mWKQ" name="TalendDataGenerator"/>
+      <routinesParameter id="_vLm6hMlzEees4oYfE_mWKQ" name="TalendDate"/>
+      <routinesParameter id="_vLzHxMlzEees4oYfE_mWKQ" name="TalendStringUtil"/>
+      <routinesParameter id="_vLzHwMlzEees4oYfE_mWKQ" name="TalendString"/>
+      <routinesParameter id="_aTKvMPpLEeeyKtqaT_p1lg" name="Encrypt"/>
+      <routinesParameter id="_r4PHoOvVEeequ4npDh9sDw" name="OSValidator"/>
+    </parameters>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="42" offsetLabelY="10" posX="672" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error getting settings from database&quot;+((String)globalMap.get(&quot;tMSSqlInput_1_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50730"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="ErrorGettingSettingsFromDB"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Print the Die massage on failure of getting values  from database"/>
+      <metadata connector="FLOW" name="tDie_4"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="3" offsetLabelY="9" posX="256" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Meta data set up for job &quot;+jobName+&quot; OK&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="MetaDataSetUPOK"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Triggers a information Message with MetaData Setup for the  job is done "/>
+      <metadata connector="FLOW" name="tWarn_1"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="projectName"/>
+        <elementValue elementRef="VALUE" value="projectName"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="jobName"/>
+        <elementValue elementRef="VALUE" value="jobName"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+        <elementValue elementRef="VALUE" value="rootPid"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+        <elementValue elementRef="VALUE" value="fatherPid"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+        <elementValue elementRef="VALUE" value="pid"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareInputPar"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input  values to store procedure SetTalendLog&#13;&#10;"/>
+      <metadata connector="FLOW" name="tFixedFlowInput_1">
+        <column comment="" key="false" length="255" name="projectName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="jobName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="root_pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="father_pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="640" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cac6DvRAeFtTg3bNPAczxlSfuKncZ1QGwAf12ATLXdsEqg8tisyXUw8G8jjinDvgAH71LPX1wna5RFU="/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_SetTalendLog&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="jobName"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="projectName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="jobName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="root_pid"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="father_pid"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="pid"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="StartBoundary"/>
+        <elementValue elementRef="TYPE" value="OUT"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="OUT"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Componet is used to run Store Procedure based on the input values to get the  unique TalenLogId and StartBoundry "/>
+      <metadata connector="FLOW" name="tMSSqlSP_1">
+        <column comment="" key="false" length="255" name="projectName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="jobName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="root_pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="father_pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="pid" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="StartBoundary" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="context.StartBoundary=input_row.StartBoundary;&#10;context.TalendLogID=input_row.TalendLogID;&#10;System.out.println(&quot;Start Boudary is:&quot;+context.StartBoundary);&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="SetStartBoundary"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Set the TalendLogId and StartBoundy values into context variable from the output of store procedure "/>
+      <metadata connector="FLOW" name="tJavaRow_1"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="640">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error executing usp_SetTalendLog &quot;+((String)globalMap.get(&quot;tMSSqlSP_1_ERROR_MESSAGE&quot;))+&quot; &quot;+((String)globalMap.get(&quot;tFixedFlowInput_1_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="50709"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="usp_SetTalendLog_Error"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Print the Error Message  on failure of StoreProcedure and FixedFlowInput "/>
+      <metadata connector="FLOW" name="tDie_5"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="-4" offsetLabelY="2" posX="480" posY="640">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Executing usp_SetTalendLog finished  OK&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="usp_SetTalendLogOK "/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Triggers an information with usp_SetTalendLog  store procedure execution done ok"/>
+      <metadata connector="FLOW" name="tWarn_2"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//Determine which system job server running and set appropiate slash&#10;boolean isItWindows=routines.OSValidator.isWindows();&#10;String slash=&quot;/&quot;;&#10;if (isItWindows==true)  slash=&quot;\\&quot;;&#10;//Set time portion of file names&#10;java.time.format.DateTimeFormatter dtf = java.time.format.DateTimeFormatter.ofPattern(&quot;yyyyMMddHHmmssSS&quot;);&#10;java.time.LocalDateTime now = java.time.LocalDateTime.now();&#10;String FileTime =dtf.format(now);&#10;//Make sure that root directory variables ending wiht slans&#10;String LastChar=context.LocalLogRoot.substring(context.LocalLogRoot.length() - 1);&#10;if (!LastChar.equals(slash)) context.LocalLogRoot=context.LocalLogRoot+slash;&#10;&#10;LastChar=context.S3RootLogRoot.substring(context.S3RootLogRoot.length() - 1);&#10;if (!LastChar.equals(&quot;/&quot;)) context.S3RootLogRoot=context.S3RootLogRoot+&quot;/&quot;;&#10;&#10;&#10;LastChar=context.URLLogRoot.substring(context.URLLogRoot.length() - 1);&#10;if (!LastChar.equals(&quot;/&quot;)) context.URLLogRoot=context.URLLogRoot+&quot;/&quot;;&#10;&#10;///set base for file names&#10;&#10;String LogFileNameShort=projectName+&quot;_&quot;+jobName+&quot;_&quot;+FileTime+&quot;_Log&quot;;&#10;&#10;String ContextDumpFileNameShort=projectName+&quot;_&quot;+jobName+&quot;_&quot;+FileTime+&quot;_Context&quot;;&#10;//Set file name &#10;///Local log files&#10;context.LocalLogFileNameDel=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;LogFiles&quot;+slash+&quot;delimeted&quot;+slash+LogFileNameShort+&quot;.txt&quot;;&#10;context.LocalLogFileNameXML=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;LogFiles&quot;+slash+&quot;xml&quot;+slash+LogFileNameShort+&quot;.xml&quot;;&#10;context.LocalLogFileNameHTML=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;LogFiles&quot;+slash+&quot;html&quot;+slash+LogFileNameShort+&quot;.html&quot;;&#10;///Local Context dump files&#10;context.LocalContextDumpFileNameDel=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;ContextDumps&quot;+slash+&quot;delimeted&quot;+slash+ContextDumpFileNameShort+&quot;.txt&quot;;&#10;context.LocalContextDumpFileNameXML=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;ContextDumps&quot;+slash+&quot;xml&quot;+slash+ContextDumpFileNameShort+&quot;.xml&quot;;&#10;context.LocalContextDumpFileNameHTML=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;ContextDumps&quot;+slash+&quot;html&quot;+slash+ContextDumpFileNameShort+&quot;.html&quot;;&#10;//S3 file to be inputed as &quot;key&quot; in S3 put box&#10;context.S3LogFileName=context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;LogFiles&quot;+&quot;/&quot;+LogFileNameShort+&quot;.html&quot;;&#10;context.S3ContextDumpFileName=context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;ContextDumps&quot;+&quot;/&quot;+ContextDumpFileNameShort+&quot;.html&quot;;&#10;// TO CREATE job log INDEX&#10;context.S3LogDirName=context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;LogFiles&quot;+&quot;/&quot;;&#10;context.S3ContextDumpDirName=context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;ContextDumps&quot;+&quot;/&quot;;&#10;context.LocalXMLFileJobIndex=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+projectName+&quot;_&quot;+jobName+&quot;_LogNaviation.xml&quot;;&#10;context.JobIndexHTMLFileLocal=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+projectName+&quot;_&quot;+jobName+&quot;_LogNaviation.html&quot;;&#10;context.S3JobIndexHTMLFile=context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+projectName+&quot;_&quot;+jobName+&quot;_LogNaviation.html&quot;;&#10;context.URLJobIndex=context.URLLogRoot+context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+projectName+&quot;_&quot;+jobName+&quot;_LogNaviation.html&quot;;&#10;//URL Links&#10;context.URLLogFile=context.URLLogRoot+context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;LogFiles&quot;+&quot;/&quot;+LogFileNameShort+&quot;.html&quot;;&#10;context.URLContextDumpFile=context.URLLogRoot+context.S3RootLogRoot+context.ExecutionEnvironment+&quot;/&quot;+projectName+&quot;/&quot;+jobName+&quot;/&quot;+&quot;ContextDumps&quot;+&quot;/&quot;+ContextDumpFileNameShort+&quot;.html&quot;;&#10;context.LocalHTMLContextDir=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;ContextDumps&quot;+slash+&quot;html&quot;+slash;&#10;context.LocalHTMLLogDir=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;LogFiles&quot;+slash+&quot;html&quot;+slash;&#10;context.LocalXMLLogDir=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;LogFiles&quot;+slash+&quot;xml&quot;+slash;&#10;context.LocalXMLContextDir=context.LocalLogRoot+context.ExecutionEnvironment+slash+projectName+slash+jobName+slash+&quot;ContextDumps&quot;+slash+&quot;xml&quot;+slash;&#10;&#10;&#10;if (context.LogToFile==true) context.ReadyToLogToFile=true;&#10;&#10;&#10;&#10;&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="SetLogFilesNames"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="set the log File names into context variables "/>
+      <metadata connector="FLOW" name="tJava_2"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="640">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="context.JobServerSystem"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="RecordJobServerSystem"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Triggers an information with  Name of JobServer System"/>
+      <metadata connector="FLOW" name="tWarn_3"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="context.NotificationFailure=false;&#10;context.ErrorNotificationSent=false;&#10;globalMap.put(&quot;WarningProduced&quot;, &quot;NO&quot;);"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="ResetVariables"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Reset the Error Notification Variables to False "/>
+      <metadata connector="FLOW" name="tJava_1"/>
+    </node>
+    <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="640">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+      <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+      <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to Execute the set of data flow parallel"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="608">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_2"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;URLLogFile&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value=" context.URLLogFile"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesURLLogFile"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for UrlLogFile&#13;&#10;&#13;&#10;"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_2">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1312" posY="608">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_2"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fiIADBZWE16lgxDpuF1UZ+d1w11vl//bMEcfEDVKKKKYPV0zAPBbyZOdvKqCiEkx3xvyASDOANOmzrQ="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the UrlLogFile messaages"/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_2">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="15" offsetLabelY="-1" posX="1120" posY="832">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;URLContextDumpFile&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value=" context.URLContextDumpFile"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesURLContextDumpFile"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for Url Context Dump File messaage"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_3">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1280" posY="832">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_3"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JdLFD2/HboJX2NffmG1KVN9Jm8UsX6QIrqErS1yJfnpbW4wg1vgqgSx8Zfex1aN82z9pobzyHCDFLpU="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the Url Context Dump File message&#13;&#10;&#13;&#10;"/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_3">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="31" offsetLabelY="-33" posX="1088" posY="704">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_2_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingURLLogMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting Url Log Message&#13;&#10;&#13;&#10;"/>
+      <metadata connector="FLOW" name="tDie_1"/>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="24" offsetLabelY="-31" posX="1120" posY="928">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_3_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingURLContextDumpMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting Url Context Dump File messaage"/>
+      <metadata connector="FLOW" name="tDie_2"/>
+    </node>
+    <node componentName="tWarn" componentVersion="0.101" offsetLabelX="-4" offsetLabelY="2" posX="864" posY="864">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;Job messages has been recorded OK&quot;"/>
+      <elementParameter field="TEXT" name="CODE" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+      <elementParameter field="TEXT" name="LABEL" value="JobmessagesRecordedOk "/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Triggers an information  with Job messages has been recorded OK"/>
+      <metadata connector="FLOW" name="tWarn_4"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_4"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;S3LogFileName&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value="context.S3LogFileName"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesS3LogFileName"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for S3LogFileName&#13;&#10;"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_4">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1344" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_4"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:miJB6i+ab03/IlGcCEZV8O27whtsZB/ZQzoH8tc+PoZHoxltazobMgzzSEOc1w5eMyeEXCUxaIqaPFU="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the S3 Log messages  "/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_4">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="-6" offsetLabelY="0" posX="1120" posY="256">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_4_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingS3LogMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting S3 Log Message"/>
+      <metadata connector="FLOW" name="tDie_3"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="9" offsetLabelY="0" posX="1120" posY="384">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_5"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;S3ContextDumpFileName&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value="context.S3ContextDumpFileName"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesS3ContextDumpFile"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for S3ContextDumpFile"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_5">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1344" posY="384">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_5"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UicbO/d+n6gnn1Cyd1bt9h2PL4vG52QknCVQ01M3lkn8U/AmK1P6FrkQ4eyhSUwzmMQ6vJb6BPu2vI0="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the S3 Context Dump File  messages&#13;&#10;"/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_5">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_4_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingS3ContextDumpMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting S3 Context Dump Messages"/>
+      <metadata connector="FLOW" name="tDie_6"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="13" offsetLabelY="-14" posX="1120" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_6"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;S3JobIndexHMLFile&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value="context.S3JobIndexHTMLFile"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesS3JobIndexHMLFile"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for S3 Job Index Hml Message"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_6">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1312" posY="1056">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_6"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vmJ31/slcw8ueXfvGz3pEg+t/Yw9I7ImONp8dURPYxLyYM2JII/ApuS0CT9M7jtpYaO8DmPun8tkOlw="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the S3 Job Index Hml Message"/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_6">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="-6" offsetLabelY="0" posX="1120" posY="1152">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_6_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingS3JobIndexHMLMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting S3 Job Index Hml Message&#13;&#10;"/>
+      <metadata connector="FLOW" name="tDie_7"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="9" offsetLabelY="-13" posX="1088" posY="1280">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_7"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="VALUE" value="context.TalendLogID"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageName"/>
+        <elementValue elementRef="VALUE" value="&quot;URLJobIndex&quot;"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="MessageValue"/>
+        <elementValue elementRef="VALUE" value="context.URLJobIndex"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="PrepareVariablesURLJobIndex"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input Message Value for Url job Index"/>
+      <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_7">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="7" posX="1344" posY="1280">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlSP_7"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lT3-wOwBEeeVWbhzPeguUw"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="HOST" value="context.cSqlMetaDataDB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.cSqlMetaDataDB_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.cSqlMetaDataDB_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.cSqlMetaDataDB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.cSqlMetaDataDB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L5uVI19cL92FEjohuCrWijU5bFz+d0J9xsMloWuacHRriOCgG18/3YdTTxVfSJCf5OOXcrIxn6/fWJs="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3IO3cDHtEeiOEus5I7RG0Q - metadata"/>
+      <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_InsertJobMessage&quot; "/>
+      <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="TalendJobBundleRunId"/>
+      <elementParameter field="TABLE" name="SP_ARGS">
+        <elementValue elementRef="COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageName"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+        <elementValue elementRef="COLUMN" value="MessageValue"/>
+        <elementValue elementRef="TYPE" value="IN"/>
+      </elementParameter>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.cSqlMetaDataDB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="LABEL" value="MeatDataDBSP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This Component is used to execute store procedure to  insert the Url Job Index"/>
+      <metadata connector="FLOW" label="metadata" name="tMSSqlSP_7">
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendLogID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="MessageValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.101" offsetLabelX="32" offsetLabelY="0" posX="1088" posY="1376">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="&quot;usp_InsertJobMessage had failed  &quot;+((String)globalMap.get(&quot;tMSSqlSP_7_ERROR_MESSAGE&quot;))"/>
+      <elementParameter field="TEXT" name="CODE" value="4"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="InsertingURLJobIndexMessageFailed"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to Display Error Message Inserting Url Job Index"/>
+      <metadata connector="FLOW" name="tDie_8"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="context.ContextDumpOnError=false;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="DisableContextDump"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="set the contextDumpOnError variable "/>
+      <metadata connector="FLOW" name="tJava_3"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_8"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendProjectName"/>
+        <elementValue elementRef="VALUE" value="projectName"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobName"/>
+        <elementValue elementRef="VALUE" value="jobName"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationLevel"/>
+        <elementValue elementRef="VALUE" value="context.IntegrationLevel"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="VALUE" value="context.TalendJobBundleRunId"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="LABEL" value="SetUpVars"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+      <elementParameter field="MEMO" name="COMMENT" value="This component is used to set the fixed input  values to job properties &#13;&#10;"/>
+      <metadata connector="FLOW" name="tFixedFlowInput_8">
+        <column comment="" key="false" length="-1" name="TalendProjectName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="IntegrationLevel" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="gjGetJobProperties" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="gjGetJobProperties_1"/>
+      <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+      <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+      <elementParameter field="TEXT" name="LABEL" value="gjGetJobProperties"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value="Purpose of the Joblet&#13;&#10;---Get the required paramaters for job based on the integreation Level  from DB and load into context variables"/>
+      <metadata connector="FLOW" name="gjGetJobProperties_1">
+        <column comment="" key="false" length="-1" name="TalendProjectName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="IntegrationLevel" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="TalendJobBundleRunId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tFixedFlowInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMSSqlSP_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="projectName"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tDie_5">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError5"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tWarn_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlSP_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_1" target="tJavaRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="projectName"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="TalendJobBundleRunId"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="TalendLogID"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_2" offsetLabelX="0" offsetLabelY="0" source="tWarn_2" target="tWarn_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tWarn_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_3" offsetLabelX="0" offsetLabelY="0" source="tWarn_3" target="tParallelize_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk10"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tJava_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsSelfManaged==1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_1" target="tFixedFlowInput_8">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsSelfManaged==0"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tFixedFlowInput_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tFixedFlowInput_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="1" offsetLabelY="-21" source="tParallelize_1" target="tWarn_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tParallelize_1" target="tFixedFlowInput_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tParallelize_1" target="tFixedFlowInput_5">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tParallelize_1" target="tFixedFlowInput_6">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tParallelize_1" target="tFixedFlowInput_7">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    </connection>
+    <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMSSqlSP_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tDie_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError7"/>
+    </connection>
+    <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tMSSqlSP_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tDie_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError8"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_4" offsetLabelX="0" offsetLabelY="0" source="tWarn_4" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
+    </connection>
+    <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFixedFlowInput_4" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_4" target="tMSSqlSP_4">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_4" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_4" target="tDie_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError9"/>
+    </connection>
+    <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFixedFlowInput_5" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_5" target="tMSSqlSP_5">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_5" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_5" target="tDie_6">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError10"/>
+    </connection>
+    <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tFixedFlowInput_6" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_6" target="tMSSqlSP_6">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_6" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_6" target="tDie_7">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError11"/>
+    </connection>
+    <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFixedFlowInput_7" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_7" target="tMSSqlSP_7">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_7" offsetLabelX="8" offsetLabelY="3" source="tFixedFlowInput_7" target="tDie_8">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError12"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDie_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk13"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_8" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_8" target="gjGetJobProperties_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_8" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_8" target="tJava_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError3"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_8" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_8" target="tJava_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk14"/>
+    </connection>
+    <note opaque="false" posX="288" posY="0" sizeHeight="96" sizeWidth="513" text="Purpose of this Joblet is &#13;&#10;1. Initializing required context variables from file and DB&#13;&#10;2. Get the required BoundryType&#13;&#10;3. Insert the JobMessagelog  &#13;&#10;">
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    </note>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value=" Getting the Boundry type and TalendLogId"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_2"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message Value for URLLogFile"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message value for URLContextDumpFile"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_4"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message Value for S3LogFileName"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_5"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message Value for S3ContextDumpFileName"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_6"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message Value for S3JobIndexHMLFile"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_7"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Inserting Message Value for URLJobIndex"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_8"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value=" Getting the required properties from DB"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1024" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="SuccessTriggerOutPut"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ffa1c295-5697-4f56-80af-fb62f2c26eba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>65KtZ9xXR5Nh0+adgKwEsZvRNuDrzVIT3eLYj5rofjQYeMhAyJRuGMKv0wD9+201qXOu0V2go6KE
+oYLsRt/LKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6da06980-0f9a-48a7-b2e1-d65f4c66bcf6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+2B4at4dwAuAb9pgqrlKpadhSvNprNTpSFFILaF4w9UsvOr9QxmxGVDInBb1dW5uYKOcub9UtapJ
+Ou17CJiJGA==</DigestValue></Reference></SignedInfo><SignatureValue>ptPlwDl2yC31rMB4PG++jjYZVFgVy2utbwD7uaa5Zw9zrRP8FL0hcuy2cuLtA9kCzsDRWNPsm/cs
+2WG8MDE3Y+9T8hIcreldnskCF65Kvr5VoYugBvVHt2Qi4q44z9tkrMY92y8T9OF7S/WeXyF3iKGA
+neoV/7L7sIrL+nja1FxOG0OU8+Gfztopi1Zg6Ks7zbzc0wIYkp6aEFx7b35zr9Ucsb2WKlFajCUO
+fY5DDN0rHWKMs5154ju3r/YIPKZZ6O2IibVtUsPiZVIhGp/zFutRdI+Sekv/M3gKQINQLfRnhU0d
+HqvGNSS3GtKS4Y+EEF7PKgHM5djycfVTqYXCAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6da06980-0f9a-48a7-b2e1-d65f4c66bcf6" Target="#_ffa1c295-5697-4f56-80af-fb62f2c26eba"><Timestamp>2020-07-10 14:47:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
