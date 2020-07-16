@@ -116,6 +116,7 @@
     <module>jobs/process_mr/Templates/copy_of_diloadbqappnexusgmtadrevenuesuperusertierl30_0.1</module>
     <module>jobs/joblets/Framework/gjlstartjobrun_0.1</module>
     <module>jobs/process/demo/sqlserver_to_snowflake_0.1</module>
+    <module>jobs/process/demo/cd_db_object_list_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
