@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:kT333dbzv/1Ei7lx/M9tKak54aFThpAJnF/g31Dp"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vrBwHwnWwITWawhTQn4hCa0Hzpd2apEG2rGdSpwI"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZpX3N0zB1ggZwQvJ7aV/TnLqIkOjH2gg0XvLOncN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:V3qVmdio3L58Re3mv4oy6Cbupe7nV03UMw0a+ykY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -117,7 +117,7 @@
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="512" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;    String sDate1=&quot;31/12/1998 00:00:00&quot;;  &#10;    Date date1=new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;).parse(sDate1);  &#10;    System.out.println(sDate1+&quot;\t&quot;+date1);  &#10; &#10; java.time.format.DateTimeFormatter dtf = java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);&#10;java.time.LocalDateTime now = java.time.LocalDateTime.now();&#10;context.START_DATE=dtf.format(now);&#10;Date date2=new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;).parse(now);&#10;System.out.println(date2);&#10;System.out.println(&quot;JOB NAME IS:&quot;+context.START_DATE);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;    String sDate1=&quot;31/12/1998 00:00:00&quot;;  &#10;    Date date1=new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;).parse(sDate1);  &#10;    System.out.println(sDate1+&quot;\t&quot;+date1);  &#10; &#10; java.time.format.DateTimeFormatter dtf = java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);&#10;java.time.LocalDateTime now = java.time.LocalDateTime.now();&#10;context.START_DATE=dtf.format(now);&#10;Date date2=new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;).parse(dtf.format(now));&#10;System.out.println(date2);&#10;System.out.println(&quot;JOB NAME IS:&quot;+context.START_DATE);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
