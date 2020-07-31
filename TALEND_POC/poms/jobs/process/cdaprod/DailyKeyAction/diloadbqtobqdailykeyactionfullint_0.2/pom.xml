@@ -449,7 +449,19 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_poc.joblet</groupId>
+      <artifactId>gjlStartJobRun</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talend_poc.joblet</groupId>
       <artifactId>gjlBundleLogNotification</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talend_poc.joblet</groupId>
+      <artifactId>gjlStartJobBundleRun</artifactId>
       <version>0.1.0</version>
       <type>pom</type>
     </dependency>
@@ -463,6 +475,12 @@
       <groupId>org.example.talend_poc.job</groupId>
       <artifactId>diLoadBqaggDailyKeyAction</artifactId>
       <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talend_poc.joblet</groupId>
+      <artifactId>GjVerifyGSBQ</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>
