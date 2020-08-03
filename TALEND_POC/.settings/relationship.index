@@ -3027,10 +3027,6 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
-  }, {
-    "id" : "_X18EUOcHEeisN7WsYtauUg - DailyKeyActionSourceBoundry",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
