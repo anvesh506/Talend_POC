@@ -7526,6 +7526,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "TALEND_POC:_RC_k0NMIEeqOqqaXAR9UTQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "_enHZ0La8EeqMUrAkckOGvA",
     "version" : "Latest",
     "type" : "property"
