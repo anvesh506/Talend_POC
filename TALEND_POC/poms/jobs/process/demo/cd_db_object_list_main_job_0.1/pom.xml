@@ -128,11 +128,6 @@
       <version>1.7.25</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>talend_DB_mssqlUtil</artifactId>
-      <version>1.4</version>
-    </dependency>
-    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
@@ -141,11 +136,6 @@
       <groupId>org.example.talend_poc.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.talend_poc.job</groupId>
-      <artifactId>CD_DB_OBJECT_LIST_V3</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
