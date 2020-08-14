@@ -122,6 +122,7 @@
     <module>jobs/process/demo/copy_of_cd_db_object_list_v4_0.1</module>
     <module>jobs/process/demo/cd_db_object_list_failed_process_0.1</module>
     <module>jobs/process/demo/copy_of_cd_db_object_list_failed_process_0.1</module>
+    <module>jobs/process/demo/cd_db_object_list_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
