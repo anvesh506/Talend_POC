@@ -36,7 +36,7 @@
     <talend.job.name>CD_DB_OBJECT_LIST_MAIN_JOB</talend.job.name>
     <talend.job.id>_z-yD4Nu8Eeq4BfFIaoqQMw</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>demo/</talend.job.folder>
+    <talend.job.folder>sqlserver_to_snowfalke/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -149,7 +149,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_poc.job</groupId>
-      <artifactId>CD_DB_OBJECT_LIST_V3</artifactId>
+      <artifactId>CD_DB_OBJECT_LIST</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
