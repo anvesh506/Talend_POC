@@ -144,7 +144,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_poc.job</groupId>
-      <artifactId>CD_DB_OBJECT_LIST_V3</artifactId>
+      <artifactId>CD_DB_OBJECT_LIST_FAILED_PROCESS</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
