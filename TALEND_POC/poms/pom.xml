@@ -123,6 +123,7 @@
     <module>jobs/process/SQLSERVER_TO_SNOWFALKE/cd_db_object_list_failed_process_0.1</module>
     <module>jobs/process/SQLSERVER_TO_SNOWFALKE/cd_db_object_list_main_job_0.1</module>
     <module>jobs/process/SQLSERVER_TO_SNOWFALKE/cd_db_object_list_0.1</module>
+    <module>jobs/process/SQLSERVER_TO_SNOWFALKE/copy_of_cd_db_object_list_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
